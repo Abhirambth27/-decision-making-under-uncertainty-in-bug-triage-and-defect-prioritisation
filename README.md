@@ -38,7 +38,8 @@ To make navigation seamless and immediate for examiners and peer researchers, in
 │   └── Interview_Document.pdf                # Complete 12-Question Semi-Structured Interview Protocol Guide
 │
 ├── Survey/
-│   └── Survey_Document.pdf                   # Complete 11-Question Cross-Sectional Industry Survey Instrument
+│   ├── Survey_Document.pdf                   # Complete 11-Question Cross-Sectional Industry Survey Instrument
+│   └── Bug_Triage_Decision_Making_Survey_Results.xlsx # Fully De-Identified Survey Responses & Statistical Cross-Tabs (N=65)
 │
 ├── Transcription and Anonymization Pipeline/
 │   ├── 01_transcribe_audio_to_raw.py         # Offline local Automated Speech Recognition (Faster-Whisper)
