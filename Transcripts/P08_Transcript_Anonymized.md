@@ -1,0 +1,183 @@
+# Master Thesis Interview Transcript: Participant P08
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P08
+- **Role:** Senior Software Engineer (Backend)
+- **Experience:** 6+ years across multiple enterprise software platforms
+- **Industry Domain:** Large-Scale Enterprise Software & Release Stabilization
+- **Primary Tooling:** Jira, Git, Sentry, Monitoring Systems
+- **Interview Date:** 2026-08-24
+- **Total Timestamped Utterances:** 167 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 012.16s]** Let me take a brief introduction. Thank you for joining this meeting today. My name is
+- **[012.16s - 016.52s]** [Interviewer] and I'm currently a person, my master's in software engineering at Black Engine Institute
+- **[016.52s - 024.16s]** of Technology, Sweden. My thesis focuses on decision making under uncertainty in bug
+- **[024.16s - 028.80s]** triage and defect prioritization. Like through this interview, I'm trying to understand
+- **[028.80s - 033.88s]** how software professionals make decisions when dealing with bugs, especially when there
+- **[033.88s - 040.08s]** is incomplete information, conflict priorities, or uncertainty about the impact of a defect.
+- **[040.08s - 049.72s]** Like this interview may take 20 to 25 minutes. We are not, like you're answering the right
+- **[049.72s - 054.92s]** or wrong answers, we are mainly interested in your experience and perspectives in this
+- **[054.92s - 060.28s]** bug triage and defect prioritization. Like with your permission, we will take a few notes
+- **[060.28s - 065.88s]** of this interview. Like later, we will use that information for the data analysis purpose
+- **[065.88s - 072.12s]** for our thesis. Like once again, thank you for your time joining for this meeting today.
+- **[072.12s - 081.80s]** I will start with the first question. Yes. Could you briefly describe your current role
+- **[081.80s - 086.92s]** and roughly how long have you been involved in bug triage or defect prioritization in
+- **[086.92s - 096.16s]** your work field? I'm currently working as a senior software engineer. I think I'm working
+- **[096.16s - 103.48s]** with this current company and role for like two years now. Mainly, I have been working
+- **[103.48s - 113.48s]** in my whole time in this bug triage process because we had a quite big product which is
+- **[113.48s - 119.44s]** not released like in last two years because of the bugs and issues. So we've been working
+- **[119.44s - 126.40s]** closely. We have released some part of it quite recently, like two, three months ago.
+- **[126.40s - 132.52s]** And for other platforms, we are going to release the rest of it. But yeah, so it's
+- **[132.52s - 141.12s]** been more than like six years. I've been working with this role with multiple companies.
+- **[141.12s - 151.28s]** And I've been at different stages. I've been working with this bug triage process more or less. Yes.
+- **[151.28s - 161.88s]** Okay. Coming to the second question. Could you tell me a little bit about your team and the
+- **[161.88s - 167.24s]** kind of project you are currently working on? Like, for example, how big is your team and
+- **[167.24s - 174.04s]** what kind of software do you develop and what tools do you use like to flag bugs?
+- **[176.12s - 183.00s]** We are 20 plus people and we are working in .NET, specifically MAVI, I would say, and .NET
+- **[183.64s - 188.20s]** for the back end. We are using different tools because we have multi-platforms.
+- **[188.92s - 194.76s]** So we are using for Mac on Mac, we are using Rider, Vio Studio Code, Vio Studio,
+- **[195.72s - 202.76s]** ID, and we are also working with Azure platforms. So our back end systems are
+- **[202.76s - 206.84s]** placed in Azure with the Azure DevOps to manage the whole process.
+- **[209.88s - 217.56s]** Okay. Yeah. Like, could you walk me through like what typical bug triage sessions look like for
+- **[217.56s - 226.36s]** you from the moment a new report has arrived to your desk? Like what have you made through that
+- **[227.08s - 234.04s]** report? We have two processes. One, we've been using the traditional one. It's coming from
+- **[234.04s - 242.20s]** customer support to us. And then one of the team members goes through that and see if they are
+- **[242.20s - 248.20s]** really producible, specifically they are QA persons. And if it is, they are coming back to us
+- **[248.20s - 254.04s]** to engineers to look at and then planning the team based on the priorities. The second process
+- **[254.04s - 262.60s]** we have, we have the chat board, or I would say AI board, which usually checks that bug tickets
+- **[262.60s - 268.84s]** which are added. And then it looks through if we have all the information required to produce that
+- **[268.84s - 274.92s]** bug or to close it. Usually the problem is that the description is not enough to produce the bug.
+- **[275.48s - 280.92s]** So we are using, we've been talking to people sending back and forth different templates
+- **[280.92s - 286.60s]** that you must fill this to get back and things like that. But it usually practically it's really
+- **[286.60s - 293.24s]** hard because not usually the templates are not that good or people are not paying that much
+- **[293.32s - 299.96s]** attention. So we are using AI boards to comment on that ticket with the missing information that
+- **[299.96s - 309.64s]** that is required for that bug to solve. Okay. Basically you use AI board to track the
+- **[310.12s - 313.24s]** report, right? Yes. Okay.
+- **[315.88s - 323.64s]** We need to go ahead, please. Yeah. Okay. Sorry. Can you think of a specific reason situation where
+- **[323.64s - 331.48s]** you received a bug report that was incomplete, clear, difficult to reproduce and how did you handle it?
+- **[332.44s - 341.88s]** It's quite a usual thing for us when we work with this. And it's not, I would say, a rocket science.
+- **[341.88s - 348.20s]** We just go back to the people who are sending that and asking them to mention
+- **[350.36s - 356.36s]** videos in that or the clear stuff to produce because usually they are not produceable everywhere,
+- **[356.36s - 360.68s]** specifically in our team, we are working with installed apps. So there could be multiple
+- **[360.68s - 367.80s]** factors there on the user's machine, network, security of their network and the other parts.
+- **[368.36s - 374.12s]** So usually we go back to the customer support and ask them. And in our case, customers would
+- **[374.12s - 379.40s]** usually do that already. They try to produce it locally or try to help customer troubleshooting
+- **[379.40s - 385.40s]** that stuff or some work around which we have already provided them. Just like the feedback,
+- **[386.28s - 393.96s]** right? What do you mean by feedback? I mean, the customer's support, you said,
+- **[393.96s - 403.00s]** so that's why is it like a feedback or something? We just talk to them via tickets. We just comment
+- **[403.00s - 408.68s]** on tickets. So they just assign tickets to us and we try that information. If it's not working,
+- **[408.68s - 414.60s]** we just comment on that ticket. For example, they added in the Jira, for example, as a work
+- **[414.60s - 419.24s]** item. So we just go back under the ticket and say, hey, we can't produce it. Can you guys
+- **[420.04s - 425.08s]** look again and see? Or maybe there is some time, it's quite usual that the information is not
+- **[425.08s - 432.44s]** enough in that ticket. So we just randomly throw the question that we need to know which platform
+- **[432.44s - 439.08s]** it is produceable, which version it is, and what account if it's a problem for everyone
+- **[439.08s - 442.04s]** or just specific customer or organization and things like that.
+- **[443.80s - 444.12s]** Okay.
+- **[444.12s - 444.60s]** Go ahead.
+- **[447.08s - 454.12s]** Like when a bug report lacks clear reproduction steps or the environment detail is missing in
+- **[454.12s - 457.96s]** that bug report, what do you typically do first, like in the first case?
+- **[459.96s - 465.56s]** As I mentioned, we just comment under the ticket and ask our colleagues to add more information,
+- **[465.56s - 472.52s]** which is missing. But usually now we have given them the template. So they are now having templates
+- **[472.52s - 477.08s]** so that we can reduce that communication. But it's still, as I said, even though they
+- **[477.08s - 481.48s]** have failed the complete information, it could be the case that it's not produceable to us,
+- **[481.48s - 483.32s]** but it's produceable on customer's machine.
+- **[484.20s - 484.44s]** Okay.
+- **[484.44s - 495.80s]** How do you decide the priority to assign a bug when severity is unclear or consistent?
+- **[495.80s - 499.32s]** Like how do you usually decide what priority to give it to it?
+- **[500.84s - 508.44s]** Yes, usually we are quite close to our product management. So the product management team
+- **[508.44s - 512.52s]** actually decides if we should just work on this specific thing or not.
+- **[514.36s - 519.40s]** And yeah, so they usually decide that. And we in the team see that if this is something which
+- **[519.40s - 525.00s]** is blocking a customer completely, is it a blocker for everyone? All the people who are using that
+- **[526.52s - 531.96s]** version or if it's a specific customer. So it really depends how business value is affected.
+- **[534.92s - 535.40s]** Okay.
+- **[535.64s - 543.96s]** Like what shortcuts or thumb rules you have developed? Like when an information of a bug
+- **[543.96s - 548.12s]** crash was missing, like what are your shortcuts to solve easily?
+- **[550.76s - 556.28s]** We usually try to see what information we have and if we can produce the problem with
+- **[556.28s - 561.56s]** that information or try around to see if that area is really affected or not. Otherwise,
+- **[562.28s - 566.76s]** we usually try to go back to our colleagues and say, hey, we can't produce it. And as I said,
+- **[566.76s - 573.56s]** we have customer support who actually try to produce it. And if they are able to produce it,
+- **[573.56s - 578.36s]** good enough, they can add the steps. Otherwise, they mention it clearly that they can't produce it.
+- **[578.36s - 582.92s]** Customers still have, can you guys see if there could be something around that area
+- **[582.92s - 586.04s]** which could be a problem, so to speak?
+- **[587.08s - 587.40s]** Okay.
+- **[587.64s - 588.12s]** Okay.
+- **[590.92s - 595.48s]** Can you tell me about a situation where we are under a lot of time pressure,
+- **[596.20s - 601.08s]** maybe because of an upcoming release and it affected how you handle on uncertain book?
+- **[602.36s - 603.00s]** Sorry, can we get?
+- **[604.12s - 609.80s]** I mean, can you describe a specific situation where an upcoming release deadline or workload
+- **[609.80s - 616.84s]** pressure changed how you handle a bug report that you were under, I mean, uncertain about?
+- **[618.60s - 624.68s]** Yeah, it usually comes. It's quite normal that you are quite near to release and QA comes up with
+- **[624.68s - 631.88s]** something which is really a big blocker for release. So quite recently, we had this situation
+- **[631.88s - 637.48s]** where one of our features, which is quite important, was not working properly and having
+- **[637.96s - 644.12s]** 10 to 12 different kinds of bugs. So we looked at those bugs and we delayed our release timing.
+- **[644.76s - 650.92s]** We were about to release like eight days ago, but we are delayed and we still haven't decided
+- **[650.92s - 652.92s]** our data until those big blockers are fixed.
+- **[655.08s - 662.84s]** Okay. Like, how does your current workload typically affect your amount of time
+- **[663.80s - 666.12s]** you can spend investigating the bug?
+- **[668.36s - 678.52s]** Um, actually, nowadays it's quite less because we are using Copilot and AI. So we just throw our
+- **[678.52s - 686.44s]** bugs to AI to see if it's a really problem, really an issue. When we are doing bug triage with AI
+- **[686.44s - 693.32s]** a lot, as I mentioned, if information is good enough and then we also see or sort our lists
+- **[693.32s - 698.92s]** based on AI as well. So nowadays it's quite less back in the days when we were not using AI,
+- **[698.92s - 706.44s]** it was quite a lot of time in comparison to just try to look at the bug, try and restart your
+- **[706.44s - 712.36s]** application, try to produce it, try different users, different machines, different versions.
+- **[712.36s - 714.20s]** So it was a lot of time.
+- **[716.20s - 716.70s]** Okay.
+- **[718.20s - 722.76s]** How do management expectations or business priorities factor in your trail?
+- **[723.96s - 727.16s]** Stations when you are uncertain about a bug severity?
+- **[731.48s - 738.12s]** Usually it's not the case that we don't know about the bug severity. Usually we know that and
+- **[739.96s - 746.52s]** if it's quite clear in front of us, we have to be very clear with that. It's not the case that it's
+- **[746.52s - 751.80s]** a bug and we don't know how severe it could be for the customers and we don't care about it.
+- **[752.76s - 759.64s]** We try to see the impact area. It could be one customer, it could be everyone. And if it is the
+- **[759.64s - 768.20s]** case, we just go for hot release, hot fix release for that specific bug. So the management and
+- **[768.20s - 774.60s]** priorities usually set to the business continuity. So if business continuity is disturbed,
+- **[775.32s - 780.92s]** then it must have a hot fix release. Otherwise we can just delay it and wait
+- **[781.80s - 784.28s]** until the other priority items are done.
+- **[788.84s - 796.04s]** Like based on your experience, what do you think would most improve the process of handling the
+- **[796.04s - 801.88s]** uncertain or incomplete bug reports, whether in terms of tooling process or other team practice?
+- **[805.48s - 807.96s]** Do you mean you want to know what would be more important?
+- **[808.60s - 810.20s]** Yeah, yeah. Between?
+- **[811.08s - 811.32s]** Yeah.
+- **[812.36s - 813.64s]** Between what? Sorry.
+- **[813.64s - 822.12s]** Between the tools and the team practices, what should they improve in your project and workplace?
+- **[823.08s - 829.72s]** I think it's hard to choose one, but I would say the team practices are more important because we
+- **[829.72s - 834.36s]** have several different tools, even in our team. Different people are using different tools.
+- **[834.84s - 840.04s]** But the team practices are the ones which keep us in sync. So I think the team process is
+- **[840.84s - 841.72s]** more important.
+- **[841.72s - 843.96s]** Managing the team is more difficult, I think, for you.
+- **[846.20s - 849.80s]** Yes, I think managing a team is different than managing a tool.
+- **[850.76s - 851.00s]** Yeah.
+- **[854.20s - 859.64s]** This is the last question. Before we finish, is there anything else about how you make decisions
+- **[860.36s - 867.08s]** when dealing with uncertain or unclear bugs that you think is important, but we haven't talked about?
+- **[869.08s - 871.00s]** We have. What was the last sentence?
+- **[871.72s - 876.76s]** I mean, is there anything that how you make decisions when dealing with uncertain
+- **[877.40s - 882.68s]** or unclear bugs that you think which is important, but we didn't ask you.
+- **[885.16s - 887.56s]** I just missed the last line again.
+- **[887.56s - 894.36s]** Okay. I mean, is there anything else about how you make decisions when dealing with uncertain or
+- **[894.36s - 899.16s]** unclear bugs that you think is important, but we haven't talked about?
+- **[899.96s - 904.28s]** We haven't talked about it. Okay. Okay. Sorry. Sorry. I just missed that line.
+- **[905.96s - 911.96s]** Yeah. So if they are bugs, we usually know already and they are in our backlog.
+- **[912.52s - 918.28s]** If don't, we just escalate them in the channel. We have Slack channel, for example. So we just
+- **[918.28s - 923.48s]** escalate them, guys. Everyone. It's almost everyone's responsibility, not one person.
+- **[923.48s - 930.20s]** That this is a bug. This would disturb everyone. And this is just before release. I know that we
+- **[930.20s - 935.80s]** have delayed many releases. I was just about to click on the release button and just a smoke
+- **[935.88s - 943.32s]** test is done before. And we have found something. So if these are the cases, we usually halt our
+- **[943.32s - 948.52s]** release and see if this will really impact everyone or not. Again, as I said, business
+- **[948.52s - 954.76s]** continuity is and the business value are the two main major parameters for the bug in our team.
+- **[954.76s - 964.92s]** At least. Okay. Okay. Like it's a last question. Like how do you measure the severity of a bug
+- **[964.92s - 972.20s]** like what rating from zero to five you give for a bug when the CVRT is big or low? How do you
+- **[972.20s - 979.56s]** measure that case? We, as I mentioned, the two things are very important. Is it blocking
+- **[979.56s - 987.32s]** everyone business continuity and is, will it be adding any value than current one? For example,
+- **[987.32s - 994.76s]** there could be some bug, but even if we fix it, it will not probably add that huge impact on
+- **[994.76s - 999.96s]** the application. Instead, if we will release, spend the same time to release another feature,
+- **[999.96s - 1004.60s]** maybe it will be more value valuable for a customer. So these are two items which you
+- **[1004.60s - 1009.48s]** take. And third, of course, priority. Do we have time for this now? Or if there is some other
+- **[1009.48s - 1013.16s]** bug, which is even more severe than this one. So of course, we will give the priority of that
+- **[1013.16s - 1016.12s]** one. So these three things. Okay.
+- **[1016.12s - 1024.68s]** Are we all done? Yeah, we are good. Thank you for this meeting. Like we gathered a lot of
+- **[1024.68s - 1031.00s]** insights and information from your sites. And this does very lot for us. Yeah. Thank you very much.
+- **[1031.00s - 1035.64s]** Thank you. Thank you. Have a nice day. Bye. Bye.

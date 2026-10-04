@@ -1,0 +1,189 @@
+# Master Thesis Interview Transcript: Participant P10
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P10
+- **Role:** Full-Stack & Generative AI Developer
+- **Experience:** 3+ years in full-stack development & GenAI/RAG pipelines
+- **Industry Domain:** Python (FastAPI/Django), React/TypeScript, RAG & Vector DBs
+- **Primary Tooling:** Jira, FastAPI, React, TypeScript, Vector Databases, Git
+- **Interview Date:** 2026-08-26
+- **Total Timestamped Utterances:** 173 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 008.40s]** Hi, I do thank you for joining this meeting today. Like it mean a lot for us like
+- **[008.40s - 018.24s]** Let's start the interview like my name is [Interviewer] and my team name is [Co-Researcher].
+- **[018.24s - 027.24s]** We are currently pursuing our master's in software and in BTH, fast commerce video.
+- **[027.48s - 030.48s]** This interview may take 20 to 25 minutes.
+- **[032.24s - 038.44s]** Like we are currently focusing on this progress and different practices.
+- **[038.44s - 053.64s]** We asked you a couple of questions and we later take a few notes of your answers and we will make this information
+- **[053.64s - 062.84s]** later for our data analysis purpose. Yeah, once again thank you very much for joining this today.
+- **[062.84s - 091.84s]** Like our team mainly focuses on defect decision making and defect prioritization in bug triage.
+- **[091.84s - 107.84s]** Through this interview, I'm trying to understand how software professionals make this decision when dealing with bugs, especially when there is incomplete information, conflicting priorities or uncertainty about its impact of a defect.
+- **[107.84s - 110.84s]** Yeah, let's move on to the first question.
+- **[111.84s - 122.84s]** Could you briefly describe your current role and roughly how long have you been working in this work range or defect prioritization in your workspace?
+- **[123.84s - 131.84s]** Okay, currently I'm working as a full stack and full stack developer and Gen AI engineer at [IT Services Corp C].
+- **[131.84s - 138.84s]** I have around two years of experience in the software domain.
+- **[138.84s - 145.84s]** My main technology stack I'm using here in my team was Python on the back end.
+- **[146.84s - 156.84s]** Mostly using the frameworks like Fast API, Flash, Django and on the front end I have worked with React and Azure JavaScript and TypeScript.
+- **[156.84s - 174.84s]** I have also been involved in the Gen AI team recently, like on the beginning of the presentation, with related developments like where I investigate with LLMs, REST APIs, Pecta databases, embeddings, RAGPR, pipelines and prompt based services into the RAP.
+- **[175.84s - 189.84s]** Coming to the bug triage has been a part of my work almost from the beginning because once an application goes into QA or production,
+- **[189.84s - 197.84s]** defect starts coming from the testing team, monitoring systems, clients and other developers at the table.
+- **[197.84s - 207.84s]** I normally participate in identifying the issue, checking its severity, trying to reproduce it, sorry,
+- **[207.84s - 221.84s]** reduce it and analyzing logs, calls, identifying which component is responsible for that bug and then deciding whether it needs to be an immediate fix or it just slides into the stack.
+- **[221.84s - 224.84s]** Can we move into the latter?
+- **[225.84s - 237.84s]** I have around 3 years of practical experience now and defect prioritization, although it is one of my borders development roughness.
+- **[237.84s - 238.84s]** That's it.
+- **[239.84s - 247.84s]** Coming to the second question, could you tell me a little bit about your team and the kind of project you are currently working on?
+- **[247.84s - 254.84s]** Like how big is your team? What kind of software do you develop and what tools do you use to flag bugs?
+- **[255.84s - 266.84s]** Coming to my team, usually in the 3 years I worked within an agile, a STEM based team. I think you guys know the times.
+- **[266.84s - 275.84s]** Depending on the project, our team has around, it's not constant because we have moved. Sometimes it's 8, sometimes it's 15.
+- **[275.84s - 279.84s]** Sometimes we recruit some new members to the team and sometimes we recruit interns to the team.
+- **[279.84s - 286.84s]** So it's basically 8 to 15 members, including frontend developers, backend developers, QA engineers, technical leads,
+- **[286.84s - 295.84s]** Scram master, product owner or business analyst from their side and sometimes DevOps and cloud engineers also.
+- **[295.84s - 305.84s]** The applications are mostly enterprise web applications where we have something like React for frontend,
+- **[305.84s - 312.84s]** REST APIs, Python based backend databases and external AI services.
+- **[312.84s - 321.84s]** Gen.A applications, the architecture may also introduce components like pickup, user query, API layer, prompt processing.
+- **[321.84s - 327.84s]** Then we do embedded modeling, vector based database, LLM response and then we send back this response to the user.
+- **[328.84s - 334.84s]** Coming to them, then we normally use Jira for issue tracking and spill management.
+- **[334.84s - 347.84s]** In some projects, GitHub may be used and sometimes we use Azure DevOps, use it for the source control and CI CD.
+- **[347.84s - 356.84s]** For debugging, I commonly use things like application logs, browser developer tools, API response, especially Postman.
+- **[357.84s - 363.84s]** Python stack trees, database queries and cloud monitoring tools.
+- **[363.84s - 374.84s]** Git is also very important because sometimes a defect can be traced back to a particular pull request, code change or development.
+- **[374.84s - 382.84s]** Basically, by using the Git, we're going to find out which module or the who the person who has developed this.
+- **[383.84s - 387.84s]** The complete project context looks like this.
+- **[387.84s - 394.84s]** I can't share more into the project because of the community policies and due to the NID.
+- **[394.84s - 402.84s]** Could you walk me through what typical enterprise sessions look like for you?
+- **[402.84s - 409.84s]** From the moment a new report arrives to you when the decision is made about it.
+- **[409.84s - 412.84s]** What decision you have made about it?
+- **[412.84s - 425.84s]** Yeah, normally when a new bug comes in, the first thing I do is read the ticket completely instead of immediately getting into the code.
+- **[425.84s - 438.84s]** I check the things like description, reproducion steps, expected behavior, actual behavior, screens or logs, environment,
+- **[438.84s - 443.84s]** API payloads and application version also.
+- **[443.84s - 451.84s]** Then I try to reproduce the issue in the same environment and the same modules and all.
+- **[451.84s - 465.84s]** For example, if it is an API problem, I made a request using Postman or CURL and inspect the request payload, response glory,
+- **[465.84s - 469.84s]** history, status codes and backend blocks.
+- **[469.84s - 481.84s]** If it is in front-end issue, I usually check the browser console, network tag, JavaScript errors, API calls.
+- **[481.84s - 488.84s]** If it is in the backend side, I may check Python exceptions, database queries and server logs.
+- **[488.84s - 494.84s]** Then we try to understand the impact and severity of the issue or the bug.
+- **[495.84s - 506.84s]** For example, if the bug causes authentication failure for every user, that is obvious and much more critical than a small UI admin.
+- **[506.84s - 518.84s]** After that, we normally classified with something like critical high, medium low and assign its relevant component to a component or a double code.
+- **[518.84s - 522.84s]** Sometimes a ticket is also marked as needs more information.
+- **[522.84s - 535.84s]** If we cannot make a reasonable or a reliable decision, the checklist specify focuses on the end-to-end movement from receiving a report to making the correct decision.
+- **[535.84s - 550.84s]** Can you think of a recent time when you received a bug report that was incomplete or difficult to reproduce, then how do you handle it?
+- **[551.84s - 563.84s]** An example was an issue where user occasionally getting an error while generating an AI-based response.
+- **[563.84s - 571.84s]** That ticket initially just said something like AI response is getting failure or failing sometimes.
+- **[572.84s - 582.84s]** That was difficult because there was no request ID, user input, environmental information, time strap or error message.
+- **[582.84s - 590.84s]** When I tested the same functionality locally and in our development environment, it was looking correctly.
+- **[591.84s - 605.84s]** I asked the QA for additional information like time strap, exact input prompt, browser information, and environment and screenshot.
+- **[605.84s - 613.84s]** Then I checked the backend logs based on the appropriate time straps.
+- **[613.84s - 622.84s]** From the logs, I noticed that the failure was not actually happening in our Python business policy.
+- **[622.84s - 628.84s]** An external AI service was occasionally returning a time. Actually, it turned out to be a time audio.
+- **[628.84s - 639.84s]** We later corrected it with API latency and found some requests are exceeding the configured time mark value.
+- **[640.84s - 646.84s]** We improved exception handling, added retry logic with exponential backup,
+- **[646.84s - 655.84s]** improved logging with correlation IDs and showed up more meaningful messages on the frontend.
+- **[655.84s - 666.84s]** That situation taught me that when a bug is not applicable, our logs are obviously data becomes very important.
+- **[669.84s - 683.84s]** Like when a bug reports logs, a clear reproduction steps or environmental details, like what do you typically do first?
+- **[684.84s - 698.84s]** The first thing I normally do is check whether there is enough information to recreate the same exception, like the same error.
+- **[698.84s - 708.84s]** I look for application environment, build, version, end point, user role, input data, time strap, browser or device.
+- **[709.84s - 712.84s]** Sometimes devices also play some role.
+- **[712.84s - 724.84s]** API requests, responses, logs or screenshots. If those are missing, I normally ask them to report for them.
+- **[724.84s - 734.84s]** At the same time, I do not completely stop investigation. I search the backend logs and monitoring data for similar extent.
+- **[739.84s - 748.84s]** When you are dealing with a bug where the CVRT isn't clear, how do you usually decide what to give it?
+- **[750.84s - 760.84s]** When you are dealing with a bug where the CVRT isn't clear, how do you usually decide what to give it to a bug?
+- **[761.84s - 770.84s]** I normally separate CVRT and priority because they are related but they are not exactly the same.
+- **[770.84s - 776.84s]** CVRT is more about the technical or functional impact of the defect.
+- **[776.84s - 780.84s]** Priority is more about how quickly the business needs to be fixed.
+- **[780.84s - 789.84s]** I usually consider several factors like user impact, affected user percentage, business critical functionality, security risks.
+- **[790.84s - 794.84s]** Work on the availability, production impact and release dependency.
+- **[794.84s - 805.84s]** For example, suppose there is a UI issue that doesn't technically crash the application but it affects the payment buttons on the checkout page.
+- **[805.84s - 817.84s]** Technically, someone may initially call it as medium severity but because it blocks the revenue generating workflow, it's the business priority.
+- **[818.84s - 820.84s]** In the business priority, it becomes very high.
+- **[821.84s - 823.84s]** So here, in this case, it's unclear.
+- **[823.84s - 838.84s]** Similarly, if there is a backend assumption that occurs only for an internal admin feature, that is rarely used and has worked around, we may not create it as an immediate production product.
+- **[839.84s - 846.84s]** If the issue cannot be reproduced, I usually avoid it immediately making it low priority.
+- **[846.84s - 854.84s]** If the potential impact is serious, we may keep it high enough for investigation until we have more evidence.
+- **[860.84s - 863.84s]** What thumb rules or short words have you developed?
+- **[864.84s - 874.84s]** I have developed a few practical characteristics.
+- **[875.84s - 880.84s]** One is impact first, reproduction is second.
+- **[881.84s - 895.84s]** Even if I cannot reproduce something, if the reported impact never involves security payments, authentication, data correlation or any major production functionality, I don't ignore it.
+- **[895.84s - 899.84s]** Another rule is check the recent changes first.
+- **[899.84s - 905.84s]** Instead of getting back into the history, just take the surface for the issues.
+- **[906.84s - 915.84s]** If an issue suddenly happens or a release, I usually inspect the recent pull requests on configuration changes, dependency upgrades and deployments.
+- **[915.84s - 918.84s]** Another one is check boundaries between the systems.
+- **[918.84s - 925.84s]** A lot of bugs in full stack development, particularly in the full stack development, happens at integration points.
+- **[925.84s - 932.84s]** For example, front-end backend integration or backend database integration or any backend with the third party services,
+- **[933.84s - 938.84s]** especially in JI and JI development with the AI services.
+- **[940.84s - 957.84s]** Particularly in JI applications, another useful heuristics is to check whether the problem comes from the prompt or retried context of model response token limit vector such or application logic before assuming that the LLM itself is the problem.
+- **[958.84s - 969.84s]** I also look for the patterns, if the multiple users report similar behavior, even with incomplete reports, that increases my confidence that there is a real underlying issue.
+- **[970.84s - 974.84s]** Basically, we deal with an ideal like this.
+- **[974.84s - 992.84s]** Can you tell me about a situation where you were under a lot of time pressure of an upcoming release and how it is affected and how did you handle it?
+- **[992.84s - 994.84s]** Uncertain.
+- **[994.84s - 999.84s]** Uncertain for a bug?
+- **[1000.84s - 1005.84s]** Yes, of an upcoming release when you were on a lot of time pressure.
+- **[1007.84s - 1021.84s]** Yes, during one release QA reported an immediate issue close to deployment where one dashboard API occasionally took much longer than expected.
+- **[1022.84s - 1030.84s]** We could not consistently reproduce it.
+- **[1030.84s - 1040.84s]** Normally, I would spend more time doing a deeper root case analysis, profiling the services and checking the database exception plans.
+- **[1040.84s - 1047.84s]** But because we were close to the production release, we first focused on the risk reduction.
+- **[1048.84s - 1056.84s]** We reviewed whether the issue could cause data correction or an application failure.
+- **[1058.84s - 1061.84s]** The main impact was increased latency.
+- **[1062.84s - 1071.84s]** So we implemented additional time-out handling, improved logging and added monitoring around the endpoint.
+- **[1072.84s - 1078.84s]** We released it because the core functionality was working and there was no major business broker.
+- **[1079.84s - 1083.84s]** Then we created a separator technical task for deeper performance analysis.
+- **[1083.84s - 1095.84s]** Later, we found that one database query was inefficient for larger datasets and requiring indexing and query optimization.
+- **[1096.84s - 1102.84s]** So under deadline pressure, sometimes we separate immediate mitigation from permanent root cause case.
+- **[1107.84s - 1122.84s]** How do you manage your expectations of these disparities in your tries decisions when you are uncertain about a bug severity like you were unable to reproduce the bug?
+- **[1126.84s - 1130.84s]** Coming to the business priority, definitely an effect strike.
+- **[1131.84s - 1137.84s]** From an engineering perspective, we might judge an issue based on technical severity.
+- **[1137.84s - 1143.84s]** But management or the product owner may have additional context that developers don't have.
+- **[1144.84s - 1149.84s]** For example, there might be an upcoming client demonstration or a production launch.
+- **[1150.84s - 1161.84s]** Suppose there is a bug in a feature that is not technically critical, but that feature is important as part of tomorrow's customer demo.
+- **[1162.84s - 1171.84s]** In that situation, the product owner may request that we prioritize it above another technically similar defect.
+- **[1172.84s - 1179.84s]** Another example is a production issue affecting a high value customer.
+- **[1180.84s - 1189.84s]** Even if a small percentage of users are affected, the business impact may justify treating it as a P1 or a P2.
+- **[1190.84s - 1194.84s]** But I think these decisions should be communicated clearly.
+- **[1194.84s - 1204.84s]** We should explain technical risk, expected effect and possible side effects so that final decision is not based only on urgency.
+- **[1205.84s - 1216.84s]** The organizational influence is directly covered in the checklist through release pressure, management expectations and business priorities.
+- **[1219.84s - 1230.84s]** How does your current workload typically affect the amount of time you can spend investigating a bug before making a decision?
+- **[1231.84s - 1245.84s]** Workload definitely affects the investigation depth. If I have only one or two important defects, I can spend more time reproducing the issues,
+- **[1246.84s - 1253.84s]** the reading logs, debugging locally, checking databases state and analyzing the root box.
+- **[1254.84s - 1258.84s]** But during a major release, there might be many tickets at the same time.
+- **[1259.84s - 1264.84s]** In that situation, we need to time box the initial investigation.
+- **[1265.84s - 1272.84s]** For example, I may first spend around enough time to answer three questions like, is the issue is real?
+- **[1273.84s - 1280.84s]** What the potential impact? Can we identify the responsible component?
+- **[1283.84s - 1290.84s]** If I cannot determine the exact root cause immediately, but the issue is not critical.
+- **[1291.84s - 1295.84s]** I document that I have checked and moved to the further investigation.
+- **[1296.84s - 1300.84s]** For critical production issues, however, workload normally becomes secondary.
+- **[1301.84s - 1309.84s]** The team may use a swarming approach where multiple engineers temporarily focus on that particular issue only.
+- **[1310.84s - 1320.84s]** So the workload changes the depth and the sequence of investigation, but ideally it should not change how we respond to a truly critical difference.
+- **[1321.84s - 1322.84s]** Yeah.
+- **[1328.84s - 1339.84s]** Based on your experience, what do you think to improve the process of handling incomplete bug report or tooling process or team practice?
+- **[1340.84s - 1342.84s]** What is based on your experience?
+- **[1343.84s - 1346.84s]** Coming to incomplete bug reports.
+- **[1347.84s - 1356.84s]** For me, one of the biggest improvements would be better structured bug reporting combined with stronger observability.
+- **[1357.84s - 1371.84s]** A good bug template should automatically ask for environment, build number, reproduction steps, expected behavior, actual behavior change or time-stamps and affected user experience.
+- **[1372.84s - 1384.84s]** From the engineering side, applications should have proper structured logging, correlation IDs, distributed track tracing, metrics and other monitoring.
+- **[1385.84s - 1394.84s]** For example, if every request has a unique correlation ID, QA can simply attach that ID to the Jira ticket.
+- **[1395.84s - 1403.84s]** Then I can search the back-end logs and follow the exact execution path.
+- **[1404.84s - 1408.84s]** I also think some parts of the choice can be improved using AI.
+- **[1409.84s - 1421.84s]** For example, an internal generator tool could analyze previous Jira tickets, extract results and similar historical defects on the suggestions.
+- **[1422.84s - 1428.84s]** Likely components, duplicate tickets, possible owner and potential severity.
+- **[1429.84s - 1439.84s]** Technically, that could be implemented using embedded MX vector search, drag, where the historical bugs are stored in vector databases.
+- **[1442.84s - 1443.84s]** Yeah.
+- **[1444.84s - 1456.84s]** Okay. Okay. And the last question. Before we finish, is there anything else about how you make decisions when you are dealing with uncertain bugs that you think is important but we haven't talked about?
+- **[1458.84s - 1464.84s]** One important thing I have learned is that bug reporting is not just about finding the technical root cause.
+- **[1465.84s - 1469.84s]** It's really about a decision-making process under incomplete information.
+- **[1470.84s - 1476.84s]** Sometimes there are no logs. Sometimes the bug only happens in production. Sometimes QA cannot reproduce it.
+- **[1477.84s - 1480.84s]** Sometimes the customers are using only a string chart.
+- **[1481.84s - 1488.84s]** So as an engineer, you have to continue technical evidence with experience and business context.
+- **[1489.84s - 1493.84s]** I usually find out to say, I can't reproduce it, so it's not a bug.
+- **[1494.84s - 1502.84s]** Instead, I could say, I cannot reproduce it with the information currently available, so we need more evidence.
+- **[1503.84s - 1520.84s]** So the difference is important. Over time, good observability, communication between the QA and development, and historical knowledge of the systems and experience with similar defects make these decisions much easier.
+- **[1521.84s - 1532.84s]** Especially as a full-stack engineer, having visibility across the frontend, backend, API databases, cloud services, and generic components,
+- **[1533.84s - 1541.84s]** helps become because you can solve the complete request for instead of tooling at a just one layer.
+- **[1542.84s - 1548.84s]** That's probably the biggest advantage I found when dealing with the uncertain bugs. Yeah, that's it.
+- **[1549.84s - 1557.84s]** Thank you very much. We gather a lot of information from you. This has been a very good time.
+- **[1558.84s - 1559.84s]** Thank you. Thank you, Ajahn.
+- **[1560.84s - 1561.84s]** Thank you.

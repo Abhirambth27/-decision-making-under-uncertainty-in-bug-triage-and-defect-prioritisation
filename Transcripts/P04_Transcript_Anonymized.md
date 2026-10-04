@@ -1,0 +1,263 @@
+# Master Thesis Interview Transcript: Participant P04
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P04
+- **Role:** Senior Embedded Architect & Technical Lead
+- **Experience:** 20+ years leading embedded software & telecom engineering teams
+- **Industry Domain:** Embedded Telecom Systems & Multi-Module Field Diagnostics
+- **Primary Tooling:** Internal Troubleshoot Trackers, Module Test Suites, Jira
+- **Interview Date:** 2026-08-16
+- **Total Timestamped Utterances:** 247 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 010.68s]** Hi [Participant P04], thank you for joining the meeting today. My name is [Interviewer] and I have one more
+- **[010.68s - 018.36s]** teammate working with me. He is actually sick today. So I am only taking interview today.
+- **[018.36s - 025.36s]** I am currently pursuing my master's in software engineering at BTH, like my thesis focuses
+- **[025.36s - 031.96s]** on decision making under uncertainty in bug triage and defect prioritization. Through
+- **[031.96s - 037.44s]** this interview, I am trying to understand how software professionals make decisions when dealing
+- **[037.44s - 044.48s]** with bugs, especially when there is incomplete information, conflicts, priorities or uncertainties
+- **[044.48s - 052.56s]** about the impact or a defect. The interview will take 20 to 25 minutes. There is no right
+- **[052.56s - 062.24s]** or wrong answers and I am mainly interested in your experience and perspectives regarding
+- **[062.24s - 068.04s]** the bug triage. With your permission, I will take a few notes in this interview for the
+- **[068.04s - 076.60s]** data analysis purpose of my thesis. Once again, thank you for your time today.
+- **[076.60s - 088.32s]** It is a pleasure to join this meeting. Maybe I can introduce myself maybe. Maybe for the
+- **[088.32s - 093.16s]** first question, maybe I am not sure. But yeah, I can just introduce myself. I have been working
+- **[093.16s - 099.56s]** in the IT industry for more than 20 plus years of experience I have. I have been working
+- **[099.56s - 108.20s]** in the software domain, especially on the embedded domain side, where I will be working
+- **[108.20s - 114.88s]** in the telecom domain, where we would be making the software as well as embedded software.
+- **[114.88s - 120.80s]** And we will also be working on the field bugs, internal bugs. And that is called something
+- **[120.80s - 126.92s]** called troubleshoot reports, where we get it both internally and externally from the
+- **[126.92s - 132.20s]** customers as well as from the internal teams. So where we will be working with multiple modules
+- **[132.20s - 139.08s]** across. So one module might maybe would be doing end-to-end testing, module testing,
+- **[139.08s - 146.00s]** and multiple modules also can be tested. So in that case, we will get some bugs from various
+- **[146.00s - 155.68s]** teams or the testers and so on like that. So that is where I can say myself, maybe that
+- **[155.68s - 156.68s]** would be helpful for you.
+- **[156.68s - 161.68s]** Yeah, sure definitely. Can we start the interview?
+- **[161.68s - 167.80s]** Yeah, sure, please go ahead.
+- **[167.80s - 174.16s]** Like what is your team and projects you are doing currently? Like what is your team size
+- **[174.16s - 178.92s]** and what software do you build your present company?
+- **[178.92s - 187.20s]** Yeah, if any issue occurs, like where do you raise the tickets in Jira or GitHub issues,
+- **[187.20s - 188.20s]** etc.
+- **[188.20s - 197.00s]** Yes, so my team, actually I will handle sometimes multiple teams. So each team size kind of
+- **[197.00s - 201.88s]** what you call is like cross-functional teams or something like that agile mode of working
+- **[201.88s - 209.52s]** where we actually work with in the team. So it will be around eight to nine people,
+- **[209.52s - 215.56s]** mostly each team sizes. So I as a work as a technical lead and delivery manager, so
+- **[215.56s - 222.12s]** I work with multiple teams. So maybe sometimes two teams, maybe sometimes at one team at
+- **[222.12s - 230.04s]** sometimes. So that would be the team size would be varies normally eight to nine people,
+- **[230.04s - 232.32s]** but it can handle multiple teams.
+- **[232.32s - 239.72s]** Coming to the software that we build, we build the embedded software, which also are not only
+- **[239.72s - 245.40s]** embedded software, which runs on the hardware, specific hardware, customer that could be
+- **[245.40s - 252.32s]** proprietary hardware, where in the telecom domain, and also we also build a general purpose
+- **[252.32s - 260.00s]** software, which runs on the general purpose processor GPP. So it works on both of them.
+- **[260.00s - 268.12s]** So that's how we build the software. And yeah, coming to the bugs, and also for the
+- **[268.12s - 276.68s]** normally team, we for the team to have in the agile way of working, we also maintain
+- **[276.68s - 285.96s]** like the sprints and the work also we maintain Jira and also for the bugs tracking and also
+- **[285.96s - 293.56s]** there is we use mostly Jira and yeah, that's and most of the time I have used Jira and
+- **[293.56s - 299.20s]** Bugzilla also sometimes has been used in my career, I have seen that both of them.
+- **[299.20s - 300.20s]** Thank you.
+- **[300.20s - 307.64s]** Thank you for the question. Like could you walk me through the typical bug triage sessions
+- **[307.64s - 315.32s]** you look through and what are the moment of a new report arrived to and when a decision
+- **[315.32s - 319.76s]** made about it? What decision you have made about it?
+- **[319.76s - 327.24s]** Yeah, when you say bug triage session, like we actually a creator will, if any bug has
+- **[327.24s - 333.76s]** been in, been observed or been during the testing process, any bug has been observed
+- **[333.76s - 339.52s]** or has been by the tester or some of the other team members, they face a bug. So when
+- **[339.52s - 345.48s]** it is within the organization, it is called internal bug. And that would be a little bit
+- **[345.48s - 350.76s]** of low priority. But normally when there is an external, which would be raised by the
+- **[350.76s - 356.20s]** external customers, basically that would take an actually a bit of high priority.
+- **[356.20s - 362.60s]** So we call it as a troubled report, we call it as both of them. Yeah. And when it comes
+- **[362.60s - 369.32s]** actually when a creator creates a bug, and he actually creates, he gives a description,
+- **[369.32s - 376.12s]** the first thing is he has to give the title, and then comes to a description, then comes
+- **[376.12s - 382.40s]** to the when it has been which software version it has been the first when it has been occurred,
+- **[382.40s - 387.60s]** that is a software version that has been occurred. And also the software version which
+- **[387.60s - 393.56s]** has been working fine, that's the one which has been working fine. And also when it
+- **[393.56s - 399.68s]** has been started seeing the issue and the conditions, what has been how to reproduce
+- **[399.68s - 404.32s]** the issue, what exactly been expected, but what has been there could be something called
+- **[404.32s - 412.12s]** you call it as what you call asserts, or you call it as it's a crash. It could be anything
+- **[412.12s - 419.08s]** like that they reported and if there is other other criteria like KPIs, key performance indexes
+- **[419.08s - 425.72s]** was not met. So like that they actually has reports all this and based on the severity
+- **[425.72s - 431.20s]** or the complexity, they also assign that's called priority. So it could be low, medium,
+- **[431.20s - 438.92s]** high severity and critical also. So like that they actually assign it in general, if it
+- **[438.92s - 446.20s]** is by internal, if any, any, any bug that's been reported, then they normally keeps as
+- **[446.20s - 454.96s]** medium if it is until unless they cannot, the software can't be deployable in that case
+- **[454.96s - 461.32s]** they might go as a critical. So that's this it's very when they say critical it has to
+- **[461.32s - 466.44s]** be and they say that which software version is not been working. So that's how they actually
+- **[466.44s - 472.32s]** report it. Once it has been reported, so there would be a different process for something
+- **[472.32s - 477.92s]** like internal and something for the external things. So external always takes the priority
+- **[477.92s - 484.24s]** when you come to the external process. So there would be the team that there would
+- **[484.24s - 492.60s]** be an allocated team for whenever it is for a kind of a spot team who would look after
+- **[492.60s - 499.28s]** all these trouble reports or the bugs has been raised. That is the first one they actually
+- **[499.28s - 504.20s]** that team will look into that and say that, okay, then let's see this, this is a real bug
+- **[504.20s - 510.52s]** or it is issue within the environment that the customer is being raising or there will
+- **[510.52s - 514.80s]** be some configuration issue. There's most of the times we see that configuration issue
+- **[514.80s - 520.48s]** is one of the major thing actually, they do not correctly configure it. So that's another
+- **[520.48s - 524.12s]** issue that we see that then that is all the things that that is the first thing
+- **[524.12s - 530.08s]** that look into it. So the ones that has been created and the first team they will assign
+- **[530.08s - 537.96s]** themselves to the team. The Spock team will assign themselves and they look into it and
+- **[537.96s - 544.00s]** they actually try to resolve if they can resolve themselves. If not, if it is a real
+- **[544.00s - 550.12s]** bug or they cannot be able to can't help at that the Spock team can't do it, then
+- **[550.12s - 555.32s]** they can go to the they assign based on the experience that they have it, they will assign
+- **[555.32s - 561.08s]** to something called department which module software module would be failing actually
+- **[561.08s - 569.24s]** based on that they will assign to that particular team or the software module. So based on
+- **[569.24s - 574.08s]** that it will come to the particular software, then it will come to the team, then it will
+- **[574.08s - 579.68s]** be again first level is been done, then the second level which comes to a team level
+- **[580.36s - 584.88s]** So then the team will start looking into it and they will see that whether which software version
+- **[584.88s - 590.00s]** is been then there would be been using the old software version or they might have already
+- **[590.00s - 594.88s]** been that kind of bug would have been fixed already. So in that case what they say that
+- **[594.88s - 599.40s]** OK, oh, this is already been known issue. This one has been fixed in this particular
+- **[599.40s - 603.68s]** version of the software version. So please install this version and something like that
+- **[603.68s - 608.72s]** which which would be not been delivered so that the Spock team might not know at
+- **[608.72s - 613.80s]** that time that OK, this is not available to the Spock team at OK, but they can give
+- **[613.80s - 620.84s]** a called unofficial version of it maybe yeah, this would fix that issue. This has been
+- **[620.84s - 626.40s]** or going to come in this one. So that's that's all it goes on then the assigned team will
+- **[626.40s - 632.76s]** look into it and they will actually and at every stage I can say that there will
+- **[632.76s - 641.08s]** be a round trip delay or forgot that word actually to say it how many days it has to
+- **[641.08s - 651.08s]** be in that in that stage actually. So once it has been created assigned to the Spock
+- **[651.08s - 656.16s]** team, then it comes to the particular department and then how long it is been there in that
+- **[656.16s - 663.84s]** in their department. So there will be always number of SLA or whatever. So that would be
+- **[663.84s - 669.76s]** like how long it take how long it has to be this and to be there in that particular one.
+- **[669.76s - 674.72s]** Then it will goes on to the next one is once it has been the bug fix happens of course
+- **[674.72s - 680.00s]** in the software version that has been unofficial version then they will there is another process
+- **[680.00s - 687.12s]** for that to give the version of the software and so on like that and finally it will be
+- **[687.12s - 693.92s]** fixed. So they actually and the management will look into that where it has been there
+- **[693.92s - 700.96s]** actually how many days in each stage you can say once it is say that in once they
+- **[700.96s - 707.44s]** say that it has been the it's screening then assigned to the particular team and then how
+- **[707.44s - 712.64s]** much this team has took it then that's where it's called in progress then it says that it is
+- **[712.64s - 719.76s]** very maybe some sometimes it goes into testing then review and testing and then final delivery like
+- **[719.76s - 726.32s]** these could be different stages they say that it's would be the bug bug goes through it in general.
+- **[728.24s - 733.92s]** Yeah, moving to the next question. Can you please tell us a specific reason
+- **[734.88s - 742.96s]** bug report you have received which was incomplete or high impossible to reproduce like what happened
+- **[742.96s - 746.56s]** what information was missing and what have you done with next step?
+- **[754.00s - 761.60s]** Yeah, it is many times if they've been the at the trouble report or the bug who has been reported
+- **[761.68s - 768.64s]** he might be inexperienced so he might not fill up them actually most of the importance so if I can
+- **[768.64s - 775.20s]** say that there are sometimes we do have some basic description some mandatory fields has to be
+- **[776.00s - 781.76s]** entered sometimes other fields may not be mandatory fields so that time sometimes they
+- **[781.76s - 787.84s]** they might have the configuration issue is most of the thing where they will not mention most of
+- **[787.84s - 792.56s]** the time the bug report is incomplete in the sense what exactly the configuration has been used
+- **[792.56s - 799.60s]** in this particular test or the bug where they have seen it okay and there is another issue that
+- **[799.60s - 806.24s]** they see that there also in industry like telecom industry where you can say that there will be
+- **[806.24s - 816.80s]** most of the time there could be like intermittent issues will be there so which is not
+- **[816.80s - 824.56s]** it's called a flaky intermittent not reproducible so it will not occur all the time so that's again
+- **[824.56s - 830.64s]** there is a condition that so it could be some of them could be so they might have to mention
+- **[830.64s - 836.48s]** every time this issue happens or not so that also they miss it actually so that's where we
+- **[836.48s - 842.80s]** ask that okay is this consistently reproducible so that is one of the question that they miss
+- **[842.88s - 850.00s]** it most of the time if it is consistently reproducible or it is intermittent or it is one in how many
+- **[850.00s - 857.12s]** runs okay it could be 10 runs one in 50 runs so that also depends so those kind of information
+- **[857.12s - 863.60s]** they normally miss to give this information so that's the one of the things that whenever
+- **[863.60s - 867.92s]** they see an bug has been reported first thing they actually look into this and they say that
+- **[868.40s - 872.80s]** so this is incomplete you have to give the first thing is you have to give whether it is
+- **[873.36s - 879.84s]** consistently reproducible or not and those things actually and also the configuration
+- **[879.84s - 884.56s]** issue that they miss it so these are the two things that i can say that miss most of the time
+- **[887.12s - 897.04s]** like can we move to the next question yeah whenever people lack air reproduction steps
+- **[897.12s - 904.24s]** or an environmental details as you said the mandate reaches it like what do you typically do first
+- **[904.80s - 908.24s]** could you walk me through the last time what happened in your team
+- **[912.08s - 918.00s]** so if the reproduction steps or and the environmental details means when i say that
+- **[918.00s - 922.80s]** is a configuration issue configuration is not properly done so they might have
+- **[922.80s - 928.32s]** missed some of the configuration so which would be lack of that or it could be some of the
+- **[928.32s - 934.32s]** documentation could be missing also it would happen in both the cases actually so some of them
+- **[934.32s - 939.84s]** the documentation is also misses it actually or the documentation might not be available sometimes
+- **[939.84s - 945.52s]** or not they might have missed the it might be the documentation so the thing is they say that
+- **[945.52s - 951.28s]** okay this is your configuration you can look into this particular documentation so you can look
+- **[951.36s - 956.32s]** into this particular documentation and properly configure it so and that's what we inform them
+- **[956.32s - 963.44s]** actually what typically we do first yes so can you please look into this whether you have
+- **[963.44s - 969.04s]** been followed this this exactly these steps which would have been described in the for
+- **[969.04s - 974.08s]** when a customer has been released actually there is something called release guide or some of the
+- **[974.08s - 978.56s]** user guide or some of them would be given to the customer so that that's where they'd be
+- **[978.56s - 992.72s]** asked them to see that did it answer the question or you are having no it's probably like how do you
+- **[993.52s - 1000.72s]** decide like what priority to sn for a bug like whether it's a severity or it's which was unclear
+- **[1001.84s - 1005.12s]** like how do you mention it for a specific bug
+- **[1006.00s - 1015.68s]** it normally as I said so the severity is if it is unclear to us okay so normally the when it comes
+- **[1015.68s - 1024.00s]** to us if it is unclear then the its default which is a default priority has will be assigned
+- **[1024.00s - 1029.52s]** if it is unclear it's forced as a medium priority that's that's how we actually normally take it as
+- **[1030.24s - 1035.76s]** so it might be there until a medium or and then it may be suppose it's not been
+- **[1036.32s - 1042.88s]** fixed for or it has been not looked into it and it has been exceeding the time that has been
+- **[1043.44s - 1051.28s]** kept it actually for the in one of the particular stage or particular step actually if it is in
+- **[1051.28s - 1055.84s]** progress it has been taken more than a week then it may actually then that time the
+- **[1055.84s - 1060.24s]** management can have a look at though this has not been on the department parallel department where
+- **[1060.24s - 1066.72s]** it has been assigned to them okay this is medium priority and it has been there for more than a week
+- **[1066.72s - 1072.40s]** but nothing has been looked upon it then okay let's let's increase the priority or whether they
+- **[1072.40s - 1077.52s]** actually ask a question to the who has been reported this is this bug is still valid
+- **[1078.16s - 1083.68s]** and that that's where the severity is unclear then that's that's how we normally post about it
+- **[1085.84s - 1093.20s]** like what thumb rules or what shortcuts you have developed that you relay on when
+- **[1093.20s - 1096.56s]** a information of a bug report is missing or unpaired
+- **[1107.52s - 1113.12s]** yeah this is actually the thumb rules is mainly the the configuration is correct
+- **[1113.76s - 1118.40s]** or when it is whether it has been they might be using the older software versions
+- **[1119.76s - 1126.08s]** and then whether it is how often it is reproducible these are the three things that
+- **[1126.88s - 1133.52s]** when we actually look at it okay that that's where we start looking into these are the
+- **[1133.52s - 1141.20s]** three things that we can say look on them can you describe a specific situation where you
+- **[1142.16s - 1149.44s]** have an upcoming release deadline for your product or whatever maybe like or you have a
+- **[1149.44s - 1157.28s]** workload pressure in your team while having a specific bug report like what are the uncertainties
+- **[1157.28s - 1170.72s]** you have faced yeah normally if a bug actually normally when we are releasing
+- **[1171.68s - 1178.48s]** upcoming release is coming and when we have planned a release so normally what happens is that
+- **[1179.20s - 1187.28s]** if any of the critical bugs actually which can block the release okay that would take
+- **[1187.28s - 1193.76s]** the highest priority say so that would be taken up at the highest priority and that has to be
+- **[1193.76s - 1204.48s]** handled before the release happens so the priorities will change if that is been can block
+- **[1204.48s - 1210.32s]** the release so otherwise we cannot do the release so priorities will increase and sometimes we
+- **[1210.32s - 1215.36s]** actually need to fix the bugs before they develop so that that's priority and that's called that
+- **[1215.44s - 1216.32s]** normally we take it
+- **[1220.16s - 1226.16s]** how do you manage the expectations or a business priority factor into your work right
+- **[1227.36s - 1232.96s]** decisions when you are uncertain about a bug severity or it's reproducibility
+- **[1234.24s - 1239.28s]** would you recall a specific instance where what happened like that
+- **[1246.32s - 1260.72s]** business priorities factor into trial decisions when you're certain about bugs everywhere okay
+- **[1263.84s - 1270.32s]** when you are uncertain it's not actually when you're uncertain or it's not reproducible but only
+- **[1270.32s - 1277.12s]** the thing is as i said if it is not reproducible it normally business they don't actually
+- **[1278.00s - 1283.68s]** management might not look into it actually at a high priority the priority would be lower for
+- **[1283.68s - 1289.84s]** that and because it's as long as it's not reproducible or it's not blocking any of the
+- **[1290.48s - 1296.56s]** usual activities for a customer or for any team so they don't want actually the priorities would
+- **[1296.56s - 1303.92s]** lower it actually if the bug severity or uncertain about the severity and it's not reproducible
+- **[1305.52s - 1309.04s]** so it would take the lower priority goes on to the fabric i can say
+- **[1310.96s - 1317.36s]** like how does your current work role typically affect the amount of time you spend on
+- **[1317.36s - 1320.00s]** investigating a bug before making a decision
+- **[1326.56s - 1332.56s]** um
+- **[1342.48s - 1345.04s]** current work would typically affect the amount
+- **[1346.80s - 1354.08s]** you can spend investigating bug before making a decision i i did get exactly the workload on that
+- **[1354.80s - 1361.60s]** no no no on you the workload on you affected like how much time you have spent on the bug
+- **[1362.64s - 1368.64s]** investigation okay normally how much time that we take before taking any decision okay yeah so
+- **[1368.64s - 1376.48s]** you or your team like yeah it it really depends we cannot say that it's like
+- **[1376.72s - 1385.52s]** um maybe the priority of the bug severity like maybe the severity is high you may take
+- **[1387.92s - 1388.72s]** so much time
+- **[1394.80s - 1402.96s]** it's really depends on the very high priority then it might be spent on higher so as i said that
+- **[1403.04s - 1409.60s]** if it is higher it's really blocking the customers and it would be given as highest priority then that
+- **[1409.60s - 1416.48s]** case we we actually spend the full full uh work actually so full time actually we work and every
+- **[1416.48s - 1422.32s]** day sometimes we can say that okay it need to be updated such kind of things need to be updated
+- **[1422.32s - 1428.32s]** every every day there should be status has to be given other status for that could be given every
+- **[1428.40s - 1439.68s]** day so yes it's before making a decision yes so when we make a decision that oh this could go
+- **[1441.60s - 1448.72s]** not sure exactly to say it but yeah that that's how it goes into um the amount of work i can say
+- **[1448.72s - 1453.68s]** it's depend mostly depends on the priority and how do you so if it is high priority then we'll
+- **[1453.68s - 1459.36s]** take more time we'll work on the more on that time so that it will begin priority and to work on it so
+- **[1459.36s - 1467.52s]** like that is awesome like based on your experience like what do you think you would
+- **[1468.72s - 1475.12s]** have to improve the process of handling the uncertain or incomplete bug reports whether
+- **[1475.12s - 1480.16s]** in terms of tooling process or the team practice like that
+- **[1480.16s - 1490.24s]** yeah so when somebody created a bug report the first thing is some of the fields as i said that
+- **[1490.24s - 1496.80s]** it would have been some of them would not be make it mandate mandatory so that would be the one of
+- **[1496.80s - 1501.68s]** the thing that maybe some of the fields need to make it mandatory or need to be introduced
+- **[1501.68s - 1507.36s]** if that doesn't have that in that bug report when they actually create a bug report so that's
+- **[1507.36s - 1512.80s]** the first thing they need to introduce they don't need to have all the fields any of the fields are
+- **[1512.80s - 1519.68s]** missing they need to introduce the field so one as i said it's like how often it is reproducible
+- **[1519.68s - 1525.20s]** and the software versions which software version is first occurred that's also one of the important
+- **[1526.08s - 1532.00s]** thing that if it is missing that those kind of things actually and the process wise yes process
+- **[1532.80s - 1540.88s]** so if the process has to be well defined how when it has to go into when it has to be screening
+- **[1540.88s - 1546.16s]** when it is when when it go to into the screening process when it's going to be assigned to a
+- **[1546.16s - 1555.20s]** particular team when it goes to when it has to be taken up and it should be in progress and then
+- **[1555.20s - 1564.16s]** the review testing and all those has to be the there should be the time bond should be there for
+- **[1564.16s - 1569.60s]** each and every stage that the bug report bug has to be there so sometimes this will miss actually
+- **[1569.60s - 1575.52s]** it will be in progress for so for many weeks actually because it's a medium priority so that
+- **[1575.52s - 1579.92s]** time sometimes so they don't look into that if there's a medium the priority is there but they
+- **[1580.00s - 1585.76s]** don't okay it would be one week but they don't look into that so that could have been some
+- **[1586.96s - 1593.92s]** report has to be the tools has to generate an automatic there should be every weekly okay if
+- **[1593.92s - 1599.44s]** it has been exceeding the time in that particular stage then they should actually
+- **[1599.44s - 1603.68s]** create a tool has to be there to create a report and send it for this need to be
+- **[1603.76s - 1610.08s]** taken up otherwise you are you are missing this that that kind of things actually
+- **[1611.68s - 1616.48s]** each team which has been assigned team they should also should get that so that they are aware of it
+- **[1616.48s - 1621.68s]** so it has to be the both manager as well as to the team to get such kind of
+- **[1621.68s - 1628.00s]** reminder emails if the bug has been there with them but it has not been taken up yeah
+- **[1628.80s - 1638.48s]** yeah to the last question like is there anything else about how you make bug triage decisions under
+- **[1638.48s - 1643.76s]** uncertainty something important that we did not discussed in this interview meeting
+- **[1645.60s - 1648.72s]** or your experiences you would like to share with us
+- **[1649.44s - 1654.72s]** I don't think so I think we have covered mostly I think so
+- **[1658.40s - 1665.84s]** thank you for your day spending the time with our employees today it's a good session we had
+- **[1668.16s - 1674.24s]** yeah it's a nice pleasure pleasure to be on your balance thank you for your time for it
+- **[1674.24s - 1683.76s]** thank you good luck your project yeah thank you very much thanks

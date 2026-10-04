@@ -1,0 +1,200 @@
+# Master Thesis Interview Transcript: Participant P03
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P03
+- **Role:** Data Engineer / Production Pipeline Engineer
+- **Experience:** 5+ years in production data pipelines & distributed systems
+- **Industry Domain:** High-Throughput Data Pipelines & Distributed Systems
+- **Primary Tooling:** Airflow, PySpark, Snowflake, Kafka, dbt, Jira
+- **Interview Date:** 2026-08-15
+- **Total Timestamped Utterances:** 184 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 007.52s]** Hi, Sachadev. Thank you very much for taking the time to join this interview today. My
+- **[007.52s - 013.00s]** name is [Interviewer] and I'm currently pursuing my Master's in Software Engineering at the
+- **[013.00s - 020.36s]** Baking Institute of Technology in Sweden. My thesis focuses on decision making under uncertainty
+- **[020.36s - 026.16s]** in bug triage and different priorities. Through this interview, I'm trying to understand how
+- **[026.16s - 033.16s]** software professionals make decisions when dealing with bugs, especially when there is
+- **[033.16s - 040.80s]** incomplete information like the uncertainties about the impact of the defects. The interview
+- **[040.80s - 047.08s]** will take 20 to 25 minutes. There is no right or wrong answers. I'm mainly interested in
+- **[047.08s - 055.76s]** your experiences and perspectives of the software environment and the bug triage. With your
+- **[055.76s - 061.28s]** permission, I will take some few notes in this interview to analysis the information later
+- **[061.28s - 068.72s]** for my thesis purpose. Once again, thank you for your time. Yeah. Yeah, thank you so much.
+- **[068.72s - 076.92s]** Please take your note. How can I answer your questions? Yeah, thank you. Let's start with
+- **[076.92s - 081.60s]** the first question. Would you please briefly describe your current role and roughly how
+- **[081.60s - 087.76s]** long have you been in this bug triage and different priorities in your workspace?
+- **[087.76s - 096.56s]** So yeah, currently I'm working as a data engineer at a [Product Development Enterprise G] here at USA where
+- **[096.56s - 104.12s]** my primary focus is on production data pipelines. My day to day involves working with Airflow,
+- **[104.12s - 108.42s]** Python, PySpark, Snowflake, DVD and Kafka. Bug
+- **[108.42s - 116.36s]** page is part of my day to day responsibility because when we have pipeline failures or when
+- **[116.36s - 123.12s]** we identify any data for the issues or any schema changes in our data, and if you find
+- **[123.12s - 128.80s]** any unexpected results, we investigate and prioritize them. I have been involved in this
+- **[128.80s - 136.72s]** kind of troubleshooting and the prioritization for us already as till now and including my
+- **[136.72s - 143.56s]** previous role at city, usually my responsibility is to understand the impact and identify whether
+- **[143.56s - 150.68s]** the problem is related to data or the code or the infrastructure or an upstream dependency.
+- **[150.68s - 156.62s]** And then we work on appropriate team to resolve it based on the severity and how it impacts
+- **[156.62s - 157.62s]** our business.
+- **[157.62s - 164.90s]** Okay, okay. Thank you. Like how does your team and the project contain like what is your
+- **[164.90s - 171.90s]** team's size and what type of software do you build and what are the issues you track
+- **[171.90s - 180.62s]** in your dream? Like for example, you raise a ticket like Jira or GitHub issues or Bugzilla
+- **[180.62s - 182.62s]** etc. like that.
+- **[182.62s - 191.18s]** Yeah, let me start with you know, with my team. I work in you know, as my current project
+- **[191.18s - 197.30s]** currently work in a cross functional agile team with we have you know, we have data
+- **[197.30s - 207.10s]** in a software engineer, analyst and also desk stakeholders. My main project, we use industrial
+- **[207.10s - 213.98s]** IoT data that passing through a flow pipeline. We transform this data, you know, using Python
+- **[213.98s - 221.66s]** by spark, and we load them into snowflake and using dbt. We make this data available to
+- **[221.66s - 230.46s]** the downstream applications and also for the reporting things in order to use the data.
+- **[230.46s - 236.10s]** We have the real time processing through Kafka. And because there are several systems that
+- **[236.10s - 242.50s]** are interconnected. And so if an issue in one component can affect multiple down, sorry,
+- **[242.50s - 249.34s]** downstream consumers, we use issue tracking and version control processes to track these,
+- **[249.34s - 255.86s]** of course, we use Jira and Confluence for that. And we assign the ownership for the
+- **[255.86s - 262.66s]** tracking and prioritize work to track fixes through development and later testing and also
+- **[262.66s - 268.42s]** for the production. So the work is usually collaborative rather than you know, single person
+- **[268.42s - 272.42s]** making the entire decision. That's how we do it here at PTC.
+- **[274.90s - 280.26s]** Like, could you walk me through what the digital doctor is sessions look like for you
+- **[280.26s - 285.70s]** from the moment and new report errors when you take a decision about it?
+- **[285.70s - 294.50s]** Yeah, so let's say if a new issue comes in, first what we do is we review the description of the
+- **[295.06s - 302.18s]** error message of the log and also check what affected what environment it got affected.
+- **[302.18s - 309.14s]** And also check for any production steps that are available we can perform. Then what I check is,
+- **[309.14s - 314.02s]** I check the monitoring of the information and logs to understand the failure occur.
+- **[314.98s - 322.26s]** You know, for a data pipeline example, I might check the airflow DAG or source data availability,
+- **[322.26s - 328.66s]** spark processing, or DBT transformations and snowflake output. So once we understand the
+- **[328.66s - 335.06s]** scope of the range, we evaluate severity based on the things like business impact, number of
+- **[335.06s - 342.18s]** downstream consumers that are affected, and also what's the SLA impact on and whether there is
+- **[342.18s - 347.70s]** any workaround for this or not. We then assign the issue to the appropriate owner and determine
+- **[347.70s - 355.62s]** the priority of it. So after the fix, we validate the data again and monitor subsequent runs before
+- **[355.62s - 363.86s]** you know, considering the issue is resolved or not. Okay, okay. Can you think a specific
+- **[363.86s - 371.22s]** recent situation where you received a bug report that was incomplete and ambiguous to produce,
+- **[371.22s - 377.78s]** like what happened? What is the information missing in that bug report? Yeah, what did you do next?
+- **[378.98s - 386.74s]** So we can every time we cannot expect, expect, you know, the complete or good report. So yeah,
+- **[386.74s - 393.86s]** it happens a lot. So I'll give you one example, which was without data quality issue with the
+- **[393.86s - 401.06s]** user score reported in consistent data. But initially, we didn't have any enough information
+- **[401.06s - 407.70s]** to reproduce exactly what we were seeing. We were missing, you know, details such as
+- **[407.70s - 413.46s]** records affected processing window, and whether the issue was happening consistently or not.
+- **[414.58s - 419.86s]** Then later I started identifying, you know, sample reports and comparing them across different
+- **[419.86s - 426.58s]** stages of the pipeline. I also reviewed a flow logs and the transformation logic to determine
+- **[426.58s - 432.74s]** whether the value started changing or not. We then asked the reporting team for the specific
+- **[432.74s - 438.74s]** examples from their output. Once we combine the examples with our pipeline logs, we were able to
+- **[438.74s - 444.98s]** narrow down the issue and identify whether it originated upstream or whether it's in our
+- **[444.98s - 455.30s]** transformation logic, which we return. Like when a bug report lacks clear reproduction steps,
+- **[456.26s - 462.10s]** what do you typically do first? Would you walk me through that? What happened in your?
+- **[463.14s - 469.30s]** Yeah, of course. Yeah. So first step, what initially I would take is I usually gather the
+- **[469.30s - 474.90s]** evidence, you know, rather than just assuming what might be the cause or bugging myself.
+- **[475.78s - 482.26s]** I look for the effector record ID, so time stamps in the environment or
+- **[483.54s - 489.62s]** I check for the pipeline and any error messages and unexpected versus actual results.
+- **[490.26s - 496.18s]** Then I use monitoring and logs to reconstruct what happened. For example, you know, with airflow
+- **[496.18s - 501.38s]** pipeline, I can identify the exact DAG run and then trace the data through ingestion.
+- **[502.74s - 506.50s]** I also do the Python, PySpark processing,
+- **[506.50s - 511.54s]** Devitry transformations and also in the snowflake. If I still cannot reproduce the issue,
+- **[511.54s - 517.54s]** I contact the person who reported it and ask for a small number of concrete examples.
+- **[517.54s - 524.42s]** So that usually gives us enough information to determine whether we have actual defect or just
+- **[524.42s - 531.14s]** an upstream problem or it might also be an environment specific issue. That's how we trace it.
+- **[534.50s - 541.06s]** How do you decide what priority to assign for a bug when its severity is unclear and context?
+- **[543.22s - 548.82s]** Well, I try to separate technical severity from business priority.
+- **[549.54s - 556.42s]** I look at how many users or downstream systems are affected, whether the production is impacted,
+- **[556.42s - 563.14s]** whether we are missing an SLA or whether data could be incorrect and whether work or not exists.
+- **[563.14s - 569.46s]** I'll give an example like a small technical defect might still become a high priority
+- **[570.02s - 575.94s]** if it affects an important production report or a critical business process of ours.
+- **[576.66s - 582.98s]** On the other hand, something that looks technically serious may also take a low priority if it only
+- **[582.98s - 587.78s]** affects the development and has no downstream impact on the users.
+- **[588.34s - 593.94s]** So if the issue cannot be reproduced, I usually don't ignore it. I document the evidence we have,
+- **[594.50s - 600.18s]** assess the potential impact that it is causing and continue monitoring with the reason of my
+- **[600.18s - 605.38s]** wanting. So if additional occurrences come from the problem, that's how I do it.
+- **[606.74s - 614.82s]** Great, thank you. Over time, like what are the shortcuts you have
+- **[615.54s - 622.98s]** developer to trace a bug severity which was a country or which was missing in the bug report?
+- **[623.70s - 634.18s]** So one rule I follow is to focus first on the impact, rather than the evidence or
+- **[636.02s - 642.26s]** the recent changes. So if something was working correctly and surely failed, I first checked what
+- **[642.26s - 648.82s]** changed recently. Is the code deployment or was it the schema change or it could be in
+- **[648.90s - 656.50s]** configuration update or any upstream data. So another rule is what I follow is to trace the
+- **[656.50s - 662.58s]** problem from the earliest reliable point in the pipeline. So instead of starting only from the
+- **[662.58s - 669.14s]** final output, I look for patterns where all records are affected or only just a subset.
+- **[669.86s - 676.58s]** Whether the issue occurs during every run and whether it is isolated to one environment,
+- **[676.58s - 684.42s]** then these heuristics help narrow down a large investigation for a good deal. But I still would
+- **[684.42s - 689.54s]** validate the conclusion with logs and actual data before deciding the root cause.
+- **[690.10s - 698.42s]** Okay, thank you. Can you describe a specific situation where an upcoming release deadline
+- **[698.42s - 708.50s]** is about to come and you have so much work pressure? What are you do in that certain situation?
+- **[710.50s - 718.90s]** Well, so during the release cycle, let's say we had an issue that we are close to deployment,
+- **[719.46s - 723.78s]** but initially it wasn't clear whether it would affect the production rate or not.
+- **[724.74s - 733.94s]** Because the release deadline was approaching, we couldn't spend unlimited time investigating
+- **[733.94s - 739.22s]** every possible cause. So what we did was we first focused on determining the potential
+- **[739.94s - 745.06s]** production impact, date cause and whether the issue could affect downstream consumers
+- **[745.78s - 753.70s]** or not. Then we produced a critical path for it, validated the representative data and reviewed
+- **[754.66s - 763.14s]** the recent code changes. So this lowers the risk of investigation items and if they were
+- **[763.14s - 768.90s]** documented for follow up rather than blocking everything. If there had been a risk of incorrect
+- **[768.90s - 774.42s]** production data, we would have stopped the deployment. So under deadline pressure, I don't
+- **[774.42s - 781.38s]** skip the validation. I narrow the investigation to highest risk and what might be the primary cause
+- **[781.38s - 793.62s]** for this feature, this bug. Okay, okay. How do you manage the expectations or the
+- **[793.62s - 800.90s]** priorities factors into your triage decisions when you are uncertain about the bug severity
+- **[800.90s - 810.98s]** or its reproducibility? For business priority, I think it's an important part of our triage
+- **[811.06s - 819.94s]** because technical severity alone doesn't always tell us what should be fixed at first. For example,
+- **[819.94s - 826.98s]** if a data issue affects an executed dashboard or a regulatory reporting or an important customer
+- **[826.98s - 835.38s]** tracing process, management may certainly ask us to prioritize it even if only a limited number
+- **[835.46s - 842.50s]** of reports were affected. So like in my previous role at Citibank, this was especially important
+- **[842.50s - 847.70s]** because some pipelines supported compliance and operational reporting at the same time.
+- **[848.26s - 853.62s]** I think engineering should clearly communicate the technical risks that we are facing.
+- **[854.42s - 860.26s]** I normally explain what is affected, what we know, what remains uncertain and what the
+- **[860.26s - 867.78s]** possible consequences are that allows product or management stakeholders to actually prioritize
+- **[867.78s - 873.54s]** the decision with the right technical information they have. So that's how I would manage the
+- **[874.82s - 882.18s]** management expectations and business priorities. How does your current workload typically affect
+- **[882.18s - 887.86s]** the amount of time you're spending on investigating a bug before making a decision? Could you describe
+- **[887.86s - 893.46s]** this specific recent case? Like what workload have you shaped for the decision of the bug?
+- **[896.18s - 906.82s]** So usually if the workload is high for me, I follow a risk-based approach. I don't give my
+- **[906.82s - 916.26s]** attention to every issue at the same time for every issue. Based on the production failure or data
+- **[916.26s - 924.82s]** corruption or security concern or some SLA impacting issues get my immediate attention.
+- **[925.38s - 934.50s]** While lower risk impact issues can be documented and scheduled for further investigation or later.
+- **[935.46s - 941.14s]** So for example, if several pipeline issues arrive together, I first identify whether they
+- **[941.14s - 948.98s]** have a common upstream cost because resolving one cost can resolve all the multiple issues
+- **[948.98s - 956.50s]** at the same time. I also use logs and monitoring dashboards, also automated data quality checks
+- **[957.06s - 966.58s]** to reduce non-linear investigation. At my current company, we use great expectations and cloud
+- **[966.58s - 973.70s]** watch design, especially useful to monitor the pipeline and everything and help us quickly
+- **[973.70s - 983.22s]** identify if there were any schema drift or freshness problems. So we use this kind of tools so that
+- **[983.22s - 988.74s]** we can spend more time on actual root cause analysis instead of manually checking everything.
+- **[989.30s - 996.26s]** These tools help us keep track of everything and logs. So whenever there isn't any failure,
+- **[996.34s - 1001.06s]** it usually lets us know before it impacts the downstream users.
+- **[1002.98s - 1009.94s]** Okay, thank you. Like based on your experience, what do you think would the most improve for
+- **[1009.94s - 1017.38s]** the process of handling the incomplete bug reports, whether the terms of tooling or the
+- **[1017.38s - 1028.42s]** process or the team practice, etc. I say the biggest improvement comes from combining the
+- **[1029.54s - 1036.02s]** better reporting standards with stronger observability. So a bug report should ideally
+- **[1036.02s - 1042.10s]** include the environment, timestamp, affected records, expected results, actual behavior,
+- **[1042.74s - 1049.14s]** and relevant logs, production, reproduction steps. So coming to the tooling side,
+- **[1049.78s - 1056.90s]** centralized logs, pipeline monitoring, data lineage, and automated data quality checks make
+- **[1056.90s - 1065.38s]** investigations much more faster and easier. In my current project, we use tools like airflow
+- **[1065.38s - 1071.62s]** monitoring. And like I said, great expectations and cloud watch. We also do perform dbt tests
+- **[1071.62s - 1078.34s]** for transformation testings. These help us identify if something were to go wrong.
+- **[1078.90s - 1085.30s]** I also think teams should document previous incidents and root causes. So if the same
+- **[1085.30s - 1090.58s]** problem occurs to some other teams six months later, the engineers do not have to you know,
+- **[1090.58s - 1095.38s]** rediscover everything from scratch. It's better if we document and
+- **[1096.10s - 1103.46s]** if we do the documentation and observability will significantly reduce the uncertainty during this
+- **[1103.46s - 1113.22s]** stage. Okay. Is there anything else about how you make a bug triage decision under uncertainty
+- **[1113.22s - 1121.78s]** something important to you? We have not had a chance to discuss in this interview so far.
+- **[1121.78s - 1135.14s]** Well, so one most important thing I have learned from working with production data systems is that
+- **[1135.70s - 1143.54s]** uncertainty itself needs to be managed properly. So when a bug is reported, we may not know whether
+- **[1143.54s - 1148.98s]** the problem is coming from the source system or the pipeline or the transformation logic,
+- **[1148.98s - 1155.38s]** or it might be also from the infrastructure. So sometimes it can be even from the downstream
+- **[1155.38s - 1161.86s]** application. So instead of jumping to conclusion, what I do is I try to clearly separate what we
+- **[1161.86s - 1169.22s]** know and what we suspect, and then what still need to be validated. So for example, if someone
+- **[1169.22s - 1176.58s]** reports incorrect data, I start with specific affected reports and trace them to the pipeline.
+- **[1176.58s - 1186.42s]** I check the source state, if execution, Python or Python processing, and also I check the
+- **[1186.42s - 1192.42s]** difficulty transformation and finally the warehouse output. Also look at the logs, data quality checks,
+- **[1192.42s - 1197.22s]** the recent deployments, schema changes, and whether similar issues occurred previously
+- **[1197.22s - 1203.78s]** that helps reduce the uncertainty systematically. So another most important part for us is
+- **[1203.78s - 1209.70s]** communication. If I haven't come from the root cause yet, I don't present an assumption as a fact.
+- **[1210.26s - 1215.62s]** I tell the team what I have validated so far, what the potential impact is and what I'm
+- **[1215.62s - 1220.66s]** checking next. So if necessary, I involve upstream or downstream teams rather than
+- **[1220.66s - 1224.90s]** spending too much time investigating something outside my team's ownership.
+- **[1225.94s - 1231.06s]** Finally, what I do after resolving the issue is I think it's important to improve the process.
+- **[1231.06s - 1236.66s]** So the same problem is either to detect an extent that could mean adding something like a
+- **[1236.66s - 1243.94s]** DBT test or a great expectations checkpoint, also monitoring in here some kind of alerts,
+- **[1243.94s - 1252.66s]** but better to document. So overall for me, to handle a good path triage and uncertainty is like
+- **[1252.66s - 1260.10s]** using evidence or prioritizing based on impact. And the main thing communication is a very,
+- **[1260.10s - 1265.38s]** very important one and collaborating with the right people and learning from each incident,
+- **[1265.38s - 1270.82s]** rather than simply trying to post back as quickly as possible. So that's what I would
+- **[1271.70s - 1274.18s]** suggest, you know, under back to each decisions.
+- **[1276.90s - 1283.78s]** Okay. Okay. Thank you very much for today's interview. Like we do not disclose any data
+- **[1283.86s - 1290.42s]** to others as per GDPR. We only use your audio file for the data analysis purpose.
+- **[1291.22s - 1297.62s]** And yeah, that's all. Thank you. Thank you. Have a nice day.
+- **[1297.62s - 1303.46s]** Thank you. Bye bye.

@@ -1,0 +1,123 @@
+# Master Thesis Interview Transcript: Participant P12
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P12
+- **Role:** Backend Software Engineer
+- **Experience:** 6+ years in backend engineering & SaaS platform development
+- **Industry Domain:** Enterprise SaaS Platform & Cloud Product Architecture
+- **Primary Tooling:** Jira, Git, Server Logs, Cloud Infrastructure
+- **Interview Date:** 2026-08-26
+- **Total Timestamped Utterances:** 107 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 005.00s]** Hi [Participant P12]
+- **[005.00s - 008.00s]** Hi [Co-Researcher]
+- **[008.00s - 012.00s]** Hi, thank you very much for taking the time to speak with me today
+- **[012.00s - 018.00s]** My name is [Co-Researcher] and I am conducting this interview as part of my thesis, Master Thesis
+- **[018.00s - 025.00s]** My research focuses on how developers make decisions when dealing with uncertain or incomplete bug reports
+- **[025.00s - 028.00s]** during the bug triage process
+- **[028.00s - 038.00s]** I am also interested in how things like deadline, workload and business or management priorities might influence those decisions
+- **[038.00s - 042.00s]** There are no right or wrong answers here
+- **[042.00s - 049.00s]** I am mainly interested in your experience and how you normally handle these situations in your work
+- **[049.00s - 061.00s]** Could you start by telling me a little bit about your current role and how long you have been involved in handling or prioritizing books
+- **[061.00s - 070.00s]** I currently work for a product company as a back-end engineer
+- **[070.00s - 074.00s]** I am being in this role for the last 6 years
+- **[074.00s - 085.00s]** We develop features as part of our product and regularly we keep seeing bugs and triage them
+- **[085.00s - 097.00s]** Customers do report bugs in production also, so we do triage both kind of bugs
+- **[098.00s - 106.00s]** Coming to the second question, could you tell me a little bit about your team and the project you are currently working on
+- **[106.00s - 113.00s]** How big is your team, what kind of software do you work on and what tools do you use?
+- **[114.00s - 121.00s]** My team size is 5
+- **[121.00s - 138.00s]** The type of software we build is a completely SAS platform for enterprise companies
+- **[138.00s - 146.00s]** To track bugs we use Jira primarily
+- **[148.00s - 155.00s]** Could you walk me through what usually happens when a new bug report comes in
+- **[155.00s - 161.00s]** How do you go about deciding what should happen with it?
+- **[161.00s - 183.00s]** What a typical bug triage session looks like for me is whenever we develop a new feature
+- **[184.00s - 190.00s]** We are given certain type of requirements by the product team
+- **[193.00s - 196.00s]** This is how the functionality should look like
+- **[196.00s - 205.00s]** We develop accordingly aligning to the platform, aligning to the business needs
+- **[206.00s - 224.00s]** Whenever we miss any corner case, while it comes to the developer, while QA is validating with the same requirements that the product has given
+- **[225.00s - 234.00s]** Generally, the QA bugs reported to our dev team were like this
+- **[235.00s - 253.00s]** And the moment a new report arrives, we check whether most of our issues fall into data
+- **[254.00s - 260.00s]** Or if it would be a configuration or it would be a code issue
+- **[260.00s - 271.00s]** So we mostly debug initial triage happens along these three cases
+- **[272.00s - 285.00s]** Can you think of any recent situation where you received a bug report that was incomplete and difficult to reproduce
+- **[285.00s - 290.00s]** And how did you deal with that in those situations?
+- **[291.00s - 304.00s]** Whenever a bug is incomplete, the bug report information is incomplete
+- **[305.00s - 318.00s]** If it is not clear, ambiguous, or if it is unable to reproduce, we try to see where the end user is reporting from
+- **[319.00s - 329.00s]** There can be multiple dimensions like the location of the user or the device that the user is using
+- **[329.00s - 333.00s]** Sometimes it is mobile and sometimes it is web
+- **[338.00s - 341.00s]** Or the time zone the user is in
+- **[343.00s - 349.00s]** Sometimes it is unable to reproduce because of this parameter
+- **[349.00s - 356.00s]** So we ask for these parameters, these information from the user
+- **[360.00s - 372.00s]** Or the customer sometimes in production, it would be difficult for the customer himself to give all the information
+- **[372.00s - 381.00s]** We try to gather as much information as possible
+- **[382.00s - 391.00s]** When a bug report lacks clear reflection steps or environmental details, what do you typically do first?
+- **[394.00s - 400.00s]** When a bug report lacks environment details
+- **[401.00s - 412.00s]** Or whenever there are no proper steps to reproduce
+- **[412.00s - 428.00s]** We at least my point of view was to go and actually experience the issue like the end user is having
+- **[429.00s - 432.00s]** I treat myself as an end user and try to reproduce myself
+- **[432.00s - 438.00s]** If there are no steps to a reproduction, just whatever the report has
+- **[439.00s - 446.00s]** And if there are no proper environment details, I check production first
+- **[446.00s - 456.00s]** If it is not production, then go to lower environments like UIT and Q environment
+- **[457.00s - 459.00s]** So I check all the environments
+- **[462.00s - 470.00s]** When you are not sure how serious a bug is, and people have different opinions about it, severity
+- **[470.00s - 474.00s]** And how do you usually decide what priority to give it?
+- **[474.00s - 487.00s]** We actually have priority defined and severity defined
+- **[487.00s - 499.00s]** But when severity is unclear, we go to the business impact of it or the system impact of it
+- **[500.00s - 504.00s]** Severely depends on the business impact
+- **[504.00s - 515.00s]** The more problem it causes to business, we take it as a more severe bug
+- **[515.00s - 525.00s]** And if it is less important from a business standpoint, we take less severity
+- **[530.00s - 537.00s]** Over time, have you developed any rules of thumb or shortcuts that you use when a bug report doesn't give you enough information?
+- **[538.00s - 557.00s]** There are more specific rules of thumb, but generally back in engineering, we have a few specific patterns
+- **[558.00s - 571.00s]** Caching, for example, if we have application has caching layer, be it in memory or distributed cache
+- **[572.00s - 584.00s]** So we have few patterns which may always create some issue when they are not designed or programmed properly
+- **[587.00s - 595.00s]** I don't have a specific rule of thumb actually
+- **[597.00s - 609.00s]** Can you tell me about a situation where you were under a lot of pressure because of an upcoming release or a heavy workload?
+- **[609.00s - 615.00s]** Is that any situation affected how you handle a bug?
+- **[615.00s - 617.00s]** Can you tell me about the bug?
+- **[646.00s - 656.00s]** Most of the bugs generally follow a pattern like 5-6 bugs
+- **[657.00s - 665.00s]** But at the same time, it is highly likely that there is a common issue
+- **[666.00s - 677.00s]** Even if there is a release deadline, I keep checking every bug report that I try to check
+- **[678.00s - 690.00s]** But yes, whenever there are deadlines, we keep having a factor like not more than certain number of bugs should have before the release deadline
+- **[691.00s - 694.00s]** Only then we allow our builds to release
+- **[699.00s - 710.00s]** How do management expectations or business priority factors into your triagulations when you are uncertain about a bug severity or its reproducibility?
+- **[711.00s - 721.00s]** How do management expectations or business priority factor in your triage decision?
+- **[722.00s - 724.00s]** In a triage decision, you make a bug
+- **[726.00s - 732.00s]** When we are uncertain, we see this as reproducibility bug
+- **[733.00s - 739.00s]** And how do management expectations or business priorities influence the decision you make?
+- **[740.00s - 752.00s]** Business priorities definitely do influence the way we triage our bugs
+- **[753.00s - 767.00s]** Because the more sense we are like a more of a customer-based company
+- **[768.00s - 771.00s]** Business priorities do influence triage decision
+- **[772.00s - 777.00s]** The more the customer is getting affected, not by the specific bug
+- **[777.00s - 781.00s]** But there can be bugs from a different customer sentiment
+- **[782.00s - 787.00s]** We factor in while triaging bugs
+- **[788.00s - 799.00s]** We group bugs based on customers who are actually having more business impact
+- **[800.00s - 806.00s]** We categorize our customers into multiple buckets
+- **[811.00s - 820.00s]** When you have a lot of work to deal with, how does that affect the amount of time you can spend investigating a bug before making a decision?
+- **[821.00s - 828.00s]** What is your current work typical effect, the amount of time?
+- **[829.00s - 839.00s]** Yeah, current workload definitely. So why keep, every day we keep checking bugs
+- **[840.00s - 844.00s]** First, later we go to feature development
+- **[845.00s - 851.00s]** So you try to plan our current workload, we follow sprints
+- **[852.00s - 865.00s]** Try to plan better based on the already reported bugs that we have as backlog to triage
+- **[865.00s - 882.00s]** If at all, if there is any ad hoc bug, we try to triage it because it would more likely that there can be repeated one
+- **[883.00s - 895.00s]** And based on your experience, what do you think could make the process of handling unclear bug reports?
+- **[896.00s - 905.00s]** I mean like unclear bug reports better, it could be through tools, process or where the team works
+- **[905.00s - 920.00s]** Based on my experience, if there is any uncertain or incomplete bug report
+- **[921.00s - 941.00s]** We keep having more of more documentation or troubleshooting guides to actually check, see if this is like a similar bug
+- **[942.00s - 949.00s]** Like troubleshooting guides to help map to previous bugs
+- **[950.00s - 956.00s]** So if there is any, I think troubleshooting guides helps
+- **[956.00s - 973.00s]** And team and engineering wise, we do have our own cheat codes, like nodes in form of documentation
+- **[975.00s - 977.00s]** But there are no specific tools
+- **[978.00s - 996.00s]** And last question, is there anything else about how you make decisions when dealing with uncertain bugs that you think is important but we haven't talked about
+- **[997.00s - 1011.00s]** Work setting, work triage, decision under uncertainty, which I think is important
+- **[1012.00s - 1024.00s]** So I currently work for a product company where they are like a platform team
+- **[1024.00s - 1044.00s]** Though, so we don't directly interact with customer facing teams, but we mostly partner with other engineering teams to develop actually
+- **[1044.00s - 1061.00s]** So sometimes it's not like directly, not all bugs are directly impacting end user but it can be like impacting internal teams too
+- **[1064.00s - 1067.00s]** Okay, that's it [Participant P12], thank you so much
+- **[1068.00s - 1072.00s]** Thank you for your time and have a nice day
+- **[1075.00s - 1076.00s]** Yeah, thank you
+- **[1077.00s - 1078.00s]** Bye

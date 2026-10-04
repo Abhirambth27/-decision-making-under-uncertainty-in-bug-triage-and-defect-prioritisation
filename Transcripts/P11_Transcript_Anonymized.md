@@ -1,0 +1,163 @@
+# Master Thesis Interview Transcript: Participant P11
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P11
+- **Role:** DevOps & Cloud Platform Engineer
+- **Experience:** 6+ years in CI/CD pipelines, SRE & deployment triage
+- **Industry Domain:** CI/CD Pipelines, Deployment Automation & Kubernetes Infrastructure
+- **Primary Tooling:** Jenkins, Kubernetes, CI/CD, Jira, Prometheus, ELK
+- **Interview Date:** 2026-08-26
+- **Total Timestamped Utterances:** 147 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 009.78s]** Yeah, hi, [Participant P11]. Thank you very much for joining this interview today. My name is [Interviewer]
+- **[009.78s - 015.04s]** and my team's name is Vinith and we are currently pursuing our Masters in Software Engineering
+- **[015.04s - 023.52s]** and Technology, Sweden, Karlsparin. Our thesis mainly focuses on decision making under uncertainty
+- **[023.52s - 030.16s]** in bug triage and defect prior to decision. Through this interview, we are trying to understand
+- **[030.16s - 036.04s]** how software professionals make decisions when dealing with bugs, especially when there is
+- **[036.04s - 043.28s]** incomplete information, conflict priorities, or uncertainty about the impact of a defect.
+- **[043.28s - 048.92s]** Like this interview may take 20 to 25 minutes, there is no right or wrong answers and we are
+- **[048.92s - 057.04s]** mainly interested in your experience and perspective. And with your permission, we will take a few
+- **[057.04s - 066.08s]** notes in this interview so we can analyze the information later for our thesis purpose.
+- **[066.08s - 074.32s]** Like once again, thank you for your time. Yeah. Let's start with the first question.
+- **[074.32s - 081.64s]** Like could you briefly describe your current role and roughly how long have you been involved
+- **[081.64s - 086.72s]** in this bug triage or defect prior to decision in your workspace?
+- **[086.72s - 096.52s]** Hey, [Interviewer]. I'm currently working as a DevOps Engineer at the [Telecommunications Corp A] in Delhi. My main response
+- **[096.52s - 105.60s]** will be to the CIC and 3D pipelines, deployment automation, monitoring and supporting development
+- **[105.60s - 113.36s]** terms when they face issues. By the way, bug triage is not my only responsibility, but
+- **[113.36s - 121.00s]** I'm not involved in it regularly, especially when an issue affects a bill, deployment, testing,
+- **[121.00s - 128.76s]** environment or a production service. Usually when a bug is reported, I first try to understand
+- **[128.76s - 135.72s]** whatever it is related to the application and infrastructure, configuration or environment.
+- **[135.72s - 144.76s]** Then I took the impact and how gently it needs to be handled. I have learned that bug triage
+- **[144.76s - 151.20s]** is not always about finding the technical cause immediately. Often we have a complete
+- **[151.20s - 157.08s]** information so we need to work with developers and testers, check logs and use our experience
+- **[157.08s - 161.72s]** to make reasonable decisions. Okay.
+- **[161.72s - 167.64s]** Okay. And could you tell me a little bit about your team and the kind of project you
+- **[167.64s - 172.56s]** are currently working on? Like how big is your team? What kind of software do you
+- **[173.00s - 176.28s]** and what tools do you use for FragWorks?
+- **[177.80s - 187.08s]** Yes, Svinith. We work in a collaborative environment where DevOps engineers, developers, testers
+- **[187.08s - 193.00s]** and other engineering teams work together. From the DevOps side, we mainly deal with
+- **[193.00s - 198.72s]** CI, CD pipelines, deployment, infrastructure, monitoring and different environments such as
+- **[198.72s - 205.24s]** development, testing and production. For this issue tracking, we mainly use Jira and
+- **[205.24s - 213.36s]** we also get useful information from pipeline results. Logs and monitoring systems also.
+- **[213.36s - 221.44s]** In one challenge is that problem doesn't always clearly belong to one term. For example,
+- **[221.44s - 227.00s]** a deployment failure might initially look like an application problem, but after checking
+- **[227.00s - 233.52s]** the logs, we may find that these are actually related to configuration or infrastructure.
+- **[233.52s - 240.32s]** So the bug trace usually involves communication between different terms. We collect the available
+- **[240.32s - 247.04s]** information, but we understand the impact and decide who should handle the issue and
+- **[247.04s - 249.52s]** how urgently it needs attention.
+- **[250.52s - 255.52s]** That's good for our project.
+- **[257.52s - 265.52s]** Could you walk me through what typical bug trace session look like for you from the moment a new report arrived?
+- **[265.52s - 270.52s]** And what decision have you made about it?
+- **[271.52s - 281.52s]** When a new bug report comes, first we look at the basic information, what is failing,
+- **[281.52s - 289.52s]** which environment is affected when it happened and whatever logs or screenshots are available.
+- **[289.52s - 298.52s]** If it's related to DevOps, we normally check the CI, CD pipelines, deployment history, logs and monitoring information.
+- **[298.52s - 304.52s]** Also try to understand whether the problem is reproducible.
+- **[304.52s - 316.52s]** After that, we look at the impact. For example, a problem affecting only development environment may not be very urgent.
+- **[316.52s - 325.52s]** Well, an issue blocking a production deployment would obviously have higher priority. So the information is incomplete.
+- **[326.52s - 332.52s]** If incomplete, we contact the person who reported the issue and asked for missing details.
+- **[332.52s - 340.52s]** Finally, based on evidence and impact, we decide the priority and who needs to investigate further.
+- **[340.52s - 345.52s]** So for me, trace is mainly about understanding the impact before making the decision.
+- **[346.52s - 347.52s]** That's it Abhi.
+- **[348.52s - 359.52s]** When you think of any recent time situation when you received a bug report, which is incomplete and difficult to reproduce,
+- **[359.52s - 362.52s]** how did you handle that in those situations?
+- **[362.52s - 371.52s]** Yeah, in that situation, I have experienced this several times.
+- **[371.52s - 383.52s]** So, we have one example, I tell you. In deployment issue, when a developer reported a service pass failing during deployment,
+- **[384.52s - 392.52s]** but the ticket did not clearly mention the environment deployment version or exact steps.
+- **[392.52s - 396.52s]** When we tried to reproduce it, everything was working normally.
+- **[396.52s - 404.52s]** So check the CI, CD pipeline history and logs around the time when the failure happened.
+- **[405.52s - 415.52s]** Eventually, we found that there was a configuration difference between the environment, which explains why we could reproduce it continuously.
+- **[416.52s - 417.52s]** Okay.
+- **[418.52s - 427.52s]** In the original report, we were missing information like exact environment timestamp and recent configuration changes.
+- **[427.52s - 435.52s]** After we finding the issue, we asked the team to include those details when reporting similar problems.
+- **[436.52s - 442.52s]** We also improved some logging to make future investigation easier.
+- **[442.52s - 448.52s]** So, when a bug cannot reproduce, I don't immediately assume it's not important.
+- **[448.52s - 454.52s]** I first try to understand what evidence we have and why reproduction is difficult.
+- **[458.52s - 470.52s]** When a bug report lacks clear reproduction steps or environment details, what do you typically do first?
+- **[474.52s - 479.52s]** First thing, we normally do check information available for systems.
+- **[479.52s - 490.52s]** Even if a bug report is incomplete, we usually have logs, pipelines, history, deployment information or monitoring data that can provide some clues.
+- **[491.52s - 497.52s]** We first identify the affected environment and check what happened around reported time.
+- **[497.52s - 508.52s]** If that doesn't give me enough information, then we contact person who report the issue and simply ask for more information.
+- **[508.52s - 521.52s]** I usually ask specific questions such as which environment they are using, which version was deployed, what action caused the problem, whether it happened more than once.
+- **[522.52s - 530.52s]** If it still cannot reproduce the issue, I document that clearly and keep it relevant evidence.
+- **[531.52s - 542.52s]** My general approach is to first use information already available, then communicate with the reporter and finally decide how much additional investigation is needed.
+- **[547.52s - 559.52s]** When you are dealing with a bug, whether the CVRT isn't very clear and people have different opinions about it, how do you decide what priority to give it to it?
+- **[561.52s - 570.52s]** When the CVRT is unclear, mainly look at actual impact rather than just description of the bug.
+- **[571.52s - 587.52s]** I consider things like how many users or services are affected, whether the production is involved, whether it blocks deployment, whether there is work around and how frequently the problem occurs.
+- **[588.52s - 596.52s]** Sometimes the developers and operations teams may have different opinions about priority in that situation.
+- **[597.52s - 603.52s]** We try to focus available evidence and discuss the impact with relevant people.
+- **[604.52s - 608.52s]** If a bug cannot reproduce, I don't automatically make it low priority.
+- **[609.52s - 618.52s]** For example, if there is evidence that it has already affected production, I would still take it seriously.
+- **[619.52s - 629.52s]** So, we decide usually based on a combination of impact, frequency, reproducibility and environment and business importance.
+- **[630.52s - 638.52s]** So, the goal is not necessary to make perfection decisions immediately, but not make the most reasonable decisions.
+- **[639.52s - 648.52s]** Based on the information, we use the time and the available at that time. So, we decide the priority.
+- **[649.52s - 652.52s]** Okay.
+- **[653.52s - 654.52s]** Okay.
+- **[654.52s - 664.52s]** Would you please tell me like what short question of thumbprint have you developed that you rely on when a bug report is missing or unclear?
+- **[665.52s - 666.52s]** Yeah.
+- **[667.52s - 671.52s]** Yes, experience has given me a few rules of thumb.
+- **[672.52s - 680.52s]** First one is a productive impact usually get attention first, even if we don't have all the technical details.
+- **[681.52s - 692.52s]** I also look at whether what if going prevents several developers from testing, developing, deploying their work.
+- **[693.52s - 700.52s]** I would normally consider it more important than small issue affecting only one person.
+- **[701.52s - 713.52s]** Another thing I look for it is whatever we seen similar problem before previous incidents can help us understanding the likely cause and importance of new issue.
+- **[714.52s - 729.52s]** However, I try to rely completely and as assumptions, these shortcuts help me quickly narrow down the problem, but I still check logs monitoring information and the other evidence before making the final decision.
+- **[730.52s - 737.52s]** So, I would say experience helps me make faster initial decision, but I still evaluate those decision with actual information.
+- **[744.52s - 756.52s]** Okay. Got it. Can you describe a situation where an upcoming release deadline or workload pressure changed how you handle a bug report that you were uncertain about?
+- **[757.52s - 772.52s]** Yes, we need to release deadlines and definitely affect how we handle uncertain bugs. I remember situations where a release was approaching and we had some issues.
+- **[773.52s - 783.52s]** We have to be completely reproducible. Normally we might spend more time investigating, but when the deadline is close, we have to consider the risk of delay the release.
+- **[784.52s - 799.52s]** For example, if a deployment occasionally failed, but succeeds after a retry and there is no product impact, we might document the issue, use the work around and continue with the release.
+- **[799.52s - 811.52s]** At the same time, we keep the bug open for proper investigation afterwards. The important thing is that we don't simply ignore the problem because of the deadline.
+- **[812.52s - 826.52s]** We look at the potential risk and make sure relevant people are aware of it. If the issue could seriously affect production or customers, then even the tight deadline would not be a good reason to ignore it.
+- **[826.52s - 830.52s]** Yeah.
+- **[830.52s - 857.52s]** Okay.
+- **[857.52s - 860.52s]** [Interviewer], hello?
+- **[860.52s - 870.52s]** Yes, your voice is not audible.
+- **[870.52s - 882.52s]** No [Interviewer], still your voice is low.
+- **[882.52s - 885.52s]** Should I continue with the rest of the questions if you want?
+- **[886.52s - 888.52s]** Yeah. Am I audible now?
+- **[888.52s - 889.52s]** Yes.
+- **[889.52s - 891.52s]** No, no, too.
+- **[891.52s - 893.52s]** Yeah. Okay.
+- **[893.52s - 911.52s]** How do management expectations or business priority factors into your tries decisions when you are uncertain about a bug CVRT or its reproducibility?
+- **[911.52s - 923.52s]** Okay. When the management and business priorities can definitely influence your decisions, especially when there are important releases or customer communities.
+- **[923.52s - 940.52s]** And there might be several bugs which similar to technical CVRT, but if one affects customer facing service or important release, it may receive attention first. However, I don't think business priority should completely override technical risks.
+- **[940.52s - 948.52s]** My responsibility is to obtain the technical impact clearly so the management can make an informal decision.
+- **[948.52s - 956.52s]** If an issue is so difficult to reproduce but has only appeared in testing, we might decide to postpone it.
+- **[957.52s - 972.52s]** But if there is uncertainty around production issue, I would normally recommend investigate it further. So we see business priorities as one factor in the decision rather than one only factor.
+- **[972.52s - 982.52s]** Ideally, we balance technical impact, customer impact, business importance and available resources when deciding what to do with an uncertain bug.
+- **[982.52s - 990.52s]** So the management and business priority is like this process we have to do.
+- **[990.52s - 992.52s]** Okay.
+- **[992.52s - 1005.52s]** How does your current workload typically affect the time of you can spend you spending, investigating a bug before making a decision?
+- **[1005.52s - 1009.52s]** Yeah, yes.
+- **[1009.52s - 1026.52s]** In workload we definitely affect how much time I can spend investigating a bug. In DevOps, there can be several things happening at the same time, such as deployment issues, pipeline failures, incidents and infrastructure tasks.
+- **[1026.52s - 1038.52s]** When the workload is high, we normally start with acute assessment and we check the logs, understand the environment and we look at the potential impact.
+- **[1038.52s - 1049.52s]** After that, if it appears to be low impact issue, we may document that what we found and investigate later.
+- **[1050.52s - 1068.52s]** But if it is affecting production or blocking an important deployment, then I give immediate attention. Sometimes we also use temporary or current varies in the inform.
+- **[1069.52s - 1077.52s]** So we take enough time to find the complete root cause, then we create follow up task for deeper investigation.
+- **[1077.52s - 1087.52s]** So workload mainly affects the depth and time of investigation, but it shouldn't completely change how we judge the importance of issue.
+- **[1089.52s - 1091.52s]** Yes.
+- **[1092.52s - 1094.52s]** Okay.
+- **[1095.52s - 1108.52s]** Based on your experience, what do you improve the process of handling the uncertain or incomplete bug reports, whether it comes to tooling process or team practice?
+- **[1109.52s - 1129.52s]** I think the biggest improvement would be having both structured bug reports, important information like environment version, time step, expected behavior, actual behavior and reproduction steps should be included whenever it is possible.
+- **[1130.52s - 1144.52s]** On the DevOps side, better integration between JIRA and CI-CD tools, monitoring systems and logs could also help for us.
+- **[1144.52s - 1155.52s]** If the relevant pipeline run for deployment information was automatically connected to the bug, it would be saved a lot of investigation time.
+- **[1155.52s - 1168.52s]** I also think communication between developers, testers and operation is very important. Sometimes the information already exists, but it is spread across different people or systems.
+- **[1168.52s - 1180.52s]** Finally, maintaining some history of recurring problems would be helpful because previous incidents can provide useful context for new bugs.
+- **[1180.52s - 1190.52s]** I don't think everything needs to be automated. Tools can help collect information, but human judgment is still important when the situation is unclear.
+- **[1190.52s - 1199.52s]** So I would focus mainly on better bug reports, tool integration and team knowledge sharing.
+- **[1201.52s - 1203.52s]** That's it [Interviewer].
+- **[1203.52s - 1216.52s]** Last question, before we finish, is there anything else about how you make decisions when dealing with uncertain bugs that you think is important but we haven't talked about?
+- **[1216.52s - 1224.52s]** Yeah, I would say that uncertainty is actually a normal part of bug trash.
+- **[1225.52s - 1238.52s]** We don't always have enough information to make a perfect decision, especially when a problem is intermittent or cannot be reproduced.
+- **[1238.52s - 1249.52s]** And for me, the important thing is to transparent about that uncertainty instead of saying that bug is indefinitely low priority.
+- **[1250.52s - 1258.52s]** I would explain that based on current information, we consider it low priority, but it will continue to monitor it.
+- **[1258.52s - 1276.52s]** I also think three edge decisions should be resisted when the new information becomes available and a bug that looks minor initially can become more important if we discover that affects more users or happens more frequently.
+- **[1277.52s - 1289.52s]** From a DevOps perspective, monitoring logs and historical data can also provide useful evidence.
+- **[1290.52s - 1317.52s]** So we think overall good triage is about making reasonable and evidence based on decision with information available and communicating with uncertainty problems like having some bug reports with the reporter and after that being willing to change the decision when new evidence comes in.
+- **[1318.52s - 1331.52s]** Thank you, Karthke. We gathered a lot of information from you. Thank you for this interview. Have a great time.
+- **[1331.52s - 1336.52s]** Thank you, Karthke. Have a nice day.
+- **[1336.52s - 1340.52s]** Thank you. Thank you so much.

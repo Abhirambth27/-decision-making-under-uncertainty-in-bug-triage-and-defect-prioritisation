@@ -1,0 +1,172 @@
+# Master Thesis Interview Transcript: Participant P07
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P07
+- **Role:** Software Developer (Telecom Codebase)
+- **Experience:** 5-6 years in telecom software development & customer defect resolution
+- **Industry Domain:** Telecommunications Feature Development & Customer Bug Resolution
+- **Primary Tooling:** Git, Unit Testing Frameworks, Jira, Internal Defect Logs
+- **Interview Date:** 2026-08-18
+- **Total Timestamped Utterances:** 156 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 013.00s]** Hi, [Participant P07], good evening. Thank you very much for today's meeting. My name is [Interviewer] and my name is [Co-Researcher].
+- **[013.00s - 021.00s]** Currently we are pursuing our Masters in Software Engineering at Blacking Institute of Technology.
+- **[021.00s - 027.00s]** Our thesis focuses on decision making under uncertainty in bug triage and different prior traditions.
+- **[027.00s - 037.00s]** Through this interview, we are trying to understand how software professionals make decisions when dealing with bug triage,
+- **[037.00s - 045.00s]** especially when there is incomplete information or taking priorities or uncertainty about the impact of a defect.
+- **[045.00s - 049.00s]** Like this interview will take 20 to 25 minutes.
+- **[049.00s - 059.00s]** There is no right or wrong answers and we are mainly interested in your experience and perspectives regarding this bug triage and environment.
+- **[059.00s - 068.00s]** We will take a few notes of your answers to analysis this information for our thesis purposes later on.
+- **[068.00s - 075.00s]** Once again, thank you. Thank you for giving an interview today.
+- **[075.00s - 079.00s]** [Co-Researcher], will you introduce yourself?
+- **[079.00s - 090.00s]** Hi, hello, my name is [Co-Researcher].
+- **[090.00s - 093.00s]** Hi, good evening.
+- **[093.00s - 094.00s]** Yeah.
+- **[094.00s - 099.00s]** Okay.
+- **[099.00s - 102.00s]** Let's start this interview session.
+- **[102.00s - 110.00s]** First of all, I would like to thank you, Mr. [Participant P07], for having me in this interview session.
+- **[110.00s - 122.00s]** Moving to the first question, could you briefly describe your current role and roughly how long have you been involved in this bug triage or different prior situation in your work environment?
+- **[122.00s - 127.00s]** Hi, currently I'm working as a software developer.
+- **[127.00s - 132.00s]** It's since 5 to 6 years with [Telecommunications Corp A].
+- **[132.00s - 140.00s]** So mostly my role is like I have to implement the code base and I have to do unit testing.
+- **[140.00s - 145.00s]** And then if any issues, we have to fix it.
+- **[145.00s - 163.00s]** And once I merge the changes, if the customer side, if they see any issues, I have to fix not only in my area, like any other teammates are developed in any other feature or something like that.
+- **[163.00s - 169.00s]** So it's not like only I'm responsible for my implementation part.
+- **[169.00s - 179.00s]** So mainly I can say like I have an experience with the development, bug fixing and resolving the customer issues.
+- **[179.00s - 180.00s]** Okay.
+- **[180.00s - 182.00s]** Yeah.
+- **[182.00s - 186.00s]** What does your team and what projects do you work like?
+- **[186.00s - 191.00s]** Like what is your team size and what type of software you built?
+- **[191.00s - 201.00s]** Like when a bug arises, like on which platform you use like Jira or GitHub issues or Bugzilla, etc.
+- **[201.00s - 206.00s]** Like where do you raise the ticket for a bug report or bug tracking issue?
+- **[206.00s - 207.00s]** Okay.
+- **[207.00s - 208.00s]** Yeah.
+- **[208.00s - 211.00s]** Coming to my team, it's around eight people.
+- **[211.00s - 218.00s]** So all are developers and one product owner and one Scram master.
+- **[218.00s - 224.00s]** So my Scram master and product owner also, they do the development.
+- **[224.00s - 226.00s]** So I can say all are developers.
+- **[226.00s - 227.00s]** Yeah.
+- **[227.00s - 240.00s]** And as I said, like for raising bugs, like I usually we don't do, but other teams or customers, they raise tickets.
+- **[240.00s - 244.00s]** Those are mainly Jira, you know, Jira board.
+- **[244.00s - 256.00s]** So once there is the ticket, we'll suppose if I get one ticket, I just analyze it and maybe that process will come later, I think.
+- **[256.00s - 259.00s]** I don't want to detail explaining this question.
+- **[259.00s - 271.00s]** So yeah, we use the GitHub and get it for CI CD pipeline, like to maintain a code and for issue tracking Jira board.
+- **[271.00s - 272.00s]** Okay.
+- **[272.00s - 273.00s]** Yeah.
+- **[274.00s - 288.00s]** Like could you walk me through like what keep going bugs, buffer sessions look like for you from the moment a new report arrives to you and decision is made about it.
+- **[288.00s - 292.00s]** Like what decisions you take about it?
+- **[292.00s - 299.00s]** Yeah, it is like when bug report is logged, it is like enter into the Jira queue.
+- **[299.00s - 310.00s]** So once it is in the queue based on the priority, like if it is a critical urgent or based on the priority, we will pull the tickets.
+- **[310.00s - 322.00s]** And then if any critical issue is there, suppose I got the ticket and first I take the like a high level, what is the issue about it?
+- **[322.00s - 341.00s]** And it's really the bug is related to our feature or our team or maybe sometimes you don't know, like just people assign randomly without knowing sometimes, but rarely.
+- **[341.00s - 359.00s]** So if it is not relevant to our project, just maybe we can migrate it. Otherwise, if it is related to our project, our work, then we have to take it and then we'll be maintained like a sprint, three weeks sprint.
+- **[359.00s - 373.00s]** So first we do like a planning then refinement and then what is the last process?
+- **[373.00s - 376.00s]** I forgot, sorry.
+- **[376.00s - 389.00s]** Yeah, so initially in planning phase, we'll get some tasks right, but these are unexpected.
+- **[389.00s - 409.00s]** Like you don't know when the ticket will arrive. So based on the critical or like urgent, we'll pull that issue and then we'll start working on it.
+- **[409.00s - 413.00s]** Yeah, some words I forgot actually.
+- **[413.00s - 429.00s]** Yeah, okay, no problem. Like, moving to the next question, like, can you think a specific or recent situation where you received a bug report that was incomplete and impossible to reproduce?
+- **[429.00s - 441.00s]** Like what happened in that case? Like what is the what information was missing in that bug report and what have you done in the next case?
+- **[441.00s - 462.00s]** Okay, usually when you receive a ticket, as I said, like you will review the high level, right? So if somewhere like if some logs are not attached in that case, you are not able to proceed further, some criteria will be there.
+- **[462.00s - 486.00s]** So and also sometimes you want to like, you want to see the logs and you're not finding any major issue. And then if you want to run in your local system, and then if you don't have sufficient resources or maybe hardware is not available or whatever the reason.
+- **[487.00s - 510.00s]** So in that scenario, we'll ask whoever writes the bug will ask you to reproduce the scenario so that you can come to know like on which hardware and which platform the issue is occurring and you can narrow down something like that.
+- **[510.00s - 539.00s]** Like if it is in the latest release, the bug is bug is like a it's a new and if you see like a previous release, if you are not seeing that you it's a to narrow down like a compare the code base and where it is causing the leak and so yeah, it's a based on the scenario how you the way you proceed, you can take a call.
+- **[540.00s - 542.00s]** Okay. Yeah.
+- **[543.00s - 556.00s]** When a bug report likes clear reproduction steps or environmental details, what do you typically do first? Could you walk me through the what happened last time in your bug report?
+- **[556.00s - 566.00s]** I think I answered this. So first item, just quick five minute sanity check like environment issues and the summary description.
+- **[566.00s - 576.00s]** So if you're you cannot reproduce it immediately, maybe I can check it in a error monitoring tools or something like that.
+- **[576.00s - 585.00s]** The very very it is having the gap and then we'll check back with the reporter.
+- **[585.00s - 600.00s]** So it is like mostly initial couple of time, a couple of minutes, you will find out any environment issues or reproduction issues or something like that.
+- **[600.00s - 608.00s]** So it's just maybe first glance, you'll find these it is easy. Yeah.
+- **[612.00s - 618.00s]** How do you decide like what priority to assign a bug when it's severity is unclear or context.
+- **[620.00s - 625.00s]** Yeah. Yeah. Yeah. Continue. You're asking something. Yeah.
+- **[626.00s - 638.00s]** Could you describe a specific bug where you have make a call for that or does it change anything bug also cannot be reported. Just like what is this reality usn for it.
+- **[639.00s - 653.00s]** Okay. So yeah, it is like based on the based on the bug like now I'm recently working on one bug. Somebody has like a replace the files which causing entire
+- **[654.00s - 669.00s]** entire set ups are not at all working. So it is like a you consider it as a major bug because it is not only blocking a certain one or two test cases. It is entirely blocking the test line completely for all the users.
+- **[670.00s - 681.00s]** So like this situations you have to take it as a priority. So if you are currently assigning some task and you are working on a specific task, you can
+- **[682.00s - 696.00s]** You can park it and you have to pick the ticket and you have to clear it as early as possible. So like this. You can see you can you can define the severity.
+- **[699.00s - 700.00s]** Yeah.
+- **[701.00s - 710.00s]** Medium medium or low which is low impact those things maybe you can take it as slowly.
+- **[712.00s - 718.00s]** Okay. My question. Yeah. My teammate will ask you a few questions. Yeah.
+- **[719.00s - 734.00s]** I mean like overtime what rules of our mental shortcuts have you developed that you really that you really really want and when information in a bug report is missing or unclear.
+- **[736.00s - 744.00s]** I mean if you're given any example of recent cases, they use one of these. So we can understand it very better.
+- **[745.00s - 760.00s]** Yeah. Like our reporter who report the bug that is the main thing like if the report comes from your senior developer or like if you consider it is like a client maybe.
+- **[761.00s - 773.00s]** So I assume that is the high validity even with the missing information or investigating to the deeper and also like
+- **[776.00s - 785.00s]** If you recently merge some particular code base or deployed within 24 hours or 48 hours.
+- **[786.00s - 803.00s]** So that that will be like easy for you. It's not like you no need to go back to some certain releases and fall back to previous releases and all instead of that it's immediately you can address the
+- **[804.00s - 808.00s]** Like you can see the release differences and easily you cannot reset.
+- **[810.00s - 822.00s]** And also if you are spending too much of time suppose you don't know about what like you tried you narrow down initially high level like
+- **[823.00s - 839.00s]** What could be the issue environment or hardware or something like that and then you next step you have to check the log thoroughly and where is the some error or warnings or where it is leaking the code and you can check it and still if you are
+- **[839.00s - 854.00s]** If you are like a run out of the ideas, you should not block like a certain long period of time. You can take a help with that within teammates or if you need more information about if you don't have a clarity like
+- **[855.00s - 867.00s]** What is the issue and where it is occurring and everything. Maybe you can have a discussion with a reporter to get to know more details and if any blockages you discuss with our team.
+- **[868.00s - 874.00s]** So you should not spend or a block long duration of time certain point.
+- **[879.00s - 891.00s]** Can you describe a specific situation where I am coming release deadline or workload pressure changed how you handle a badi pool that you were in a uncertainty.
+- **[891.00s - 912.00s]** Yes, same like a investigating the bug it is like a time pressure also it will be impacting the decision quality. So it is like a
+- **[913.00s - 940.00s]** Some intermittent issues. It's like a difficult and hard to reproduce and sometimes it's really hard to investigate as well because if it is occurring every time you know like it is behaving all the time same behavior, but if it is the issue will be the intermittent. It's very hard to identify the area of
+- **[940.00s - 944.00s]** issue. So
+- **[946.00s - 948.00s]** Hope I answered your question.
+- **[949.00s - 955.00s]** Sorry. Hope I answered your question. Yeah, yeah, yeah, I got it. I got your part. Yeah. Okay.
+- **[956.00s - 971.00s]** How do management expectations or business priorities factor into your track decisions when you are uncertain about a bug severity or its responsible reproducibility.
+- **[972.00s - 973.00s]** Okay.
+- **[973.00s - 974.00s]** Okay.
+- **[979.00s - 983.00s]** Business priorities factor into your decisions.
+- **[986.00s - 989.00s]** Your answer to networks. Yeah.
+- **[990.00s - 1011.00s]** This and severity part most of the time 90% of the time you'll the reporter only provide the severity. He will only mention like a what is the bug severity because they already seen the issue and so
+- **[1011.00s - 1031.00s]** So from them will come to know what type of severity it is. Once you're digging into the logs and started analyzing then only will come to know. So the first glance it is from the reporter and also them sometimes the management the management also prioritize like a
+- **[1032.00s - 1035.00s]** Okay, we got this and it might be the
+- **[1036.00s - 1050.00s]** It might be the big issue. So you have to look at it. Look at first something like that. It will also come from the management before you dig into the logs. So the reporter or management, they first
+- **[1052.00s - 1057.00s]** Check if it is a any risk tolerance, then
+- **[1061.00s - 1070.00s]** This is all business priorities into your
+- **[1078.00s - 1079.00s]** Yeah.
+- **[1080.00s - 1089.00s]** It will come from reporter and the management management in the sense the OP or Scrum Master point of view.
+- **[1092.00s - 1099.00s]** So when I received that it is the like a top priority, then immediately I'll start the investigation.
+- **[1100.00s - 1107.00s]** We don't define the severity right like we don't have control of
+- **[1108.00s - 1116.00s]** To control of like it should be the critical and you can't say I can't make a decision.
+- **[1117.00s - 1128.00s]** Yeah, and while analyzing the logs. If I feel like it is not like a major issue on it is not a blocker and then my analysis is done.
+- **[1129.00s - 1134.00s]** So I can update in the ticket on and I can update the severity level that time.
+- **[1137.00s - 1138.00s]** Yeah.
+- **[1139.00s - 1149.00s]** One more. How does your current workload affect the amount of time you can spend investigation before making addition.
+- **[1152.00s - 1155.00s]** Yeah, it is like a again.
+- **[1156.00s - 1163.00s]** It will vary from the sprint to sprint and also sometimes it is like a entire team is available like
+- **[1164.00s - 1171.00s]** But sometimes some will be on vacation. It is during the low capacity periods or sprint ending times.
+- **[1172.00s - 1181.00s]** It is like a time or office spending on the issue analysis. It may it may be reduced like a
+- **[1182.00s - 1195.00s]** Suppose if you have like a example in a sprint, you can only take a two three tickets and rest of the time you have to focus on the development activity. So in that sprint, you cannot focus more
+- **[1199.00s - 1210.00s]** More debugging the issues and also you if you have a high workload suppose like if you have a release is nearby and you have to finish your feature development.
+- **[1211.00s - 1219.00s]** Completely so during that time as well. It's like a strict guidelines. You have to focus on this particular area.
+- **[1220.00s - 1228.00s]** So it is like a basic reproduction. Also, it will be matters and
+- **[1230.00s - 1240.00s]** And also if you are spending time looking into the logs instead of using some tools instead of that you do it in a manually
+- **[1241.00s - 1244.00s]** So it is like a
+- **[1246.00s - 1249.00s]** It might be spent too much of time.
+- **[1251.00s - 1253.00s]** To reply back to the reporter at something.
+- **[1259.00s - 1268.00s]** Based on your experience, what do you think would most improve the process of handling uncertain or incomplete bug reports.
+- **[1269.00s - 1273.00s]** Whether in terms of tooling process or team practice.
+- **[1276.00s - 1277.00s]** Yes.
+- **[1278.00s - 1282.00s]** Recommendations or like
+- **[1287.00s - 1288.00s]** Yeah.
+- **[1288.00s - 1307.00s]** In zero board when you raise a ticket. I feel like most of the people doesn't update it properly. If you raised one issue and I have received it and whatever analysis I have to update in the ticket. This is what this is what I have done.
+- **[1307.00s - 1324.00s]** And then if I provide a fix or something. The reporter is maybe tester. He has to test the whatever I provided the build. He has to test and then he has to provide the comments in the ticket like
+- **[1324.00s - 1344.00s]** So in future if you see any similar type of issues like that will be helpful in the ticket if it is properly logged all the information when you provide the fix. This is what I fixed it and this is the area I'm seeing the bug. Maybe it can be
+- **[1345.00s - 1355.00s]** This is the issue and once verification is done and then you have to put a proper answer.
+- **[1356.00s - 1372.00s]** So that it will be helpful in the future to avoid the duplication or similar type of issues in the future. And also, you no need to explain to anyone. I have done this. I have like instead of that
+- **[1372.00s - 1389.00s]** The management can track the zero board for the progress. So I feel like it should be properly maintained the zero board without any failure. Both the parties like either reporter or sub
+- **[1389.00s - 1401.00s]** We were fixing the issue. They have to keep it the ticket up to date until it get closer. That is the one thing I can say and
+- **[1403.00s - 1405.00s]** And also you have to create a
+- **[1405.00s - 1427.00s]** Specific bug. If you are specifically like I'm working as a developer and test like a issue fixing. So I don't need to track out and create a bug report or something like that. If you are specifically working as a tester or like a then you need to maintain a proper bug report.
+- **[1427.00s - 1436.00s]** So that it will be helpful for the non technical teams as well like a sales teams or supporting teams or something like that.
+- **[1442.00s - 1453.00s]** Is there anything else about how you make bug regulations under uncertainty something important that to you and we have not had any chance to discuss with
+- **[1454.00s - 1456.00s]** Is there something we might forget
+- **[1461.00s - 1480.00s]** Yeah, most of the times I see like a people doesn't close the bug or a ticket, some lack of information or something like that. So I really don't like such a thing. I need to be like a
+- **[1480.00s - 1482.00s]** Even though the
+- **[1483.00s - 1491.00s]** Some people even they don't consider to put it in a state like a open in progress or
+- **[1492.00s - 1504.00s]** Fix is provided fix verification closed or something like that. You have some stages. So at least it should be it should be updated in a
+- **[1504.00s - 1513.00s]** Proper way regular manner so that everyone knows like no need to go and ask the person what happened to this or something like that. So
+- **[1514.00s - 1526.00s]** If everyone keep it in mind, it will be useful for from the top management to everyone. It is useful. And so that is the one point I want to say and
+- **[1531.00s - 1532.00s]** Yeah.
+- **[1535.00s - 1536.00s]** That's all I think
+- **[1556.00s - 1562.00s]** Yeah, hope I answered your questions and yeah, have a nice evening.
+- **[1562.00s - 1565.00s]** Thank you. Have a nice day. Bye.

@@ -1,0 +1,169 @@
+# Master Thesis Interview Transcript: Participant P05
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P05
+- **Role:** Full-Stack Software Engineer
+- **Experience:** 5+ years in full-stack development & microservice debugging
+- **Industry Domain:** Cloud-Native Platforms, Microservices, VPN Infrastructure
+- **Primary Tooling:** Docker, CI/CD, Jira, GitHub, Prometheus
+- **Interview Date:** 2026-08-17
+- **Total Timestamped Utterances:** 153 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 008.24s]** Hi [Participant P05], thank you for joining us today in the meeting. Like my name is [Interviewer], I'm
+- **[008.24s - 013.84s]** pursuing my Masters in Software Engineering at Blaking Institute of Technology. I have
+- **[013.84s - 019.00s]** one more teammate along with me doing this thesis, like his name is [Co-Researcher], actually he
+- **[019.00s - 025.72s]** was sick today. So on behalf of him also I'm taking this session today. Like my thesis
+- **[025.72s - 032.36s]** focuses on decision making under uncertainty in bug triage and defect prioritization.
+- **[033.08s - 038.52s]** Through this interview I'm trying to understand how software professionals make decisions
+- **[038.52s - 044.44s]** when dealing with bugs especially when there is incomplete information collecting priorities
+- **[044.44s - 051.72s]** or uncertainty about impact on field effect. Like this interview will take 20 to 25 minutes,
+- **[051.88s - 060.20s]** there is no right or wrong answers. I am mainly interested in your experience and perspective in
+- **[060.20s - 067.96s]** the software development like with your permission I will take a few notes in this interview so I can
+- **[067.96s - 074.12s]** analyze the information later for my thesis purpose. Like once again thank you for your time
+- **[074.12s - 081.96s]** to joining us today. Thank you [Interviewer] for inviting me into this session. I think this
+- **[081.96s - 087.32s]** like a very interesting one and for me this is a great experience I would like to think because
+- **[089.08s - 094.52s]** when I got invited from you I thought it's something interesting one I would like to
+- **[094.52s - 100.76s]** participate in your thesis like questionnaires or things because this caught me like
+- **[101.32s - 106.28s]** it's a great experience for me I would like to remember all these things because every day
+- **[106.92s - 112.44s]** I work as a software full stack developer I thought the same questions I mean same experience
+- **[112.44s - 119.24s]** I would like to get because of the bugs or how we will solve the problems and everything I mean
+- **[119.24s - 126.04s]** this is exactly what I am doing in my daily life. I would like to get more into this I mean when
+- **[126.04s - 130.44s]** I am happy to answer you all the questions whatever the questions you would ask in this session.
+- **[130.92s - 137.56s]** Thank you once again for inviting this and I am currently working in [VPN & Cloud Security Service] it's a
+- **[137.56s - 144.52s]** full stack developer. Okay thank you. Okay thank you for the information in the introduction of
+- **[144.52s - 153.88s]** yourself like can you start the question in scenario? Yeah sure. Could you briefly describe
+- **[153.88s - 160.36s]** your current role and roughly how long have you been working and how long have you been involved
+- **[160.36s - 169.40s]** in this bug triage and defect prioritization in your work? I'm currently working as a full stack
+- **[169.40s - 178.20s]** developer and with experience with across backend, frontend, cloud, docker and CI CD environments
+- **[178.20s - 185.24s]** and I have four years of experience in my all recent my roles. I have worked on production
+- **[185.32s - 192.44s]** software where identifying experience as hands-on engineering involvement in defect
+- **[192.44s - 198.52s]** investigation and prioritizing rather than a dedicated question on server role. I usually
+- **[198.52s - 206.44s]** look at the impact of an issue how reproducible it is who is affected and how urgently it's
+- **[206.44s - 215.40s]** need to attention. Okay like what does your team and project context look like? Like what are the
+- **[215.40s - 223.32s]** T what is your team size and what type of software do you build and issues tracking tools you use
+- **[223.32s - 232.52s]** like Jira, Bugzilla, GitHub issues etc like that. Yeah like I have worked with different teams
+- **[232.52s - 238.60s]** in software because I worked three companies. In three companies I worked in small teams,
+- **[238.60s - 245.24s]** bigger teams and medium teams and few like in recent company I am the one leading that team
+- **[245.24s - 251.80s]** and while building under connected and cloud-based products like we are using like we use mostly
+- **[251.80s - 259.00s]** GitHub actions and my recent work involved as I would have been involved in completely entire
+- **[259.00s - 266.20s]** application development with focusing on APIs, back-end, docker-based deployments and CI CD
+- **[266.20s - 273.64s]** involvements. Depending on the project issues can involve the like in different scenarios like one
+- **[273.64s - 279.00s]** time it should be in front-end and one time it should be involved in back-ends and then
+- **[279.00s - 285.48s]** infrastructure or sometimes it should be different with the integrations as well and it's always
+- **[285.48s - 292.52s]** tough to tell but it's I mean on the exact team such a can it depends on vary because if it's a
+- **[292.52s - 297.64s]** small team it should be a little different if it's a big team I mean it's if you have a lot of people
+- **[297.64s - 303.00s]** if you get something into the trouble I mean if you have more people then we will investigate
+- **[303.00s - 308.52s]** more people on different things then we will find the bug I mean easily I mean it's not easy but
+- **[308.52s - 316.04s]** it's a more people then more people think widely and then easy to easy to I mean finalize the bug and
+- **[316.04s - 323.08s]** then reproduce the issue because we're able to have more people and then it's easy to reproduce it
+- **[323.08s - 331.80s]** I mean and also work on the problems tremendously and then solving the problem while it's
+- **[331.80s - 340.60s]** it should be a priority okay okay thank you could you walk me through like what typical bug sessions
+- **[340.60s - 348.84s]** look like for you from the moment a new report arrives to you when a decision is made about it
+- **[348.84s - 357.64s]** like what decision is made about it like first I would like to understand the reported behavior
+- **[357.64s - 364.44s]** and then expected behavior because when we deploy something on the production first what are the
+- **[364.44s - 372.84s]** expected behavior it matches as reported behavior then that should be fine like if there is a issue
+- **[372.84s - 379.32s]** can be reproduced and then collected useful information such as logs error messages
+- **[379.32s - 386.36s]** environment details and steps that lead to the problem while if it's not as expected behavior
+- **[386.36s - 394.52s]** then we also check whether it's already known or it's duplicated or I assume the impact is how many
+- **[394.52s - 400.76s]** users has been impacted like how much is the priority how much is the important whether there
+- **[400.76s - 407.56s]** is a workaround and then whether it blocks important functionality based on the information I would
+- **[407.56s - 414.36s]** like to discuss appropriate priority with the relevant team members like assign ownership and
+- **[414.36s - 420.68s]** then decide whether it should be fixed immediately or we can fix it later while it's already in the
+- **[420.68s - 426.76s]** production or maybe we need to investigate further I mean we need to roll back the kind version to
+- **[426.76s - 433.16s]** the previous version like if it's a very critical issue then we would like to if it will affect a
+- **[433.16s - 438.68s]** lot of real-time users then we would like to roll back the session and then investigate further
+- **[438.68s - 444.92s]** if it's a minor issue it can be solved and we know already then we would like to proceed the
+- **[444.92s - 447.24s]** production new release and then as expected
+- **[454.60s - 461.88s]** can you think a specific recent situation where you received a bug report that was incomplete
+- **[462.44s - 469.56s]** or ambiguous or impossible to reproduce like what happened in that particular situation and what are
+- **[469.56s - 474.12s]** the information was missing and what have you done the next step in the next step
+- **[475.72s - 482.20s]** actually this was a good question and I have a good example from a full-stack development
+- **[482.20s - 489.88s]** environment is an issue where the reported behavior cannot initially be reproduced consistently
+- **[490.84s - 499.16s]** if we cannot produce the same bug in that situation I would avoid immediately assume that
+- **[499.16s - 506.92s]** reports is invalid I would first identify what information is missing in our end such as
+- **[506.92s - 515.00s]** application version or environment or user's action sequence or API responses logs or is there like how
+- **[515.00s - 521.72s]** much time is taking to load the information fetch the information from the APIs I would then try to
+- **[521.72s - 528.28s]** reproduce it under different conditions and then compare the results like if I still cannot
+- **[528.28s - 535.72s]** reproduce it I would document that what I have tested and asked for targeted additional information
+- **[535.72s - 547.40s]** rather than simply closing the issue okay whenever bug report lacks clear reproduction steps or
+- **[547.40s - 553.24s]** environmental details what do you typically do first could you walk me through the last
+- **[553.24s - 561.88s]** time what happened to you my first step is to identify the smallest amount of missing information
+- **[562.36s - 570.60s]** that could explain the difference I would ask for the exact steps expected versus actual behavior
+- **[570.60s - 576.52s]** environment on which version we are currently user and then what are the version is it matching the
+- **[576.52s - 584.04s]** version or not and then any relevant logs or any screenshots or the steps of that behavior
+- **[584.04s - 590.12s]** at the same time if I have access to the system I try to reproduce the itself
+- **[590.84s - 596.20s]** and then this is more efficient than asking for a large amount of information without knowing what
+- **[596.20s - 602.28s]** is actually missing like when you are all the persons we can produce the issue like while
+- **[602.28s - 608.76s]** testing in our end with myself then I would like to clearly know the problem where it's happened
+- **[608.76s - 615.96s]** on how to reproduce it then it this will help us a lot to find the actual scenario of the situation
+- **[615.96s - 626.28s]** like expected behavior versus actual behavior yeah how do you decide like what priority to assign
+- **[626.28s - 636.84s]** a bug when its severity is unclear or contexted I separate technical severity from business priority
+- **[636.84s - 644.60s]** I look at the actual impact first whether the system is unavailable data can be lost or corrupted
+- **[645.24s - 652.68s]** a major function is broken or the issue is relatively minor then I consider urgency
+- **[652.68s - 660.84s]** number of affected users whether a work around exits dependency on release timing if the
+- **[660.84s - 667.96s]** severity is contested I prefer to make the reasoning reasoning explicit and discuss it with
+- **[667.96s - 674.28s]** relevant technical and product stakeholders if the issue is also cannot be reproduced I would
+- **[674.28s - 681.24s]** normally treat that uncertainty as a reason to investigate further rather than automatically
+- **[681.24s - 687.00s]** assigning to the high priority based on the what we have information then I would like to
+- **[687.08s - 696.76s]** go ahead with the further steps okay over time like what thumb rules or shortcuts have you
+- **[696.76s - 704.04s]** developed that you rely on when information in a bug report is missing or unclear could you give
+- **[704.04s - 709.56s]** me an example of a recent case where you used one of these shortcuts or thumb rules
+- **[709.80s - 719.40s]** my main role is to avoid making a strong decisions from weak evidence okay I normally ask three
+- **[719.40s - 726.52s]** questions can I reproduce it what is the impact if it is real and what information would reduce
+- **[726.52s - 734.76s]** the uncertainty faster I also look for patterns in logs recent deployments API changes and
+- **[734.84s - 742.68s]** environment differences if an issue is difficult to reproduce but potentially high impact I would not
+- **[742.68s - 750.60s]** ignore it just because reproduction is difficult I would document the uncertainty and gather more
+- **[750.60s - 760.44s]** evidence could you describe a specific situation where an upcoming release deadline is there for
+- **[760.84s - 768.20s]** you and your team like what was the workload pressure change how you handed a bug report
+- **[768.20s - 778.36s]** that you are uncertain about it like when a release deadline is close I would not simply
+- **[778.36s - 785.32s]** lower the quality bar instead I would focus investigation on the risks that could affect
+- **[785.32s - 794.76s]** the release for an uncertain issue I would determine whether it affects a particular user flow
+- **[795.56s - 801.00s]** whether there is a workaround and whether we can isolate the risk through additional testing
+- **[801.00s - 807.96s]** or a control deployment lower impact issues can sometimes to be scheduled later but that
+- **[807.96s - 814.04s]** should be a consistent decision based on risk rather than only on time pressure
+- **[817.88s - 826.12s]** how do you manage an expectation or the business priority factor into your trials decision
+- **[826.12s - 835.80s]** when you are uncertain about bugs severity or its reproducibility business priorities are relevant
+- **[835.80s - 843.00s]** because technical severity does not always determine urgency for example an issue affecting
+- **[843.00s - 850.20s]** a critical customer workflow can become more urgent close to a release or important business event
+- **[850.76s - 856.68s]** at the same time I would communicate the technical risk clearly rather than changing
+- **[856.68s - 863.40s]** assessment simply because someone wants a faster release my preferred approach is to present the
+- **[863.40s - 869.64s]** evidence explain the uncertainty on possible consequences and then make the priority decisions
+- **[869.64s - 881.08s]** collaboratively okay okay uh how does your workload typically affect the amount of time
+- **[881.08s - 889.96s]** you spend in investigating a bug before making a decision workload affects how deeply I can
+- **[890.04s - 899.40s]** investigate every issue when time is limited I first investigate focus on impact potentially
+- **[899.40s - 908.20s]** blocking issues for lower impact issues I may do a shorter initial investigation document what is
+- **[908.20s - 915.80s]** known and what is unknown and return to it when capacity is available the important thing is to
+- **[915.80s - 923.40s]** avoid letting workload pressure make the process invisible I would record what was checked what
+- **[923.40s - 934.84s]** remains uncertain and why the issue was deferred okay based on your experience like what do you
+- **[934.84s - 943.80s]** think would most important to process or handle uncertain or incomplete bug reports whether in
+- **[943.80s - 956.20s]** terms of tooling process or key practice like that yeah the biggest improvement would be making bug
+- **[956.20s - 964.04s]** reports more structural and evidence-based a good report should capture expected behavior actual
+- **[964.04s - 972.76s]** behavior reproduction steps environment or versions relevant logs on the impact tooling can help by
+- **[972.76s - 979.24s]** automatically attaching useful technical information by the team habits or equally important
+- **[979.24s - 987.24s]** I also think it helps to have a clear process for making an issue as needing more information
+- **[987.24s - 994.44s]** instead of treating every non-reproducible issues as either a confirmed bug or a closer issue
+- **[994.44s - 1005.80s]** let's move on to the last question like is there anything else about how you make
+- **[1006.44s - 1014.60s]** a cryogenization under uncertainty or something else important to you that we have not discussed
+- **[1014.60s - 1023.80s]** in this interview session like is there anything other out of these questions yeah one important
+- **[1023.80s - 1032.04s]** point is that uncertainty itself should be visible in the decision a bug does not always
+- **[1032.04s - 1039.08s]** have to be completely understood before the team can decide what to do sometimes the correct
+- **[1039.08s - 1045.88s]** decision is to investigate further sometimes is to mitigate the risk and sometimes it is reasonable
+- **[1045.88s - 1052.92s]** to defer the issue what matters is that decision is based on the available evidence the potential
+- **[1052.92s - 1057.80s]** impact is understood and the team knows what information would change the decision
+- **[1061.24s - 1067.56s]** like that's all for today's session like we are very happy once again to have you in this
+- **[1067.56s - 1075.96s]** interview session today like out of these what is any other else questions you would like to
+- **[1076.52s - 1080.84s]** share with us or any other your personal experiences you would like to share with us
+- **[1080.84s - 1090.44s]** I think in this interview I got like some great questions you have asked me to like how I will
+- **[1090.44s - 1098.28s]** handle in a real life experience in my daily office or company related like in my work environment how
+- **[1098.28s - 1103.72s]** I can be do like what we will do with the months how we will prioritize the works as
+- **[1103.72s - 1109.72s]** well if you saw the right questions I would love to be answerable all the questions as you asked
+- **[1110.28s - 1116.44s]** and I would like to make great session today we both have a great questions on answers we both have
+- **[1116.44s - 1123.56s]** a I mean I think you you got some clear understanding of what what happens exactly
+- **[1125.00s - 1131.56s]** I mean it's a great session for me and I would like to you as well it's a great session yeah
+- **[1131.56s - 1143.00s]** exactly yeah thank you very much and also we have noted some key points from your responses
+- **[1144.52s - 1151.40s]** thank you thank you very much for today have a nice day thank you have a nice day bye

@@ -1,0 +1,139 @@
+# Master Thesis Interview Transcript: Participant P01
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P01
+- **Role:** AI Product Architect
+- **Experience:** 4+ years in enterprise software & AI solution architecture
+- **Industry Domain:** Enterprise AI Solutions & Telecommunications Data Infrastructure
+- **Primary Tooling:** AWS Athena, Jira, GitHub Issues, PowerBI
+- **Interview Date:** 2026-08-11
+- **Total Timestamped Utterances:** 123 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 004.00s]** Good evening, [Participant P01].
+- **[004.00s - 006.00s]** Hi, my name is [Interviewer].
+- **[006.00s - 012.00s]** I'm currently studying Masters in BTH as a software engineering.
+- **[012.00s - 023.00s]** Today I'm going to conduct an interview on the part of my Master thesis, which focuses on decision-making under uncertainty in bug triage and defect prioritization.
+- **[023.00s - 026.00s]** This interview may take like 20 to 25 minutes.
+- **[026.00s - 041.00s]** I will ask you a few questions related to your work experience in the software development bug triage and how you make the decisions while working and deal with the bug triage and the uncertainties in your job life.
+- **[042.00s - 054.00s]** Before we start, I would like to ask you that I may record this session for the quality and the accurate result purposes.
+- **[054.00s - 058.00s]** Are you willing to accept this record?
+- **[058.00s - 062.00s]** Yeah, you can record the audio. No worries.
+- **[063.00s - 065.00s]** Okay, thank you.
+- **[065.00s - 068.00s]** Like I start with the first question.
+- **[068.00s - 078.00s]** Could you briefly describe your role and roughly what you have been done this job life so far?
+- **[078.00s - 079.00s]** Sure, [Interviewer].
+- **[079.00s - 084.00s]** For status, I would say I'm currently working with [Telecommunications Corp A] as an AI product architect.
+- **[084.00s - 099.00s]** My work is mainly related to AI related stuff like the products and the solutions, which includes looking into the data components applications and how the infrastructure and the security configuration fit together for an entire [Telecommunications Corp A] enterprise view.
+- **[099.00s - 110.00s]** And in my role, I am involved in understanding the technical issues as a same way potential impact on the product when an issue is related to the data or an AI component.
+- **[111.00s - 117.00s]** My involvement in bug triage is therefore more from an architectural way and the technical perspectives.
+- **[117.00s - 137.00s]** I look at available information, understand the potential impacts and help determine what is needed to be investigated or to be prioritized in the further way or the model behavior need to be changed so that to make sure the bug is identified.
+- **[137.00s - 165.00s]** Okay, like moving to the next question, like what does your team and the project, would you please tell you about your team size, like what type of software you built in the [Telecommunications Corp A] and what issues have you tracked, like what dashboard you have used it like the Jira, Bugzilla or GitHub issues like what you have used it.
+- **[165.00s - 175.00s]** Okay, so, okay, I work in an environment where AI and software components are integrated together for enlarged product and systems.
+- **[175.00s - 185.00s]** So this means that issues can be originated from different areas such as data pipelines, APIs and model infrastructures or the application components.
+- **[185.00s - 191.00s]** Because of this, understanding an issue often requires looking at the information from multiple sources.
+- **[191.00s - 208.00s]** So we usually collect all the data and then put them in an Athena view of AWS and then we collect every bug related to it or we had an internal AI system which is trying to put on the bugs and it is used for the bug understanding at the primary levels.
+- **[208.00s - 228.00s]** And as you mentioned, we use GitHub issues, Jira tickets, as well as PowerBI dashboards to see the analytics on how many bugs were identified in the past week or how many were rectified and how the process is going through.
+- **[228.00s - 249.00s]** Okay, thank you. Like, moving to the next question, like, could you walk me through what typical bugs like you look in the working projects and what reports you have arrived on what the decision you have took to solve the bug triage.
+- **[250.00s - 252.00s]** Could you please tell me about that?
+- **[252.00s - 269.00s]** Yeah, sure. So whenever let's think, suppose we have a new issue arrive, I first try to understand what the reported problem is actually, is it whether there is enough information on it or not, or the problem need to be investigated further.
+- **[269.00s - 288.00s]** For a data or AI related issue, I normally look into the things such as input data, expected outputs, actual logs and the API and I actually look into the timestamps and the data processing steps as well in order to see anything related to the annual mental issue.
+- **[288.00s - 299.00s]** If it is the bug is very new, so we try to go back to the previous versions to see whether the bug is coming from the previous versions or it is for the new version.
+- **[299.00s - 315.00s]** So, and then based on, and then we go to the next steps to identify the problem where it is coming. For example, it could be data quality problem, or, for example, it could be anything missing in the pipeline or anything from the API key or the tokens can be consumed for an affair is many elements,
+- **[315.00s - 326.00s]** or the model related problems or an integration issue. So these are the very common issues what we face and data delives. So after looking how the impact and from where the impact is coming.
+- **[326.00s - 340.00s]** So if the effect is for the many users, so we make it as a high prioritized bug and then we make sure that it is available and every user is cleared with the bug.
+- **[340.00s - 359.00s]** If there is enough information, so the book is what I also use if there has enough information to understand the bug. If I don't have enough information, then I would rather collect more evidence before making any final decisions towards how the bug need to be identified and how the bug process need to be done.
+- **[359.00s - 362.00s]** So instead of making any assumption towards the bug.
+- **[363.00s - 364.00s]** Okay. Yeah.
+- **[365.00s - 388.00s]** Like, can you think of a specific recent situation where you received a bug report that was incomplete by your team, like any ambiguous like the severity of the bug case to produce like what happened in the particular situation, like what information was report missing in the report.
+- **[388.00s - 392.00s]** And what did you do the next step.
+- **[392.00s - 401.00s]** Okay. So, as, as I mentioned in the previous step, if there is no enough information, we usually go.
+- **[401.00s - 403.00s]** Yeah.
+- **[403.00s - 427.00s]** Recently I encountered a situation is when we don't have enough information on the related bug. And so we, we go back to the initial initial step and try to execute again in order to see the bug where it is coming in order to track down, we will have usual checkpoints and entire data and in the core and
+- **[427.00s - 428.00s]** the data.
+- **[428.00s - 447.00s]** Because the report might contain the exact input data or it might contain the timestamp model system version, it might not contain any of those things. So, if that case is taking a step forward in order to understand about would be an impossible case because we don't have any kind of such inputs and that situation.
+- **[447.00s - 463.00s]** So, the first step is to identify what information is missing. And I would try to obtain the original input, right, the relevant logs or the recent time stabs or anything available output or any, any error information which are stored in the previous space.
+- **[463.00s - 475.00s]** And sometimes the issue cannot be reproduced within the application because the underlying data or the system state has changed or, for example, we have an attendee view, which runs for every 24 hours.
+- **[476.00s - 487.00s]** If we want to see any changes or refreshes, we need to wait 24 hours in order to reflect that back. So, in that cases, it is very highly impossible for us to reproduce the issue immediately.
+- **[487.00s - 500.00s]** So, in such cases, we usually document everything and like we usually document the uncertain and investigate them and we will wait for the next 24 hours if the book is not highly prioritized.
+- **[500.00s - 512.00s]** So, when the book is very highly prioritized, we make like we go back to the ground from the root and we start understanding where can be the test monitoring can be done or the configuration can be done.
+- **[512.00s - 518.00s]** And we further take the steps based on the number of people are impacting from that.
+- **[519.00s - 532.00s]** Yeah, like when a bug report has a lack of reproduction sets or environmental detail, what do you typically do at the first stage?
+- **[534.00s - 546.00s]** Yeah, so if it is not reproducible and it doesn't have any environmental details, typically it might at least have the minimum information that need to be investigated.
+- **[547.00s - 556.00s]** So, first I will look into the normal data and then our example, I go back and understand the system and I can see how the system can produce the data.
+- **[556.00s - 567.00s]** So, I can see the what version we are using in the log books. If possible, I would also compare this problematic situation with the already existing situations.
+- **[567.00s - 584.00s]** So, maybe you go back to see the previous logs or the previous errors which might we might get it. So, if possible, I would compare that and this comparison sometimes helps to understand whether the issues related to a particular type of component or the solution in the entire AI pipeline.
+- **[584.00s - 595.00s]** If not, specific processing need to be done. So, I would avoid immediate actions or concluding immediately that doesn't belong to AI model or it belongs to AI model.
+- **[595.00s - 606.00s]** I would first rather start checking the data and then understand the output, what is the difference it is making from previous setup output to the this setup output and what is the recent change we made.
+- **[606.00s - 618.00s]** And then based on that change, I start examining the thing because it is not reproducible and we don't have any environmental details. So, it's a little bit hard to understand, but we can do it.
+- **[619.00s - 620.00s]** Okay. Yeah.
+- **[620.00s - 639.00s]** Like, how do you decide what priority to assign a bug when its severity is unclear or context-based? Could you describe a specific bug where you had to make that call? Does it change anything if the bug also cannot be reproduced?
+- **[640.00s - 661.00s]** Yeah, when severity is unclear, I had to separate the technical uncertainty from the potential impact. So, if the potential impact is very low, if only my system is affecting or my group like two or three people, then I would consider it in the low priority or the low severity, but the potential impact is very high.
+- **[662.00s - 671.00s]** Then it might be considered as the highest severity, but first I separate both of them, technical uncertainty and the potential impact.
+- **[671.00s - 686.00s]** For example, even if I'm not completely certain about the root cause, I can still assess whether the issue causes effect customer or important functionality or the data quality or the system reliability or the trust in the AI or maybe the output quality.
+- **[687.00s - 700.00s]** For a data related issue, I would consider how widespread the problem is, whether incorrect data is being propagated to downstream systems, whether the problem is reproducible and whether it affects the important decision making.
+- **[700.00s - 711.00s]** Even though it can affect only one people, but if it is making highest severity, then that potential impact need to be high and it consider as high as severity.
+- **[711.00s - 724.00s]** I would generally recommend further investigation even if the root cause is not yet confirmed. So, I would not base priority or I would not base the technical uncertainty on understanding how the bug can be solved.
+- **[724.00s - 729.00s]** But I would suggest both need to be done.
+- **[730.00s - 742.00s]** Okay. Like what rules of the thumb or the mental shortcuts you have developed that rely on the information of a bug report or an unclear bug report?
+- **[744.00s - 756.00s]** One dumb rule is I first use to establish whether the issue is actually related to AI component or whether it could be caused by surrounding data or software pipelines.
+- **[756.00s - 769.00s]** Other is to look for the evidence before making any assumptions. For example, if it is an AI output incorrect, I would check input data or processing steps or any temperature related to it or any LLM prompting, etc.
+- **[769.00s - 778.00s]** I also try to distinguish between a problem that affects one individual case and the system problem because affecting a large portion of data of users.
+- **[779.00s - 791.00s]** Finally, when there is a significant uncertainty and can understand why it is, I prefer to document what is known and what is unknown and what the evidences need to be done and what can be done in the next.
+- **[792.00s - 796.00s]** That makes the decision easier actually for the rest of the team to understand.
+- **[797.00s - 798.00s]** Okay. Thank you very much.
+- **[799.00s - 813.00s]** Can you describe a specific situation where an upcoming release deadline or a workload pressure changes how you handled a bug report that you were uncertain about?
+- **[814.00s - 822.00s]** May release driven and irrelevant. There can be situations where an issue needs to be assessed with unlimited amount of time.
+- **[823.00s - 831.00s]** For an uncertain data or AI issues, I would normally focus first on determining whether it represents a release blocking risk or not.
+- **[832.00s - 844.00s]** If it is blocking the risk, then it is considered as high priority and then first it look into the data and how potential it is affecting and understanding any incorrect information.
+- **[845.00s - 857.00s]** If it is not affecting the release and if it is not blocking and I put a checkpoint and coming to the small number of use cases and then reasonable work around.
+- **[858.00s - 871.00s]** The team may decide to document and investigate it further. Maybe after the release because it is not affecting the release of the product.
+- **[872.00s - 880.00s]** The important thing for me is to make the trade-off explicit rather than simply ignoring the issues because of the deadline.
+- **[881.00s - 882.00s]** Okay. Thank you.
+- **[883.00s - 901.00s]** Like how do you manage the expectations or business prioritization factors into your trials decisions when you have an uncertain about the bug severity? Could you recall a specific instance what happened?
+- **[902.00s - 913.00s]** Yeah, I can tell you business priorities are actually important because technical severity does not directly affect into the product impact.
+- **[914.00s - 922.00s]** For example, a relatively small data issue could be important if it affect a feature that is currently critical for the customer in the upcoming release.
+- **[922.00s - 934.00s]** So when there is uncertainty, I try to provide the technical assistance and explain the possible consequences rather than making the decision purely based on business pressure.
+- **[935.00s - 950.00s]** The sell-off team and management to understand the trade-off, they can then decide whether the issue should be fixed immediately or investigation needed further and any temporary solution can be accepted.
+- **[951.00s - 952.00s]** As we know the limitations.
+- **[953.00s - 954.00s]** Okay.
+- **[955.00s - 972.00s]** Like how does your current workload typically affect the amount of time you spend on investigating the bug before making a decision? Can you describe a specific recent case where your workload shaped the decision of a bug?
+- **[973.00s - 979.00s]** A workload naturally affects how deeply an issue can be investigated at a particular point of time.
+- **[980.00s - 988.00s]** My question is like how much time was taken to rectify the bug in the workload?
+- **[989.00s - 998.00s]** Yeah, that completely depends upon how particular, how much amount of time we have to rectify the bug.
+- **[999.00s - 1013.00s]** If there is a release tomorrow and then the bug is affecting everybody and it is blocking the release, then we might prioritize it and do a temporary solution within a few hours and then redo the system and then release it.
+- **[1014.00s - 1024.00s]** If the bug is not affecting the release and it is not as valuable data, like it is not a valuable feature for the customer, then we take it slow.
+- **[1025.00s - 1032.00s]** If the issue impact is higher and the deadline is very close, then we work very faster.
+- **[1033.00s - 1042.00s]** If the issue impact is higher, we have a deadline little bit away, then we investigate further deeper and come up with a four-minute solution rather than giving it a temporary solution.
+- **[1043.00s - 1047.00s]** So it is completely dependent upon the deadline and the impact of the bug.
+- **[1048.00s - 1049.00s]** In the bug.
+- **[1050.00s - 1051.00s]** Yeah.
+- **[1052.00s - 1072.00s]** One more question I would like to ask, based on your experience, what do you think you would improve the handling of the uncertainty or the incomplete bug reports, whether in terms of tooling or the process or team practice or other?
+- **[1073.00s - 1084.00s]** I think a better structured information or maybe what kind of columns need to be filled out when we have a bug. So that would make a significant difference in understanding a bug.
+- **[1085.00s - 1099.00s]** So sometimes we have a report which is very incomplete, we will just have a bug. What is that? The system is not working. We don't have the time, we don't have what is the major impacts or what are the recent things you have done in the system? Nothing.
+- **[1099.00s - 1113.00s]** In that case, it is very unpredictable for us to understand how can we do. So for an being inside of AI and understanding the bug, it could automatically capture a lot of things like we use AI as a part of it.
+- **[1114.00s - 1120.00s]** It could capture a lot of things such as time input, output and relevant examples anymore. Any system examples which are already there.
+- **[1121.00s - 1140.00s]** Another useful improvement would be better observability across the data and the AI patterns. If we can trace output back to the relevant data, processing stage and AI components, it becomes much easier to determine whether a problem is originated from AI systems or it is basically there.
+- **[1141.00s - 1153.00s]** I also think to have a clear guidance on the severity and how the impact and the priority should be there in order to make the more consistent decisions when the information is incomplete.
+- **[1153.00s - 1167.00s]** We are going to move into the last question. Is there anything else about how you make the bug triage decisions under the uncertainty?
+- **[1168.00s - 1179.00s]** Something important to you that we have not had a chance, maybe we missed in the previous questions, what is the chance of having the bug report?
+- **[1180.00s - 1183.00s]** Yeah, okay. So based on of...
+- **[1184.00s - 1186.00s]** Yeah, that may be something important.
+- **[1187.00s - 1202.00s]** Yeah, I enlisted that. So one thing I would raise a point or I would tell as a suggestion is not every bug, not every uncertain situation can be completely removed before making a decision.
+- **[1203.00s - 1216.00s]** In AI and driven related systems, there can be uncertainty about different experts and we think those experts are the main reason for the bug, but there can be other different root cause.
+- **[1217.00s - 1225.00s]** Even though after correcting everything, we might have a temporary resolution, but we can't understand the root cause for the issue.
+- **[1226.00s - 1236.00s]** For me, in this case, the important thing is to make that uncertainty visible and make the decision based on that, even based on the evidence available at that point.
+- **[1237.00s - 1244.00s]** So I would also distinguish between identifying the root cause and defining how urgent and if you need to be handled.
+- **[1245.00s - 1254.00s]** We do not always need to know the exact root cause before deciding that is an issue has an high potential impact and requires attention because most of the cases deadline matters first.
+- **[1255.00s - 1263.00s]** We go with the temporary resolution and then if it is okay doing doing good, then we can go back to the previous versions and then understand what the root cause can be.
+- **[1264.00s - 1274.00s]** So I would say directly proportionality between the deadlines and the impact of the impact of the bug would be one of the good thing.
+- **[1274.00s - 1290.00s]** Overall, I think good triage is about combining technical evidence and also having good report and the potential impact and also product context rather than just relying on a single factor or a single evidence.
+- **[1291.00s - 1292.00s]** Okay. Yeah.
+- **[1293.00s - 1295.00s]** Thank you. Thank you. That's all for today.
+- **[1295.00s - 1307.00s]** Thank you as for joining the wonderful meeting. It helped us a lot. We gather a lot of information and very key important points from your experience.
+- **[1308.00s - 1313.00s]** We shared a lot of things today. Thank you. Have a great day. Bye-bye.
+- **[1314.00s - 1315.00s]** Bye-bye.

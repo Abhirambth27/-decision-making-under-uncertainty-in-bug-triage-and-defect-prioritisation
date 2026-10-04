@@ -1,0 +1,141 @@
+# Master Thesis Interview Transcript: Participant P09
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P09
+- **Role:** AI & Test Automation Engineer
+- **Experience:** 2+ years in automation workflows & AI-driven testing
+- **Industry Domain:** AI-Driven Automations & Agentic Workflow Tools
+- **Primary Tooling:** Workflow Automation Platforms, Python, Jira
+- **Interview Date:** 2026-08-25
+- **Total Timestamped Utterances:** 125 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 009.72s]** Hi, [Participant P09], like, hi, [Co-Researcher], like, thank you very much for taking time and joining us with
+- **[009.72s - 015.80s]** today's interview. Like, my name is [Interviewer] and my team name is [Co-Researcher]. Like, we are currently
+- **[015.80s - 022.16s]** pursuing our masters in software engineering at the Tech Institute of Technology, Kalskorna
+- **[022.16s - 028.76s]** student. Like, my thesis focuses on decision making under uncertainty in bug triage and
+- **[028.76s - 033.40s]** defect prioritization. Like, through this interview, I'm trying to understand how software
+- **[033.40s - 039.84s]** professionals make decisions when dealing with bugs especially, when there is an incomplete
+- **[039.84s - 048.96s]** information, conflict priorities or uncertainty about the impact of a defect. And this interview
+- **[048.96s - 056.20s]** will take 20 to 25 minutes. Like, there is no right or wrong answer and I'm mainly interested
+- **[056.20s - 063.76s]** in your experience and perspectives with this bug triage and defect prioritization thing.
+- **[063.76s - 069.16s]** With your permission, I will take a few notes of this interview, like, to analysis the information
+- **[069.16s - 076.68s]** later for my thesis purpose. Yep. Once again, yeah. Once again, thank you for your time.
+- **[076.68s - 080.16s]** Thank you. Thank you.
+- **[080.16s - 086.96s]** Yeah, let's start with the first question. Like, could you briefly describe your current
+- **[086.96s - 093.04s]** role and roughly how long you have been involved in this bug triage and defect prioritization
+- **[093.04s - 095.76s]** in your workspace?
+- **[095.76s - 101.36s]** So I am an AI automation engineer. So basically, I build and maintain workflows and agent based
+- **[101.36s - 110.24s]** tools. So I've been doing this dealing with bugs about for an year now. So I just started
+- **[110.24s - 118.40s]** on a general call and then more recently, I'm specifically around AI driven automations.
+- **[118.40s - 125.88s]** So which honestly, we have pretty differently from your typical bug. And that is what I
+- **[125.88s - 126.88s]** do.
+- **[127.52s - 128.52s]** Okay.
+- **[130.40s - 134.72s]** Now, coming for the second question, could you tell me a little bit about your team and
+- **[134.72s - 139.68s]** the kind of project you are currently working on? I mean, like, how big is your team? What
+- **[139.68s - 144.16s]** kind of software do you deliver and what tools do you use to track bugs?
+- **[145.36s - 153.76s]** So my team is pretty small. So we are six engineers and a couple of QE and then one project manager.
+- **[153.76s - 159.12s]** So we build a mix of internal automation tools and some customer facing stuff.
+- **[160.72s - 169.44s]** Since I work at a jewelry brand. So, so I saw there's LLM doing summarization or classification
+- **[169.44s - 176.24s]** and etc. And everything runs through Jira. So black locks, prints, we have got all these through Jira.
+- **[176.24s - 177.24s]** Okay.
+- **[183.36s - 191.92s]** Could you walk me through like what typical bug tries sessions look like for you? And for a moment,
+- **[191.92s - 197.92s]** a new report arrives to you, like when you make a decision about what decisions you make about it.
+- **[197.92s - 206.80s]** Okay, so typically, a report comes into Jira, either from the support team or from a customer
+- **[206.80s - 215.20s]** facing team. And some like someone flags the bug or something is auto generated from an error
+- **[215.20s - 222.00s]** monitor. So it lands into needs column. First I do is just check, is there actually enough
+- **[222.00s - 229.36s]** information to walk with it like logs or an ID or a run stamp? If not, then I'll come in and ask
+- **[230.56s - 236.72s]** for that instead of trying to guess and then once I got enough, I tried to figure out roughly how
+- **[236.72s - 244.72s]** bad the priority of the bug is then label about the bug and then and then I start walking on it.
+- **[244.72s - 251.44s]** If that's one of those where nobody's sure we hold up and then we talk about in the weekly
+- **[251.92s - 252.32s]** meetings.
+- **[256.56s - 264.88s]** Thank you. Can you think of a recent time when you received a bug report that was incomplete,
+- **[264.88s - 270.56s]** unclear, difficult to reproduce? And how did you handle it?
+- **[270.88s - 273.20s]** Oh, yeah.
+- **[277.52s - 278.16s]** Right.
+- **[278.16s - 287.52s]** So the recent one was that a notification that the support flag was that a notification was sometimes
+- **[287.52s - 294.24s]** going out twice to one of our agents. And then we didn't have we didn't have it. So no run ID,
+- **[294.24s - 300.24s]** no run stamp didn't know which customer or which run it happened on. So the first thing is what we
+- **[300.32s - 306.56s]** did is we went back and asked, Hey, what was the rough time we check on and once I had pulled the
+- **[306.56s - 315.28s]** logs for that window, and then we turned it out. It was a race condition and then we tried it fixing
+- **[315.28s - 322.00s]** while a sync model call was finishing up late. Not something that happens every time only under
+- **[322.00s - 326.64s]** a specific timing. So which was the one messy bug we had to deal with.
+- **[331.20s - 336.32s]** Like when a bug report lacks reproduction steps or environmental details,
+- **[336.32s - 338.16s]** like what do you typically do first?
+- **[343.12s - 344.08s]** Yes, the second.
+- **[390.24s - 416.08s]** Okay.
+- **[416.08s - 417.76s]** Can you repeat your question again?
+- **[418.08s - 418.88s]** Yeah, sure.
+- **[420.88s - 427.60s]** Like when a bug report lacks clear reproduction steps or environmental details,
+- **[427.60s - 430.16s]** like what do you typically do first?
+- **[434.00s - 442.32s]** We first checked logs before even we tried to reproduce it. So other stuff logs, like pretty
+- **[443.28s - 447.76s]** heavily. So half of the time I can narrow it down just from the timestamps and trace
+- **[447.76s - 454.88s]** IDs without bugging anyone. If I don't need more from a reporter, I try not to just say,
+- **[454.88s - 459.36s]** can you reproduce this? I ask for something specific like account ID, run ID,
+- **[460.40s - 467.76s]** roughly when the last time was actually a workflow failing for one customer. And then I had
+- **[467.76s - 473.28s]** to get the account ID and cross reference it before the feature flag.
+- **[479.20s - 484.48s]** How do you decide what priority to assign to a bug when it's severe is unclear?
+- **[490.40s - 496.80s]** I think about blast radius, like how much this actually costs downstream rather than
+- **[496.80s - 504.40s]** how scary the report sounds. So there was one where an agent was occasionally putting support
+- **[504.40s - 511.76s]** tickets in the wrong queue. Nothing crashed, but people were split on whether that even mattered.
+- **[511.76s - 519.44s]** So we ended up calling it medium, mostly based on how it happened and how much manual rerouting
+- **[520.08s - 528.00s]** takes place. And if it's not reproducible, then I genuinely can't reproduce it. I won't call it
+- **[528.00s - 535.20s]** high priority just off the report alone, unless there's like an obvious evidence of
+- **[536.56s - 542.72s]** this case has to be high priority. And there should be impact for it.
+- **[542.72s - 553.68s]** Okay. Over the time, like in your workspace, like what thumb rules or shortcuts you have developed
+- **[554.80s - 558.72s]** on when the information in impact report is missing or unclear?
+- **[563.04s - 564.96s]** Like what shortcuts have you been dealt up with?
+- **[564.96s - 577.84s]** Okay. When the AI stuff is first we rule out randomness, like temperatures,
+- **[578.40s - 585.28s]** reprice timing before we assume it's a real logic bug because AI will obviously hallucinate more.
+- **[585.92s - 595.20s]** And if I can't get the same output twice of the twice, I just treat it as inter intermittent
+- **[595.20s - 604.00s]** and instrument. So rather than guessing a fix before before, but guessing usually waste more time.
+- **[604.00s - 612.32s]** So actually, like we had one last month where an agent returned the wrong value for a client and
+- **[612.40s - 620.00s]** it wasn't a bug in the code, but it was pulling a stale document. So the fix was really a data
+- **[620.00s - 631.12s]** freshness thing, not a logic thing. Okay. Can you tell me about a situation where you were
+- **[631.12s - 636.48s]** under a lot of time pressure, maybe because of an upcoming release and it's
+- **[636.48s - 639.84s]** affected and it affected it. How do you handle and construct?
+- **[643.84s - 650.08s]** Right before release, once we had this intermittent misfire in an automation,
+- **[650.88s - 657.36s]** normally that probably blocks the release, but given the deadline, we shipped it behind a feature
+- **[657.36s - 663.84s]** flag, downgraded it temporarily, and then we fixed it properly for the next print instead of
+- **[663.84s - 674.56s]** just holding down everything. Okay. Like how do you manage the expectations or the business
+- **[674.56s - 681.04s]** priority factors in your brokerage decision? Like when you are uncertain about the bug CVRT
+- **[681.84s - 688.24s]** or its reproducibility? You don't know what the CVRT of the bug, like what happened then?
+- **[689.20s - 698.80s]** Okay. So if it's a big account affected, it can get bumped up even if technically it looks the same
+- **[698.80s - 707.68s]** CVRT as something else. So my PM will flag that context and I just weigh it in. So I had one
+- **[707.68s - 714.16s]** very pretty minor classification error that got escalated purely because it was hitting a
+- **[714.72s - 726.80s]** key customer's SLA. How does your current workload typically affect the
+- **[726.80s - 731.04s]** amount of time you can spend investigating a bug before making additional?
+- **[736.80s - 741.68s]** When the sprint is packed, I'll just do like a 10 to 15 minute pass.
+- **[741.68s - 749.04s]** And if it's not obviously urgent, I just park it as needs more info or something like that,
+- **[749.04s - 756.40s]** rather than just diving it away. During a big rollout recently, our queue backed up pretty
+- **[756.40s - 764.16s]** badly and few of the ambitious ones just sat longer. So I would have liked it before I could
+- **[764.96s - 770.16s]** like that I could have actually looked properly at those bugs.
+- **[779.84s - 787.52s]** Based on your experience, what do you think would most important like the process of handling
+- **[787.52s - 795.28s]** uncertain or incomplete bug reports where in terms of tooling process or team practices?
+- **[798.96s - 806.48s]** Tooling wise, better observability for AI outputs would help a lot. It's just harder to root cause
+- **[806.48s - 814.16s]** a bad model output the same way you would debug normal code. I would love to see if Jira could
+- **[814.16s - 820.80s]** auto attach relevant logs or traces to a new ticket based on timestamp or run ID or
+- **[820.80s - 829.28s]** N maybe a standard reproducibility field. So it's like I'm not asking for three follow up questions
+- **[829.28s - 836.56s]** every time. So but honestly, process matters just as much as tooling. So right now,
+- **[836.56s - 844.88s]** if a bug is ambitious, then whoever picks it up decides unless it's a big deal. I think
+- **[845.60s - 851.28s]** a lightweight rule like tagged non reproducible twice automatically goes to weekly
+- **[852.00s - 859.84s]** sync instead of sitting with one person. So that will actually catch a lot of stuff that
+- **[859.84s - 861.52s]** currently fall through the cracks.
+- **[866.56s - 877.76s]** Yeah, going to the last question, like, is there anything else about how you make
+- **[877.76s - 885.44s]** bug tries decisions under uncertainty, like that something which is more important and we did not
+- **[886.08s - 888.32s]** had a chance to discuss in this interview session.
+- **[888.32s - 896.24s]** I guess I just would like to add
+- **[900.40s - 906.88s]** a lot of things, a lot of what looks like ambiguity in this, like the kind of bug
+- **[907.60s - 911.60s]** isn't really reporting a problem. It's just inherent.
+- **[912.24s - 920.08s]** These systems are probabilistic, so sometimes can be behaving correctly in a statistical sense,
+- **[920.08s - 929.44s]** and sometimes wrong enough to need fixing. So, so traditional bugs like kind of ones that we assume
+- **[929.44s - 936.88s]** is either reproducible or not. And the model does not fully hold up once there's an AI component
+- **[937.12s - 943.20s]** in the room. I think if you get more into it, that will be more worth it.
+- **[947.44s - 954.80s]** Thank you very much. We gathered a lot of information from you and
+- **[955.68s - 964.40s]** later we use this recording for the data analysis purpose. So once again, thank you for your time
+- **[964.40s - 971.12s]** joining with us today for this interview. You're welcome. Thank you. Thank you. Thank you.
+- **[972.00s - 983.12s]** Have a nice day. Yeah, thank you.

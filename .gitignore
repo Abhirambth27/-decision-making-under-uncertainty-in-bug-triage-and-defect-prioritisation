@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Raw Un-Anonymized Transcripts (GDPR Article 89 & Privacy Safeguard)
+raw/
+*_raw.txt
+
+# Audio Recordings (GDPR / Privacy Compliance)
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.flac
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

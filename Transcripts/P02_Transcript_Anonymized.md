@@ -1,0 +1,262 @@
+# Master Thesis Interview Transcript: Participant P02
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P02
+- **Role:** Backend Developer / Systems Engineer
+- **Experience:** 6+ years in backend development & telecom fault management
+- **Industry Domain:** Telecommunications Backend Services & Fault Analysis
+- **Primary Tooling:** Python, Jira, Test Analysis Suites, Git
+- **Interview Date:** 2026-08-13
+- **Total Timestamped Utterances:** 246 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 010.56s]** Hi [Participant P02], my name is [Interviewer] and I'm currently studying in Masters in Software Engineering
+- **[010.56s - 015.40s]** and Blekinge Institute of Technology. I'm conducting this interview as a part of my
+- **[015.40s - 021.64s]** master thesis, which focuses on decision making under uncertainty in bug triage and decision
+- **[021.64s - 029.80s]** prioritization. Like this interview will take 20 to 25 minutes. I would ask you if you
+- **[030.48s - 038.08s]** questions related to my thesis and a few related questions about your software development
+- **[038.08s - 044.16s]** experiences. And first thing, like I would like to record this section. Is it okay for
+- **[044.16s - 050.52s]** you? Are you feeling comfortable to record? Yeah, sure, sure. Go ahead. Yeah, thank you.
+- **[051.20s - 057.36s]** Like I would like to first ask a first question. Like could you please briefly describe your
+- **[057.48s - 064.76s]** role and how long have you been involved in this bug triage and defect prioritization in your work?
+- **[066.24s - 072.64s]** Yeah, basically, my professional career is with more than six plus years. I have around like
+- **[073.60s - 079.00s]** around six years of experience, especially in the software development, mainly working with
+- **[079.72s - 084.16s]** Python and backend systems in the telecom environment because of my complete
+- **[084.56s - 088.44s]** education career is linked with telecom. So I entered into the telecom and everything is up to
+- **[088.44s - 097.12s]** now. My career is with telecom. Initially with the cargo X later on with [Telecommunications Corp A] right now with
+- **[097.12s - 103.04s]** [IT Services Corp C] integrated with fine tune with the, everything is telecom environment. Basically,
+- **[103.04s - 109.76s]** in my project, I have been involved in analyzing the test failures. And also, yeah, I did that from
+- **[109.76s - 117.36s]** the past four to five years under that during the development also. We usually do this like
+- **[117.36s - 122.72s]** test failures, defects and product issues, production issues. It's common things. He's
+- **[122.72s - 129.20s]** saying like how they should be investigated and prioritize. It's a common thing. They starting
+- **[129.20s - 134.08s]** like that the initial stages when I entered into the [Telecommunications Corp A] that the initial stage
+- **[134.72s - 141.84s]** I got completely into the fault things. I mean, bug analysis, I'm not on it. I'm just
+- **[142.64s - 148.40s]** making an analyzing of the test cases. At that time, I am like that. But right now,
+- **[148.40s - 156.56s]** right now from past five years, I can say completely. I mean, if any call comes in
+- **[157.76s - 162.64s]** the production issue, like, okay, from the chain items, we need to be active,
+- **[162.64s - 165.68s]** because we are in the maintenance as well as in the production, production as well as in the
+- **[165.68s - 172.80s]** maintenance. So we need to be active. Yeah, exactly. Exactly. Okay, moving to the next
+- **[172.80s - 178.24s]** question, like, what does your team project look like? And what is the team size of your
+- **[179.52s - 187.92s]** particular team you're working on? Yes. At present, my team is directly with
+- **[188.40s - 192.48s]** seven people only we are with seven people. We don't have any team leads.
+- **[193.68s - 199.28s]** When I'm there, [Telecommunications Corp A], no, we don't have any team leads like we are we itself as a team.
+- **[199.28s - 204.24s]** Usually, where the seven people will directly directly where the seven people indirectly,
+- **[204.24s - 211.36s]** we will contact with the 100 plus members. Like, my working says little bit different.
+- **[212.00s - 218.72s]** We usually work on finding the use cases, making an architecture and getting the production.
+- **[218.72s - 224.88s]** And later on going to the maintenance, it's completely different way. From the
+- **[225.76s - 235.52s]** stem to from the root to end, we work on everything. Yeah, we have a cross functional
+- **[235.52s - 245.04s]** agile teams with developers. Okay. Like, I would like to ask one more question.
+- **[248.16s - 248.56s]** Hello.
+- **[251.12s - 255.52s]** Yeah, yeah, this guy I can say like directly my team is like seven numbers in directly like 100
+- **[256.08s - 262.40s]** simplest statement I can say. Okay, okay. And I would like to ask you one more question like,
+- **[262.40s - 271.84s]** how do you raise the tickets like in your team like you do you use any zero ticket or
+- **[271.84s - 278.16s]** GitHub issues, etc, like that? Yeah, we usually use a zero and first we review the
+- **[282.64s - 288.32s]** when the production issues came rises out. We don't want to raise the ticket directly
+- **[288.32s - 294.64s]** without getting anything like in case if that first suppose, first suppose I'm saying like in
+- **[294.64s - 300.08s]** case if any front end is failure, then we don't want to raise a ticket like a just a yeah,
+- **[300.08s - 305.36s]** front end is failure, we need to do some other things we don't rise like that firstly,
+- **[305.36s - 313.44s]** we will review the new bulk report and understand like what exactly is falling and then we check the
+- **[314.40s - 323.44s]** reproduction steps, logs, environments and also affected components and the expected versus actual
+- **[323.44s - 330.00s]** behavior before that because we are working with an AI one, before raising the tickets,
+- **[330.00s - 336.40s]** our prior thing is before raising the ticket, we want to make sure that which aspect they need to
+- **[336.40s - 342.08s]** work. The testing team need to be we need to be clear and also the testing team need to be clear
+- **[342.16s - 348.88s]** either it's from the testing data or is from I mean some other integrated thing or else especially from
+- **[348.88s - 359.44s]** our side, usually raise the ticket like this. Okay. First suppose if the issue is
+- **[359.44s - 364.32s]** reproduced like we try to identify the root cause and also sometimes estimation,
+- **[364.32s - 370.48s]** estimate the impact based on the factors such as the severity some like I already said number of
+- **[370.56s - 376.56s]** users and systems system affected and business impact and some other factors depends upon the
+- **[376.56s - 387.12s]** factors. Okay, okay. Okay, could you walk me through like what typical bug sessions and
+- **[388.72s - 394.24s]** what are the reports you gone through and value decision of a bug triage?
+- **[394.24s - 402.72s]** Like what report have you gone through to raise a bug triage thing?
+- **[406.56s - 415.68s]** Up to now, that's it, Kalbagh, same I said like first we will review when we want to
+- **[415.68s - 421.20s]** event by issue and we want to raise the ticket as I already said to initially review the bug.
+- **[422.16s - 428.32s]** Same thing, same what exactly what the previous I discussed with you, those stuff only. Okay,
+- **[428.32s - 433.60s]** okay. Depends upon the environments and the step reproduction steps logs environment and
+- **[433.60s - 440.00s]** affected components. We usually go that if the issue is reproducible we try to identify the root
+- **[440.00s - 444.24s]** cause as I already mentioned these points and estimate the impact and based on the factors
+- **[444.24s - 451.76s]** such as the severity and number of users. In case if we cannot reproduce,
+- **[454.08s - 460.96s]** we collect the more information and also logs and also historical issues and sometimes asking
+- **[460.96s - 469.28s]** the reporter or testing team for the additional details. At that time like finally we decided,
+- **[469.28s - 478.24s]** we usually decide whether to fix it immediately or the priority case. Usually in the case we have
+- **[478.24s - 484.72s]** a priority things, one priority, one priority, schedule as per the priority. Okay, okay, see.
+- **[488.40s - 494.80s]** Can you think of a specific recent situation where you received a bug report that was incomplete by
+- **[494.80s - 501.12s]** you or maybe your team members who have done the incomplete bug report? Like what was your
+- **[502.24s - 509.52s]** information about that case? Could you share as your experience about that?
+- **[510.32s - 518.16s]** Okay, I can't able to say that issue what exactly the issue what we did but I can say like
+- **[518.40s - 526.40s]** the scenario, the failure, what the problem we, I mean I don't want to say what the problem we faced.
+- **[526.40s - 534.48s]** I just mentioned, I can mention like a failure. Yeah, yes, I have seen a situation where the
+- **[534.48s - 540.88s]** failure was reported with only an error message. It's a lot of thing but I don't want to mention
+- **[541.60s - 548.16s]** error message but without completing the reproduction steps or environment information.
+- **[549.20s - 555.36s]** You mean the data information about the case? Yes, yes, yes, yes, yes, yes. In that situation,
+- **[556.64s - 563.92s]** we usually we first check the availability logs and also try to understand when the failure occurred
+- **[563.92s - 568.72s]** and also compared with the previous failures in case if there is any failures existed.
+- **[569.36s - 574.16s]** We are as I already said we work with the telecom radio. We usually go with the telecom
+- **[575.36s - 582.80s]** data which is exactly related to particular radio and also particular radio baseband.
+- **[583.52s - 591.68s]** We usually analyze like that and check whether the same issue is happened. In case if the same
+- **[591.68s - 603.12s]** issue is happened, we try to make the clients to be solubed. In some cases, in case if we can able
+- **[603.12s - 608.88s]** to solub, it's a simple steps. In case if it's a simple step, it's a manual, it's a lab thing,
+- **[608.88s - 616.64s]** then we will just ask the team to go ahead and do this. In case if they stuff, we usually try to
+- **[617.36s - 627.44s]** do that. If you ask, especially if you ask, I mean if we don't find any logs at all,
+- **[628.24s - 634.16s]** any logs at all in the error which means we can just keep it as a muted, we did take it as a
+- **[634.16s - 639.20s]** bug as well. In that scenario, we directly contact, in case if there is the ticket,
+- **[639.28s - 648.40s]** we directly contact the team what we're doing for any logs, what it is. I can say one of the situation
+- **[648.40s - 656.32s]** happened like this recently only, recently when we are dealing with the new Faisal radios,
+- **[656.32s - 663.92s]** there is one radio is there. They got a sudden issue, we got a high prior ticket to be noted.
+- **[663.92s - 671.52s]** They just rise in them. In the mornings, we found just a radio number. We have information
+- **[671.52s - 677.36s]** like radio number. At that time, the chain of team is shut down. It is, I think it's evening
+- **[677.36s - 686.16s]** further, it is not working hours further. So at that time, we analyzed before going,
+- **[686.16s - 691.60s]** I mean before contacting, it's a little bit prior, but it should be solubed as soon as possible.
+- **[692.16s - 700.08s]** That's why we went back to the previous recently raised high prior ticket and we finalized and we
+- **[700.08s - 706.88s]** saw the result and then we got that, then we can make just troubleshoot it and we can solve this
+- **[706.88s - 718.08s]** issue. We analyzed it like that. When a bug report lacks clear production steps or environmental
+- **[718.08s - 724.56s]** details, what do you typically do first? Like, would you walk me through the last time, what happened
+- **[725.92s - 734.16s]** in the scenario? In that case, first I don't immediately assume,
+- **[736.32s - 745.04s]** assume the bug. It's valid. I don't want to assume it's completely invalid. I looked at
+- **[745.84s - 751.44s]** whether the information is available. Main thing, it's a mandatory thing. There are
+- **[751.44s - 758.56s]** three error issues we need to follow these steps. It's available or not and also special logs.
+- **[758.56s - 762.80s]** And also in our cases, time stamps are important, error messages are important and
+- **[762.80s - 769.12s]** test results are also important. We are dealing with a test case, even though we are with AI,
+- **[769.12s - 774.24s]** we are with completely telecom data, the next case is so many test cases. So we need to be
+- **[775.04s - 783.76s]** aware of this error logs mainly. So in my case, I am saying test results and also environmental
+- **[783.76s - 790.56s]** details. Then we usually try to reproduce the issue in the coolest possibility environment.
+- **[791.52s - 798.56s]** If I still can't reproduce, same thing I can say, I contact the person who it is and also ask for
+- **[798.56s - 804.56s]** the missing information in case of it is highly prior to one. As I already discussed just previous,
+- **[805.04s - 813.04s]** we make a small sheet of it and we get ready for the facing of issue.
+- **[813.60s - 823.44s]** Okay. Okay. Like how do you decide what priority to assign a bug? Like what is the severity of the
+- **[823.44s - 830.64s]** case? Like whether the bug is a severe or non-severe, which is clear, etc.
+- **[831.60s - 835.04s]** Okay. You mean like alerting the priority on priority?
+- **[835.04s - 837.28s]** Yeah. Particular bug.
+- **[840.72s - 850.32s]** Basically, it depends upon the issue rises. And also we usually in our environment,
+- **[851.20s - 862.64s]** in normally, we believe, it is not a believe thing. Severity mainly tells us what is in,
+- **[863.60s - 871.84s]** how serious situation in case if that is happens, how much workload is going to be affected,
+- **[871.84s - 876.72s]** how many people is going to be affected because I mean, depends upon that, we will make a priority
+- **[876.80s - 886.16s]** and also we have from the stakeholder side, at the initial stages when we are camera is switched off,
+- **[886.16s - 888.16s]** I think. Okay, no problem.
+- **[889.60s - 892.72s]** Did my camera switched off? Yeah, it switched off.
+- **[906.72s - 923.36s]** Sorry. Sorry, I think some. Yeah.
+- **[926.40s - 929.92s]** Yeah, we are discussing about the severity, how we are analyzing the.
+- **[931.52s - 935.76s]** Yeah, depends upon the, when we are handling the project initially, we
+- **[936.56s - 943.68s]** divide the, at that time only we divide the severity, like how much priority we need to
+- **[943.68s - 950.40s]** give this project. And in case if I cannot able to solve this project, how much of cost,
+- **[952.32s - 956.80s]** work, how many people will shut down their work, they need to be shut down their work and also
+- **[958.48s - 962.64s]** delivery timings, depends upon delivery timings, we have so many things are there.
+- **[963.36s - 968.16s]** Basically, in my work environment, we have things like the first step.
+- **[969.76s - 974.00s]** We are the first step, we are working with the first step testing radio environments.
+- **[974.00s - 979.04s]** We usually work with the frequency testings, frequency and also baseband testings and some other
+- **[980.56s - 985.92s]** inside lab testing, so we are not going outside. In case if we made a delay here,
+- **[985.92s - 991.52s]** there is a possibility of making the people, other people to be awaited.
+- **[993.28s - 1001.12s]** So, in that, I mean, in these cases, in case if we raise any issue, any other aspect, not only in
+- **[1001.84s - 1008.64s]** AI team, in case if our team raise any issue that like, we have this issue that each and every
+- **[1008.64s - 1013.60s]** team in the AI team, I hope, I believe, I believe not, I hope, it's a, it's a mandatory thing,
+- **[1013.60s - 1020.80s]** I observed that as well. They make little bit high priority others because it's an important
+- **[1020.80s - 1026.64s]** thing. We need to do the first step later on, later on the next step will follows them depends
+- **[1026.64s - 1035.36s]** upon that situation. We prioritize the ticket. Okay. Okay.
+- **[1038.08s - 1045.28s]** Okay, moving to the next question, like, what are the shortcuts and what are the thumb rules you
+- **[1046.00s - 1052.00s]** develop while reporting a bug report? Like, what are the shortcuts you have
+- **[1052.00s - 1056.32s]** developed in your point of view while writing a bug report?
+- **[1058.48s - 1067.28s]** One important rule I follow is to focus first on impact rather than only on the error message.
+- **[1068.00s - 1077.68s]** Okay, main thing is impact. And also, yeah, I forgot to mention this word in the past one,
+- **[1077.68s - 1081.76s]** every time I'm saying like, how many are shadowing, how many, at the time this word is not
+- **[1081.76s - 1088.40s]** kept, like, how many are going to be impact, how many people will impact. I forgot to mention that
+- **[1088.40s - 1096.32s]** those points there. Yeah, and also, I also look for the three things, whether the shoe is
+- **[1096.40s - 1103.60s]** reproducible, and also whether it affects a critical component and also whether there is a
+- **[1104.56s - 1111.20s]** bug theorem. And also, another useful approach is to compare the issue, compare the
+- **[1112.40s - 1118.32s]** existed issue, issue or else upcoming issue within historical failures. If the failure
+- **[1118.32s - 1124.32s]** error has occurred before, the previous root cause can provide a strong and strike point,
+- **[1124.40s - 1131.84s]** it makes the people very, very easy to be work. I mean, like, we can solve very easily.
+- **[1132.96s - 1139.84s]** But I try not to make a final decision only based on the assumptions. If the missing, I mean,
+- **[1140.56s - 1143.84s]** if the missing information would change the priority as well sometimes.
+- **[1144.48s - 1154.08s]** So I collect the information first. Okay. Thank you very much. Let's move on to the next question.
+- **[1154.08s - 1158.96s]** Can you describe a specific situation where an upcoming release deadline or a
+- **[1158.96s - 1169.20s]** workload pressure you have faced because of a bug? Because of every time the bugs rises,
+- **[1170.32s - 1177.52s]** we usually get them mostly high in case if it is a priority one bug,
+- **[1177.68s - 1187.12s]** every time it will be a risk thing. I can say in that case, yes, I can say when there is a
+- **[1190.16s - 1197.04s]** release deadline, we have to be more conscious about the risk and also the time available
+- **[1197.04s - 1204.56s]** for the investigation. For example, let's say if a bug appears close to release, we can't able to
+- **[1204.56s - 1212.64s]** reproduce in case if we can't able to reproduce it, I would first assess the potential impact.
+- **[1212.64s - 1220.32s]** But also if it affects a critical feature or it could block the releases, I would prioritize
+- **[1220.88s - 1231.44s]** the investigation and also what to say involving the relevant terms as well. If the impact is low
+- **[1231.44s - 1237.92s]** and there is a reliable work around, we may document the risk and also
+- **[1238.80s - 1245.92s]** plain if for a later release or instead of spending a large amount of time of investigation on it and
+- **[1245.92s - 1254.32s]** also on a large amount of time to investigate at the same time as well as on the especially on
+- **[1254.96s - 1263.44s]** a specific uncertainty issues. So my belief is like the deadline doesn't mean
+- **[1264.16s - 1270.16s]** that we know the quality, it means that we made the risk and also trade off explicitly.
+- **[1274.96s - 1281.36s]** Like how do you manage the expectations or a business priority factor into your triage decision
+- **[1281.92s - 1288.00s]** when you are uncertain about the bug severity or its reproducability?
+- **[1289.84s - 1295.60s]** Could you please tell us a specific instance like where happened in that case?
+- **[1299.52s - 1307.44s]** In my case, business factor are definitely important, but I would not let them to replace the
+- **[1307.52s - 1316.88s]** technical evidence basically. Or suppose, in case if an issue affects a customer facing or
+- **[1318.00s - 1321.76s]** customer facing or a business critical service, it prioritize,
+- **[1324.72s - 1332.32s]** sorry, maybe higher even if the technical, it looks like a relevant small
+- **[1332.88s - 1339.52s]** defect. And also I normally explain the technical impact and also the risk and also the availability
+- **[1340.24s - 1348.72s]** options to the stakeholders. Then we can make a decision based on both technical evidence and
+- **[1348.72s - 1355.60s]** also as a business priorities. Both are the important. If the management wants an issue
+- **[1356.32s - 1364.16s]** handle quickly, sometimes the stakeholders will like it should be immediate resolutions.
+- **[1364.16s - 1367.60s]** At the time, I would make sure the team to understand the reason.
+- **[1368.24s - 1372.48s]** Yeah, you should understand the reason like that also associate the risk rather than the
+- **[1372.48s - 1377.12s]** simply changing the priority without any analysis. I usually suggest this.
+- **[1377.92s - 1385.68s]** Yeah. Like how does the current workload typically affect the amount of time you spend on
+- **[1385.68s - 1392.16s]** investigating a bug before making a decision? Would you please describe a specific case?
+- **[1393.20s - 1397.76s]** I'm sorry, I forgot. I mean, I lost your question. Please repeat the question.
+- **[1397.76s - 1400.48s]** Okay. How does your current?
+- **[1402.08s - 1404.32s]** The current workload affecting the amount of time.
+- **[1404.32s - 1404.80s]** Yeah.
+- **[1404.80s - 1406.80s]** Yeah. Yeah.
+- **[1406.80s - 1414.56s]** Okay. Yeah. Workload definitely affects the investigation time. I already said that.
+- **[1416.16s - 1421.76s]** I am sure you did that. When there are many high priority issues, I cannot spend the same
+- **[1421.76s - 1430.80s]** amount of time on each and every uncertain bug. So I normalize, I normally prioritize based on the
+- **[1430.80s - 1437.20s]** impact and urgency, like as we already find this priority depends upon that I usually do that.
+- **[1437.20s - 1442.88s]** For high impact issues, which is nothing but the priority issues, I spend more time and also
+- **[1444.64s - 1452.32s]** usually investigate and involve the other people if necessary as well. And for lower impact
+- **[1452.32s - 1459.20s]** issues, I may collect the available evidence and also documents, what is known and unknown,
+- **[1459.20s - 1466.16s]** and also what is it, and also on scheduling and deeper investigation later on it. And the important
+- **[1466.16s - 1473.60s]** thing for me is not to make an arbitrary decision just because I am a busy. I don't want to do that.
+- **[1473.60s - 1480.32s]** I make the tradeoff visible and also document to be document to the uncertainty range.
+- **[1480.32s - 1491.68s]** Based on your experience, what do you think the most to improve the process of handling
+- **[1491.68s - 1498.08s]** uncertainty of the bug reports, whether in terms of tooling process or the team practice?
+- **[1502.00s - 1504.00s]** The agent got your question actually.
+- **[1504.64s - 1512.00s]** Like what do you think would the most important to improve the process of handling
+- **[1512.00s - 1519.68s]** uncertain bug report, whether in terms of tooling process or your team practice?
+- **[1521.44s - 1527.68s]** Yeah, in our uncertain bugs, actually, I am the AI people, that's why I mean,
+- **[1527.68s - 1535.92s]** we entered into this [Telecommunications Corp A] especially in this field to maintain the uncertain bugs only, mainly.
+- **[1536.96s - 1543.76s]** That's why we introduced a rag chatbot which can handle the uncertain bugs, very uncertain bugs.
+- **[1544.96s - 1549.92s]** Right now it is handling the prior three, I am sorry, up to prior three bugs. We have
+- **[1549.92s - 1554.40s]** we have a four level of bugs, prior one, prior two, prior three, prior four, up to
+- **[1555.04s - 1560.64s]** prior three level, which means prior four, prior three, the rag, the help of rag chatbot only,
+- **[1560.64s - 1565.76s]** it is it is handling, it is saying the solutions to the testing team. That I mean, that's the
+- **[1565.76s - 1572.96s]** improvement we achieved right now. That's a great improvement I can say. Because of this rag thing,
+- **[1572.96s - 1580.24s]** we already we analyzed the existed tools, I mean, we analyzed the existed errors what from the past
+- **[1580.88s - 1592.08s]** 4G radios, 5G radios documents. Right, I mean, that was the main step we did for uncertain
+- **[1592.08s - 1600.16s]** issues for the prior 10, prior to three. In case if you if we especially want to know,
+- **[1601.52s - 1610.00s]** even in the prior one and prior two, if I want to be a sub subdivision like a 1A1B1C and 2A2B2C,
+- **[1610.56s - 1626.24s]** in that case, I can say alerting the people to the, but mostly I mean, in my case,
+- **[1626.24s - 1631.20s]** only in my case, after getting the rag, we didn't face any uncertain issues. We don't,
+- **[1632.64s - 1639.84s]** in case you forgot any prior four tickets, we usually alert to the juniors, not the juniors,
+- **[1639.84s - 1645.28s]** there is a wrong word. I can say like, a newly income tool, they can easily solve that not
+- **[1645.28s - 1654.24s]** apart from the experience. Okay, okay. Is there anything else about you make regarding the
+- **[1654.24s - 1659.52s]** characterized issues under uncertainty something important you would like to share with us
+- **[1661.04s - 1669.36s]** during this interview session? Okay. And last but not the least question, have we
+- **[1669.36s - 1675.92s]** missed any other out of the box questions in this interview and what are your suggestions
+- **[1675.92s - 1686.32s]** to improve this questions and interview session? Yeah, I think we discussed more.
+- **[1688.40s - 1695.28s]** The problem here is I can't able to, I can't able to tell the situation. I can say only the scenario.
+- **[1695.28s - 1700.72s]** That's why I'm not saying the exact situation where exactly where it is. I'm just every time I'm
+- **[1700.72s - 1706.40s]** saying the scenario only to you. Yeah, your approach is good. Yeah, you're getting good information
+- **[1706.40s - 1712.56s]** from the people. Yeah, that is true. I appreciate that. I appreciate that.
+- **[1713.68s - 1718.48s]** Like my point is that does we miss anything else? No, no, no.
+- **[1718.48s - 1725.44s]** No, no, no, I will be you know, I can say no, everything works out.
+- **[1727.92s - 1736.08s]** Thank you. Thank you, [Participant P02], for having your wonderful time today with us and sharing
+- **[1737.04s - 1740.88s]** wonderful thoughts of your experiences in the software development team and
+- **[1741.68s - 1747.44s]** a lot of things we have noted down today. I keep points also. Yeah, thank you.
+- **[1747.60s - 1751.20s]** Are you going to present this record recordings to some of them?
+- **[1752.16s - 1760.00s]** No, we don't present everybody and as per GDPR, it was only discovered to me and my team. That's it.
+- **[1760.00s - 1767.84s]** We take these results and we after that we done a data analysis based on the rankings of the
+- **[1768.56s - 1774.96s]** key points like we note down and we raise the graph. So only the results we showed.
+- **[1775.52s - 1783.76s]** Yeah, he was unavailable. He was sick today. On behalf of him also, I am taking this session today.
+- **[1785.60s - 1793.52s]** Yeah. Okay. University in Kalskarna, right? BTSV University. Yeah, yeah, yeah. It was in Kalskarna.
+- **[1795.28s - 1801.12s]** Have you got my number? Have you got my name? Yeah, we contacted one of your colleagues from
+- **[1801.12s - 1807.92s]** the LinkedIn. So that's why we contacted you today for this session. Yeah.
+- **[1809.12s - 1820.96s]** Nice. Yeah. Yeah, thank you for today. Have a nice day. Have a nice day. Bye. Thank you.

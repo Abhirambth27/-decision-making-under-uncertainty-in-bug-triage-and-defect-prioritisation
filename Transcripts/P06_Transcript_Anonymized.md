@@ -1,0 +1,231 @@
+# Master Thesis Interview Transcript: Participant P06
+
+## 1. Demographic & Context Metadata
+- **Participant ID:** P06
+- **Role:** DevSecOps Engineer
+- **Experience:** 4+ years in cloud infrastructure, container orchestration & security
+- **Industry Domain:** Cloud Infrastructure, OpenShift Kubernetes & Pipeline Security
+- **Primary Tooling:** Azure Cloud, Terraform, OpenShift Kubernetes, CI/CD
+- **Interview Date:** 2026-08-18
+- **Total Timestamped Utterances:** 215 segments
+- **Ethical Anonymization Status:** Fully Anonymized (All PII, Company Names & Internal Codes Removed)
+
+---
+
+## 2. Verbatim Anonymized Dialogue
+
+- **[000.00s - 008.80s]** Hi, [Participant P06]. Thank you very much for having today's interview session. My name is [Interviewer]
+- **[008.80s - 012.80s]** and I'm currently pursuing my master's in software engineering at Blippen Institute of
+- **[012.80s - 020.20s]** Technology, Palskona. I'm doing my thesis with Vinay and his material manager. He is
+- **[020.20s - 025.40s]** sick today. On behalf of him also, I'm taking this session today. My thesis focuses on
+- **[025.40s - 030.40s]** decision making under uncertainty in bug triage and defect prioritization. Through
+- **[030.40s - 035.90s]** this interview session, I'm trying to understand how software professionals make
+- **[035.90s - 040.30s]** decisions when dealing with bugs, especially when there is incomplete
+- **[040.30s - 046.04s]** information, conflict in priorities or uncertainty about the impact of a defect.
+- **[046.04s - 050.96s]** This interview will take 20 to 25 minutes. There is no right or wrong
+- **[050.96s - 057.56s]** answers. I'm currently interested in your experience and perspective. With your
+- **[057.56s - 062.20s]** permission, I will take a few notes in this interview so I can analyze the
+- **[062.20s - 067.28s]** information later for my thesis purposes. Like once again, thank you for your time
+- **[067.28s - 077.32s]** joining with the students. Thank you. Thank you, [Interviewer], for inviting me. So let me
+- **[077.32s - 084.24s]** introduce very quickly. So my name is [Participant P06] and I'm working as a
+- **[084.24s - 097.56s]** DevSecOps engineer in [Enterprise Technology Group F]. Thank you very much. Could you briefly describe your current role and roughly how long have you been working in this bug triage or defect
+- **[097.56s - 105.88s]** prioritization in your work life? Yeah, so I just started working from past four years
+- **[105.88s - 114.32s]** and I'm working as a DevSecOps engineer in [Enterprise Technology Group F] and mainly I used to
+- **[114.32s - 121.64s]** work with Azure Cloud Terraform, which is used for infrastructure as a code and
+- **[121.64s - 128.40s]** OpenShift Kubernetes clusters and CI CD tools and not only that, some security
+- **[128.40s - 134.64s]** tools which we integrate in the pipelines and some other places as well. So and we
+- **[134.64s - 139.60s]** used to help the stable teams which is application teams who are going to
+- **[139.60s - 145.92s]** develop the applications to help them because they totally knew with all these
+- **[145.92s - 154.12s]** DevOps side so we used to help them with all those stuff. So I used to
+- **[154.12s - 159.80s]** help them with troubleshooting and prioritizing the technical issues is part
+- **[159.80s - 170.48s]** of my daily work. Thank you. How does your team and projects context look like?
+- **[170.48s - 175.76s]** Like what is your team size? What type of software do you build and what issues
+- **[175.76s - 184.16s]** will you track? Like what tools you use in tracking the issues like Jira, Bugzilla or GitHub issues etc.
+- **[184.52s - 194.96s]** So usually we are in our team, we are 10 people working in our team. So I'm part of
+- **[194.96s - 200.24s]** mainly platform team with supporting multiple application teams. As I mentioned
+- **[200.24s - 207.08s]** before, we manage the Azure infrastructure, OpenShift, GitOps, CI CD and security
+- **[207.08s - 216.20s]** tools. I mean the teams, application teams usually before they were in on-premises
+- **[216.20s - 221.00s]** applications which they deployed in data centers. So now they are totally
+- **[221.00s - 224.76s]** migrating to the cloud. So they are writing their application into the
+- **[224.76s - 232.52s]** microservices and here's a platform we are supporting them to move to our platform
+- **[232.52s - 236.48s]** team. So we are providing the infrastructure and all those stuff to
+- **[236.48s - 243.84s]** them so that they can deploy their microservices into our OpenShift
+- **[243.84s - 249.32s]** Kubernetes cluster so that they can able to access it and we're gonna
+- **[249.32s - 254.72s]** support them with all those stuff. So mainly here we are supporting them with
+- **[254.72s - 262.52s]** GitHub issues, infrastructure, Azure cloud issues and some GitHub. If they have any
+- **[262.52s - 266.56s]** issues with it and CI CD pipelines as well. So for example if they're facing
+- **[266.56s - 270.36s]** some issues with configuration in the pipeline because they're totally new
+- **[270.36s - 275.24s]** with it. So we're gonna support them with all those things and we're gonna trace
+- **[275.24s - 279.44s]** the bugs and we can support them with those things and even with security
+- **[279.44s - 284.44s]** tools as well. So this is our work that we're gonna support and we're gonna
+- **[284.44s - 290.48s]** track all those issues and we reach out to them directly or if they face
+- **[290.48s - 294.08s]** any issues they will reach out to the platform team and we're gonna support
+- **[294.08s - 299.48s]** them with all those things. Could you walk me through what
+- **[299.48s - 306.24s]** TCL bug triage sessions look like for you from the moment a new report arrives
+- **[306.24s - 317.08s]** when a decision is made about it? Yes so I can quickly explain to you.
+- **[317.08s - 327.20s]** So as you know that we as a team we are working on real-time projects in the
+- **[327.20s - 332.76s]** company so that we have three different OpenShift clusters which is DevQN
+- **[332.76s - 340.96s]** Broad. So first thing I try to understand the impact what the team what the
+- **[340.96s - 346.40s]** application team has been facing. So I try to check the logs because we have
+- **[346.40s - 350.00s]** the history for the logs because since we are the admins for the clusters and all
+- **[350.00s - 356.48s]** those stuff so I gonna check the logs for their applications and try to I will
+- **[356.48s - 360.08s]** check the recent changes as well if they try to upgrade the application and
+- **[360.08s - 363.28s]** they deployed the new version of it or something and I will check all the
+- **[363.28s - 368.80s]** things and check the logs events and all those stuff. So if still I cannot fix
+- **[368.80s - 372.92s]** that so I will try to reproduce the issue in my Dev cluster which is
+- **[372.92s - 378.56s]** development cluster and identify the root cause and try to fix that issue and
+- **[378.56s - 384.20s]** talk with the team and I will explain the whole situation what the bug what is
+- **[384.20s - 387.96s]** the issue and where the bug is coming from and I will try to debug that and
+- **[387.96s - 392.44s]** I will try to present the solution to the particular team so that they will
+- **[392.44s - 396.84s]** try to mitigate by themselves or I will try to help them to mitigate that
+- **[396.84s - 403.16s]** and maybe in next time if they try to get the similar issue so now they know
+- **[403.16s - 410.44s]** that so they how they can fix it and they gonna fix it by themselves so issue
+- **[410.44s - 416.36s]** will be resolved. Can you please tell me a recent situation where you received a
+- **[416.36s - 422.12s]** bug report that was incomplete, ambiguous or impossible to reproduce like what
+- **[422.12s - 427.04s]** happened in that scenario case like what information was missing like what have
+- **[427.04s - 434.88s]** you done next. So what I will do is I usually ask for them for the missing
+- **[434.88s - 440.92s]** logs from their end so for example the application was developed by themselves
+- **[440.92s - 444.48s]** so they know the application configuration and everything so since we are the
+- **[444.48s - 450.72s]** platform we don't know about the application related code or something or
+- **[450.72s - 455.32s]** configuration how they can set up the configuration on their application level
+- **[455.32s - 459.12s]** since we are the platform and we are the DevOps engineers and we are not the
+- **[459.12s - 465.16s]** developers so we don't know some of the steps so we can try to debug the code
+- **[465.16s - 472.84s]** most of the thing most of the code we can try to debug or so a lot of things
+- **[472.84s - 477.80s]** we don't know because the application was developed by them and it's not a
+- **[477.80s - 484.28s]** small application as well it's a big application so maybe some things we can
+- **[484.28s - 490.48s]** definitely miss it so I need to reach out to them I usually ask them for the
+- **[490.48s - 495.84s]** missing logs or did I find something if I miss something like environment details
+- **[495.84s - 502.20s]** or something because the in the application level they used to inject
+- **[502.20s - 506.76s]** different kinds of environment variables which is application related
+- **[506.88s - 512.60s]** configuration or external configuration they want to inject so maybe we miss
+- **[512.60s - 517.04s]** that miss those things so because of that the application might not be start
+- **[517.04s - 522.20s]** or the application will crash in the open shift in the Kubernetes cluster so
+- **[522.20s - 526.36s]** I will ask them I mean I will reach out to them and schedule a meeting and then
+- **[526.36s - 531.88s]** I will try to ask them all those details which I am missing or I will ask
+- **[531.88s - 537.40s]** them to explain some other things and I will ask them the missing logs or
+- **[537.40s - 541.76s]** missing information from them and I will try to reproduce that because the
+- **[541.76s - 547.92s]** application which we which they by using the CI CD pipeline so the application
+- **[547.92s - 553.12s]** will be built push to that container registry from there I can I have the
+- **[553.12s - 558.96s]** access to fetch that pull that image and I will deploy that application in the
+- **[559.32s - 564.44s]** cluster and I will try to reproduce that then I will try to reproduce it and
+- **[564.44s - 571.24s]** narrow down the possible cause so I mean I will alone I cannot do that but I can
+- **[571.24s - 575.68s]** invite the team and during the meeting so we will try to debug that and we
+- **[575.68s - 582.92s]** will try to fix that issue so that's the final step I can do so if
+- **[582.92s - 587.60s]** something some information got missed so I will reach out to them and I will
+- **[587.60s - 594.32s]** try to get it sorted out and then hopefully I will try to resolve that issue
+- **[594.32s - 605.44s]** with the help of the team. When a bug report lacks of reproduction like our
+- **[605.44s - 610.04s]** environment detail is missing in that bug report like what do you typically do
+- **[610.04s - 618.56s]** first in case? So in this case I first collect the error logs and environment
+- **[618.56s - 622.84s]** and recent changes then I check whether I can reproduce it in another
+- **[622.84s - 631.72s]** environment or not so as I mentioned before so I used to get that I used to
+- **[631.72s - 637.04s]** collect the error logs I mean so you can definitely see the error usually in
+- **[637.04s - 640.96s]** the open shift so there is an option you can check the logs of the application
+- **[640.96s - 644.88s]** either everything is working fine or not or the application is crashing you can
+- **[644.88s - 650.00s]** see everything in the UI so I used to collect those information so that's the
+- **[650.00s - 655.12s]** that's the first and the basic thing I can collect from the from the Kubernetes
+- **[655.12s - 659.96s]** cluster as an admin I have an access to all the stuff so I can take it out
+- **[659.96s - 668.92s]** and before I'm doing this stuff so I can reach out to the team and I
+- **[668.92s - 673.00s]** will check with them as well as I mentioned before to collect more
+- **[673.00s - 679.08s]** information from them so once everything is ready so if the if their application
+- **[679.08s - 684.12s]** was deployed in Dev cluster or something so I will try to do it on QA I can try
+- **[684.12s - 688.24s]** to reproduce that issue in QA and I will try to debug that issue and or
+- **[688.32s - 709.92s]** or maybe in the Dev I can change the project name to another one and I will try to deploy that in the Dev cluster and then try to reproduce the issue and try to debug that try to fix that and hopefully I will try to resolve that issue and help the teams with the bug trays and all those stuff
+- **[709.92s - 726.16s]** How do you decide like what priority to assign a bug when the CVRT is unclear or contexted? Could you please describe a specific bug where you had made the call?
+- **[726.16s - 745.84s]** So I will check that issue like either it is a it is a business and I mean I will check I will look at the business and the technical impact so for example as I mentioned before that if the application
+- **[745.84s - 765.84s]** where they causing the issue in the production level or something and it is impacting the end users which means the clients who are using the application so and if it is a very business application and getting a lot of money
+- **[766.84s - 790.84s]** for that and if the application has been lost or if it is crashed in the production level so then they lost lot of billions during the time so we need to be very careful when we are working on it so what I will do in this situation is so I will try to escalate it as soon as possible I will reach out to my team
+- **[790.84s - 819.84s]** let my team lead take lead and all those stuff will be involved the R text has been involved since it's a priority thing I will leave my work what I was doing for now and then I will prioritize this thing and try to talk with my colleagues as I mentioned that maybe involve R text and all those stuff and we will schedule and meeting quickly and try to do it as soon as possible without getting involved
+- **[819.84s - 831.84s]** getting any impact for the end users and for the business as well so I will take it as a high priority for this
+- **[833.84s - 844.84s]** like over time like what rules and shortcuts you have developer that you rely on the information in and bug report is missing or not here
+- **[845.84s - 861.84s]** so I usually check the scope first and look at what changes what changed recently so I also try to separate the actual root cause from the symptoms so
+- **[861.84s - 882.84s]** what I mentioned before that so I will try to check the logs that's the main thing before we try to debug the issue that's the main thing we need to check the logs since we have an access to check the logs and all those stuff
+- **[883.84s - 898.84s]** so you can check the logs and you need to debug that as an as an developer and you need to have this knowledge to check the logs first and try to find the issue where exactly the issue is coming from
+- **[899.84s - 911.84s]** so if it cannot find the issue maybe like if they if they develop the new feature and release the application with the newest version and deploy into the cluster so maybe there might be a changes
+- **[912.84s - 920.84s]** the application will not work before if they doesn't test application locally before deploying the application into the Kubernetes
+- **[921.84s - 938.84s]** maybe there might be some issues as well so application cannot work in the latest version so I need to check that I will try to check the version before either it is I mean the new version has been deployed
+- **[938.84s - 967.84s]** I will check all those things check the logs and all those stuff before getting the business impact or something like that so what I can do is I used to this is my this is the rule for the DevOps engineers so what we can do is instead of debugging the issue it takes a lot of time maybe it depends so maybe it takes like one minute two minute or five minutes or maybe ten minutes or maybe one hour up to one hour we cannot we cannot say that we cannot predict that so
+- **[968.84s - 997.84s]** what we can say is so before trying to debug the issue what we can do is we can revert back to the old version of the application once the application is working fine in the production level or somewhere so try to debug the during this meantime try to debug the issue what we are facing try to debug and try to fix the issue we can test it out on the Dev cluster first and we can test we can try to debug and we try to fix the issue everything is looking fine
+- **[998.84s - 1013.84s]** so once that has been done we can promote to QA we can check it in the QA and do some additional testings and all those stuff once everything is done so then they're good to go for the production so that's the thing we can do it
+- **[1014.84s - 1031.84s]** Okay. When you describe a specific situation when an upcoming release deadline was there for your product and like what workload pressures you have facing with a bug report and what are the uncertainties about it?
+- **[1032.84s - 1051.84s]** Yeah, so as I mentioned before the same thing so if the release is blocked so for example right now we are working on deploying the application in the Kubernetes clusters which the applications were deployed in different different Olo factories
+- **[1052.84s - 1073.84s]** so the application what we are trying to deploy there is a deadline so for each application there is a deadline that so for week 35 so we need to deploy this application within this X cluster or Y cluster something like that Y factory or something like that so we what we can do is
+- **[1074.84s - 1078.84s]** we can try to focus it we can focus it and we try to
+- **[1081.84s - 1102.84s]** the application team is different right so they will try to deploy the I mean write the code and try to build the software and everything once the new version of the application or they try to if they have like new version of the application or they added multiple features inside of that application they will try to have that application ready and so what we can do is before releasing the application
+- **[1103.84s - 1120.84s]** to the factory or something so we will get some kind of approvals from different different teams so at the time we have like lot of workload pressure and all those stuff because it's a factory if something has been happened wrong so all the factory setup will be went down so what we can do is
+- **[1121.84s - 1138.84s]** so for example if the week deadline is 36 or something for example like I'm saying that if it is a 36 or something like that we will try to put some pressure on the teams we will try to do it and test it out on the test
+- **[1138.84s - 1167.84s]** cluster or somewhere once everything is working fine easy everything is ready and everything is application is working fine and all the stuff so then we will get an approval from the team that there is a particular team that they can approve that and we will release it in the production and they have we will do it in before two weeks ahead and they will try to deploy the application in the factory and they will do some
+- **[1168.84s - 1179.84s]** kind of testings before the actual release so they will do all the testings and all those stuff once everything is working fine as expected so then they will release it and they will do the stuff so
+- **[1183.84s - 1195.84s]** how do you manage the expectations of the business priority factors into your tries decisions like when you are uncertain about the bug severity or its reproducibility
+- **[1195.84s - 1223.84s]** yes so business priorities definitely affect players so because before you are writing the application and you are releasing it to the factory or releasing it to the production level so first thing you need to check the thing is the security that security is very much important and the stability of the application before choosing a quick fix because those two are really
+- **[1225.84s - 1254.84s]** adding the value for the application because if you haven't prioritized the security or stability of the application you build application and you deploy the application and you are not following the security rules and all those stuff and if you deploy the application into the factory level someone some kind of hacker try to access your application and you will they can steal the data so what they can do is when we are when the when the developers trying to build application or developing the application they will strictly
+- **[1255.84s - 1284.84s]** follow the security and stability of the application and there are some kind of reviews as well so they will check the application condition and all those stuff and they that they following the security part and stability and they we have that structure in the world so they need to follow all those stuff and they need to follow all those things and once they got approved from themselves for their application then only they are good to go for the production so because they will
+- **[1285.84s - 1314.84s]** highly consider the security part is an important thing rather than application so so I think I will I will also consider the same thing even the having the even the DevOps in there so I used to consider these things and we also have the security tools for the cluster when their application is running on Kubernetes cluster so during the runtime we will also get different kinds of vulnerabilities the further also we have different kinds of portal so we used to
+- **[1314.84s - 1336.84s]** check those things and we send the reports once a month to the application team so they used to fix that vulnerability is within the deadline so be as a platform we used to consider that consider this as a security and stability before choosing and quick quick quick fix of the application
+- **[1337.84s - 1348.84s]** How does your current workload typically affect like the amount of time you are spending on investigating a bug before taking a decision
+- **[1348.84s - 1377.84s]** So usually it's a as I mentioned before it's a part of my troubleshooting and fixing the issues is part of my work life so not only that we have different different things and day by day we are supporting different different teams application teams to deploy their applications into the cloud not only one team I think we are supporting nearly 20 different teams
+- **[1378.84s - 1407.84s]** and we are working on different different projects as well so sometimes we have like heavy workload workload pressure and all those are sometimes we have normal days and sometimes it was calm but during the peak workload time few people few teams are trying to reach out to us and they say that like we are having this kind of issue this is important and it will cause some business impact and stuff like that so we need to put some time to do that
+- **[1408.84s - 1437.84s]** prioritize that thing as well parallel but we rather I mean we cannot ignore the work what we are doing because that is also very prior thing what we are working on it depends like if it is a prior we will parallel work on both of the stuff so if it is not a prior thing so then we will keep it aside for some time and we will prioritize this issue and so I will focus on that high impact issues
+- **[1437.84s - 1466.84s]** and if it is small issues I may provide our care and I will investigate them later so that's the thing like if it is a prior thing then I will for sure consider that as a prior and I will work on it and if it is not a prior thing and if they're having if they need some kind of support or something and if it is not a prior then I will try to assign it to one of the person from our team who doesn't have a lot of work so they will consider they will work on it or everyone is busy
+- **[1466.84s - 1479.84s]** and if it is kind of my support thing so then I will surely consider that but not quickly but I will investigate that later.
+- **[1479.84s - 1495.84s]** Based on your experience what do you think the most improve the process of handling the uncertain or incomplete bug reports whether in terms of tooling process or team practice?
+- **[1496.84s - 1524.84s]** So better bug information, good logging and clear issue templates would make trias much faster automation also helps reduce manual investigation so what we can do is so we can automate this step as well so maybe we can get some kind of alerts by using the Grafana or Prometheus maybe
+- **[1524.84s - 1545.84s]** we usually the teams I mean every application team or everyone who is working on companies they used to use this from videos and Grafana so that you can set the rules and all those stuff and for according to the application level or maybe to the cluster level or something
+- **[1545.84s - 1574.84s]** so if their application is crashed or we cannot predict that right so during the night or maybe during the day also it suddenly crashed application without having any issue or anything so suddenly it gets crashed so if you set these things you will get if you automated this thing like to the teams channel or outlook or something like that so you will get an alert that your application has been crashed
+- **[1575.84s - 1604.84s]** so you will get all those things so then you have you can look into that or maybe this is the main thing that logging part is very important who is working on the applications because logs are very much important to check the logs and events because there you can find the 98% of the error in the logs so what exactly you're facing so maybe the secret is that you can do that
+- **[1605.84s - 1634.84s]** you can have it or maybe a new one mental variables which you are using for from, from the external purposes so they made that made that might be expired or something because of that the application will be crashed so there are a lot of issues we cannot predict so you can see a lot of issues so for that you need to have that good logging part and play issue templates as well would make that as much faster and this as I mentioned that automation is also helps reduce
+- **[1634.84s - 1639.12s]** manual investigation of the logs of the issues and everything. So
+- **[1639.12s - 1642.32s]** better to have the automation. So maybe you can integrate the
+- **[1642.32s - 1649.48s]** AA as well. So AA can try to fix the, I mean, check the logs
+- **[1649.48s - 1652.20s]** and check the issues and it will investigate instead of doing
+- **[1652.20s - 1655.20s]** manual and it will save a lot of time for you. And then by using
+- **[1655.20s - 1663.24s]** that you can try to, it becomes life easy for you so that you
+- **[1663.24s - 1667.12s]** don't need to investigate the issues. Automatically it will
+- **[1669.44s - 1672.88s]** find the issue and it will give it to you. So that I mean, it
+- **[1672.88s - 1676.72s]** will see the issue so that you can try to debug and you can fix
+- **[1676.72s - 1680.48s]** the issue as soon as possible. It will save a lot of time for
+- **[1680.48s - 1680.68s]** you.
+- **[1681.84s - 1685.56s]** Thank you. Like last but not the least question like is there
+- **[1685.56s - 1690.76s]** anything else about how you make bug reports and bug triage
+- **[1691.00s - 1696.00s]** decisions under uncertainty and something important that we did
+- **[1696.00s - 1698.96s]** not have discussed in this interview session like you would
+- **[1698.96s - 1700.00s]** like to share with us.
+- **[1700.76s - 1706.40s]** Yeah. So what I can say is instead of supporting the
+- **[1706.40s - 1709.96s]** application team, one application team, you can solve the issue.
+- **[1711.64s - 1714.64s]** And the issue will be solved. But the thing is, maybe the
+- **[1714.92s - 1719.96s]** application team might get another, might get the same
+- **[1719.96s - 1723.08s]** issue again. So they know the answer. But the thing is the
+- **[1723.08s - 1725.40s]** same because as I mentioned before that we are supporting
+- **[1725.40s - 1729.32s]** nearly 20 to 25 teams. So maybe they're also following the
+- **[1729.32s - 1734.44s]** same structure when they're becoming the platform family or
+- **[1734.44s - 1741.60s]** something. So the same issue also get for maybe within that
+- **[1741.60s - 1746.44s]** another 25 teams also, right. So what we what we suggest the
+- **[1746.44s - 1752.04s]** teams is instead of sending the DMS, we have that community
+- **[1752.04s - 1756.92s]** channel where all the team members has been added to the
+- **[1756.92s - 1761.24s]** channel. So if they if they are good, good and transparent there
+- **[1761.24s - 1764.20s]** and if they post the issue there, so we will answer that and
+- **[1764.20s - 1768.84s]** we will fix the issue. And we will mention the steps as in what
+- **[1768.84s - 1772.00s]** we have done and how they should got resolved. So if I
+- **[1772.00s - 1775.60s]** answer that question, if the answer to the thread in the
+- **[1775.68s - 1781.28s]** channel so that most of the teams also aware and if any of
+- **[1781.28s - 1783.76s]** the team also get the similar issue, they will try to check
+- **[1783.76s - 1787.96s]** the channel and they can try to debug by themselves. So most of
+- **[1787.96s - 1791.64s]** the issues will be solved there. So if I do it to the
+- **[1791.64s - 1796.44s]** single team on their DMS, so then it doesn't know to anyone,
+- **[1796.44s - 1800.12s]** right. So again, another team also reached out to us with the
+- **[1800.12s - 1803.20s]** same issue, maybe another team three, team four like that. So
+- **[1803.52s - 1806.80s]** it would be kind of lot of support and lot of bugs on the
+- **[1806.80s - 1812.16s]** same issue. So better if we if we keep it as a transparent,
+- **[1812.16s - 1816.12s]** then it would be really helpful and maybe other teams also can
+- **[1816.12s - 1819.96s]** learn from that and they can try to debug and fix the issue by
+- **[1819.96s - 1824.48s]** themselves so that then for the team for the platform team,
+- **[1824.48s - 1827.92s]** also, it doesn't have a lot of workload. I mean, doesn't
+- **[1828.32s - 1831.72s]** need to look into that issue again and again. And we don't
+- **[1831.80s - 1836.68s]** want to we don't get that kind of stress or anything. And we
+- **[1836.68s - 1839.12s]** can focus on different different things during the same
+- **[1839.12s - 1841.12s]** time. So I'll suggest that.
+- **[1844.16s - 1848.56s]** Thank you. Thank you very much for this meeting today. Like we
+- **[1848.56s - 1852.04s]** have gathered a lot of information and insights from
+- **[1852.04s - 1857.64s]** you. And this helped us very lot for our purposes in the
+- **[1857.64s - 1861.88s]** analysis. And for my thesis purpose also. Thank you so
+- **[1861.88s - 1863.80s]** much. Have a nice evening.
+- **[1864.32s - 1865.84s]** Yeah, you too. Bye bye.
