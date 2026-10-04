@@ -1,6 +1,7 @@
 # Replication Package: Decision-Making Under Uncertainty in Bug Triage and Defect Prioritisation
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](LICENSE)
+[![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Methodology: Convergent Mixed-Methods](https://img.shields.io/badge/Methodology-Mixed--Methods-blue.svg)](https://link.springer.com/book/10.1007/978-3-642-48607-4)
 [![GDPR: Article 89 Compliant](https://img.shields.io/badge/GDPR-Article%2089%20Compliant-green.svg)](https://gdpr-info.eu/art-89-gdpr/)
 [![Institution: BTH](https://img.shields.io/badge/Institution-Blekinge%20Institute%20of%20Technology-navy.svg)](https://www.bth.se/)
@@ -55,6 +56,7 @@ To make navigation seamless and immediate for examiners and peer researchers, in
 │   ├── ...                                   # De-identified transcripts for P03 through P11
 │   └── P12_Transcript_Anonymized.md          # De-identified verbatim transcript for Participant P12
 │
+├── LICENSE                                   # Dual License Terms (MIT for Code, CC BY 4.0 for Data & Docs)
 └── README.md                                 # Master replication package documentation (this file)
 ```
 
