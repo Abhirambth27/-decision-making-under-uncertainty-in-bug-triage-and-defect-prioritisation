@@ -48,7 +48,6 @@ To make navigation seamless and immediate for examiners and peer researchers, in
 │   ├── run_entire_pipeline.py                # End-to-end orchestration pipeline runner
 │   ├── Transcript_Fidelity_and_Anonymization_Audit_Report.md # Full 2,043-utterance audit report
 │   ├── requirements.txt                      # Python dependencies for the pipeline
-│   ├── 00_TRANSCRIPTION_PIPELINE_KNOWLEDGE_MAP_AND_AUDIT_MATRIX.md # Knowledge map & audit matrix
 │   └── README.md                             # Pipeline execution and reproduction instructions
 │
 ├── Transcripts/
